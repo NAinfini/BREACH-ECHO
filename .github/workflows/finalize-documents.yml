@@ -20,6 +20,8 @@ jobs:
         run: python3 tools/validate_docs.py --self-test
       - name: Apply explicit source-preserving migration
         run: python3 tools/migrations/finalize_2026_09_05.py
+      - name: Apply reviewed responsibility corrections
+        run: python3 tools/migrations/review_2026_09_05.py
       - name: Validate complete documentation
         run: python3 tools/validate_docs.py --reindex
       - name: Commit verified responsibility-document changes
