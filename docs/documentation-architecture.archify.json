@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "BREACH ECHO 文档架构",
+    "locale": "zh-CN",
+    "output": "docs/documentation-architecture.html",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [1500, 760],
+    "views": [
+      {
+        "id": "authority",
+        "label": "权威与证据",
+        "focus": ["entry", "governance", "evidence", "research"],
+        "note": "当前规则与历史证据分离，冲突只在治理层裁决。"
+      },
+      {
+        "id": "game-design",
+        "label": "游戏设计",
+        "focus": ["product", "narrative", "content"],
+        "note": "Operation 是基础产品；故事、系统与具体内容有独立责任文档。"
+      },
+      {
+        "id": "implementation",
+        "label": "实现架构",
+        "focus": ["technical", "network", "modding", "templates"],
+        "note": "技术、联机和模组合同引用设计，但不复制玩法规则。"
+      },
+      {
+        "id": "delivery",
+        "label": "生产与交付",
+        "focus": ["production", "research", "templates"],
+        "note": "范围、资产、验收、风险与发行 Gate 形成一条证据链。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "entry",
+      "type": "frontend",
+      "label": "入口与导航",
+      "tag": "3 个主入口",
+      "pos": [20, 300],
+      "size": [160, 66]
+    },
+    {
+      "id": "governance",
+      "type": "security",
+      "label": "治理与决策",
+      "tag": "唯一裁决层",
+      "pos": [260, 300],
+      "size": [170, 66]
+    },
+    {
+      "id": "evidence",
+      "type": "database",
+      "label": "证据与历史",
+      "tag": "只读根据",
+      "pos": [260, 80],
+      "size": [170, 66]
+    },
+    {
+      "id": "research",
+      "type": "external",
+      "label": "研究与外部事实",
+      "tag": "可重新验证",
+      "pos": [980, 80],
+      "size": [170, 66]
+    },
+    {
+      "id": "product",
+      "type": "backend",
+      "label": "产品与游戏设计",
+      "tag": "玩法规则主域",
+      "pos": [500, 300],
+      "size": [170, 66]
+    },
+    {
+      "id": "narrative",
+      "type": "backend",
+      "label": "正史、世界与人物",
+      "tag": "创作审阅边界",
+      "pos": [500, 520],
+      "size": [170, 66]
+    },
+    {
+      "id": "content",
+      "type": "database",
+      "label": "内容规格",
+      "tag": "9 份可制作内容",
+      "pos": [740, 300],
+      "size": [170, 66]
+    },
+    {
+      "id": "technical",
+      "type": "cloud",
+      "label": "技术架构",
+      "tag": "11 份运行时合同",
+      "pos": [980, 300],
+      "size": [170, 66]
+    },
+    {
+      "id": "network",
+      "type": "messagebus",
+      "label": "联机与恢复",
+      "tag": "Steam + FishNet + 自有协议",
+      "pos": [930, 520],
+      "size": [170, 66]
+    },
+    {
+      "id": "modding",
+      "type": "security",
+      "label": "模组与开发工具",
+      "tag": "公开能力边界",
+      "pos": [1150, 520],
+      "size": [170, 66]
+    },
+    {
+      "id": "production",
+      "type": "backend",
+      "label": "生产、资产与发行",
+      "tag": "11 份交付合同",
+      "pos": [1280, 300],
+      "size": [186, 66]
+    },
+    {
+      "id": "templates",
+      "type": "external",
+      "label": "模板与智能体技能",
+      "tag": "新工作的入口",
+      "pos": [740, 80],
+      "size": [170, 66]
+    }
+  ],
+  "connections": [
+    {"from": "entry", "to": "governance", "label": "进入当前基线", "variant": "emphasis", "labelAt": [220, 333]},
+    {"from": "evidence", "to": "governance", "label": "提供来源，不直接覆盖", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelAt": [345, 220]},
+    {"from": "research", "to": "technical", "label": "验证外部技术事实", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelAt": [1065, 220]},
+    {"from": "governance", "to": "product", "label": "批准产品边界", "variant": "emphasis", "labelAt": [460, 380]},
+    {"from": "product", "to": "narrative", "label": "约束世界与玩家身份", "fromSide": "bottom", "toSide": "top", "labelAt": [585, 443]},
+    {"from": "product", "to": "content", "label": "产生可制作内容", "labelAt": [700, 380]},
+    {"from": "narrative", "to": "content", "label": "约束阵营、场所与任务", "fromSide": "right", "toSide": "bottom", "labelAt": [735, 470]},
+    {"from": "content", "to": "technical", "label": "交付行为合同", "labelAt": [940, 380]},
+    {"from": "technical", "to": "network", "label": "拆分权威与恢复", "fromSide": "bottom", "toSide": "top", "labelAt": [965, 443]},
+    {"from": "technical", "to": "modding", "label": "公开稳定能力", "fromSide": "bottom", "toSide": "top", "labelAt": [1170, 443]},
+    {"from": "technical", "to": "production", "label": "提供构建与性能关卡", "labelAt": [1215, 333]},
+    {"from": "network", "to": "production", "label": "联机可靠性关卡", "fromSide": "bottom", "toSide": "right", "via": [[1015, 680], [1480, 680], [1480, 333]], "labelAt": [1380, 680]},
+    {"from": "modding", "to": "production", "label": "安全与 Workshop 关卡", "fromSide": "top", "toSide": "bottom", "labelAt": [1395, 445]},
+    {"from": "templates", "to": "content", "label": "统一新内容格式", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelAt": [825, 220]}
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "唯一性规则",
+      "items": [
+        "每个规则和文档 ID 只能有一个现行所有者",
+        "决策文档记录理由，责任文档维护具体规则",
+        "ARCHIVE/FUTURE/REVIEW 不可冒充 BASELINE"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "当前产品主路",
+      "items": [
+        "Operation 是基础版唯一模式",
+        "游戏设计 → 内容卡 → 技术合同 → 生产验收",
+        "Descent 与无限遗物/融合只属未来规则集"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "审计范围",
+      "items": [
+        "完整文件级覆盖由 document-register.md 提供",
+        "本图按责任域汇总，不把 87 个文件挤成无法阅读的节点墙",
+        "结构通过自动链接、依赖、重复 ID 和旧决策回流检查"
+      ]
+    }
+  ]
+}
