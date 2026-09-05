@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-NARRATIVE
 doc_type: gdd
-stage: DRAFT
+stage: REVIEW
 updated: 2026-09-05
 owner_role: 叙事设计
 canon_basis: "SRC-SSOT-2.0 §25；本轮用户决策"
@@ -302,8 +302,9 @@ NAR-003 · LEGACY/OPEN · 来源：SRC-SSOT-2.0 §25.5、§25.9–§25.10；SRC-
 NAR-004 · DIRECTION · 来源：SRC-SSOT-2.0 §25.6。
 Operation是真实field mission，进入未知/敌对设施执行任务、取知识、改变局部世界。
 
-NAR-005 · OPEN · 来源：SRC-SSOT-2.0 §25.7–§25.8。
-Descent可解释为进入不稳定Fold/Resonance深度区域，但尚未批准；失败Run如何作为aborted attempt/gameplay possibility与正史共存也未定，不发明每次死后重生机器。
+NAR-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
+
+Descent叙事边界已由NAR-030及DES-008/010定义：未来公共事件打开真实行星端点，每次为新区域远征，不是空间重置、时间循环或复活旧敌人。旧未稳定Fold副本解释退出现行方向；具体首个行星内容在未来扩展Gate裁决，不阻塞Operation。
 
 ## 当代玩家身份与碎片叙事
 
@@ -333,3 +334,10 @@ NAR-009 · TEST · 来源：本轮叙事验证建议。
 ## 最新唯一历史与玩家故事约束
 
 作者层客观世界事实以本文NAR条目为唯一正文；固定四人、非递进Operation、公共已知信息与碎片收藏合同归[玩家故事](central-story-spine.md)。旧五幕、Final Revelation、主结局、账号剧情stage和Post-Revelation双世界状态已经SUPERSEDED。TC仍使用独立`canon_namespace`，不能把Mod事件写入官方历史。
+
+
+## 本次审阅闭合范围
+
+NAR-031 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0018；创作批准仍属OWNER-01。
+
+[完整故事总览](story-overview.md)整合历史因果与当代玩家常态供所有者审核。原明确CANON继续有效；NAR-011连接性细节、四人创作身份与次要未闭合历史不能因文档定稿而伪称批准。基础版不要求精确列出所有古代伤亡/小时数/设施真名，禁止用未审核细节填空。数月供应危机解释重开决定；常规合同无现实时间城市倒计时、无个人章节或节点征服。苍白增生等支线不承担基础核心因果，未展开阵营不进入首发敌人制作清单。

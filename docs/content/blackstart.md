@@ -1,8 +1,8 @@
 ---
 doc_id: CONTENT-BLACKSTART
 doc_type: content
-stage: DRAFT
-updated: 2026-09-04
+stage: BASELINE
+updated: 2026-09-05
 owner_role: 任务内容设计
 canon_basis: "SRC-SSOT-2.0 §16、§40、§42；SRC-USER-2026-09-04-ORDNANCE-MISSIONS"
 depends_on: ["../gdd/operations.md"]
@@ -28,11 +28,11 @@ BST-001 · TEST · 来源：SRC-SSOT-2.0 §16、§40、§42 Phase3。
 
 BST-002 · TEST · 来源：SRC-SSOT-2.0 §16.3–§16.4。
 
-Cart总3 Cells；Ventilation=1、Security Shutters=1、Defense Network=1、Transit=1、Research Vault=2。Vault前向loop/rejoin，增加Knowledge/Relic/Support并产生后续ingress/route代价。Finale通过local/forward Fault推进空间，不站圈；Cart改变Fog/Turret/Ingress/Transit。源Relic奖励在最新武器改装提案下需作A/B版本，不自行抹掉旧测试。
+Cart总3 Cells；Ventilation=1、Security Shutters=1、Defense Network=1、Transit=1、Research Vault=2。Vault前向loop/rejoin，增加Knowledge/Modification/Support并产生后续ingress/route代价。Finale通过local/forward Fault推进空间，不站圈；Cart改变Fog/Turret/Ingress/Transit。当前Operation只使用Modification；原Relic版本是Lab历史对照，不混入首发验收组。
 
 ## 几何与对象清单
 
-BST-003 · PROPOSED · 来源：本轮Greybox扩写；所有尺寸/敌人数/数值为TEST。
+BST-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮Greybox扩写；所有尺寸/敌人数/数值为TEST。
 
 固定主序：B00→B01→{B02S或B02M}→B03→{B04直接或B04V Vault}→B05→B06→B07→B08。另在B02M分出B02O Team Ordnance工具支路，向B03障碍后重接。所有连接连续真3D，不用传送省去可读路径。
 
@@ -55,7 +55,7 @@ BST-003 · PROPOSED · 来源：本轮Greybox扩写；所有尺寸/敌人数/数
 
 ## 任务状态机与制作步骤
 
-BST-004 · PROPOSED · 来源：本轮Greybox扩写。
+BST-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮Greybox扩写。
 
 | 状态 | 进入前置 | 玩家动作/输出 | 失败/降级 |
 |---|---|---|---|
@@ -73,7 +73,7 @@ Fault01候选：将可搬导流件装入前向槽，需短时暴露但可中断�
 
 ## Cart 后果矩阵
 
-BST-005 · PROPOSED · 来源：本轮Greybox扩写。
+BST-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮Greybox扩写。
 
 | 选项 | 可观察收益 | 明确机会成本/代价 | Finale验收 |
 |---|---|---|---|
@@ -87,7 +87,7 @@ BST-005 · PROPOSED · 来源：本轮Greybox扩写。
 
 ## Team Ordnance / Breach 分支
 
-BST-006 · PROPOSED · 来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
+BST-006 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
 
 B03前出现非关键结构堵塞，队伍先看到“可直接突破/维护旁路”的空间关系。B02O检修支路可取得一具Thermal Cutter候选；需持双手，切普通结构速度快，但切换主武器会放下。向前通过小货运出口在障碍后重接，不返回B01；队友可在侧路掩护携带者。
 
@@ -101,13 +101,13 @@ BST-007 · TEST · 来源：本轮Greybox预算候选，不是最终平衡。
 
 把一份“个人标准主武器reserve容量”定义为1 Ammunition Unit仅作观察计量，不新增玩家货币。初始团队正常reserve总量按实际4人loadout记录，沿保证主线放相当于约0.75倍团队初始reserve的本地Ammo；各弹族实际单位必须由配装表换算。医疗初始每人一份候选，主线补给两份团队医疗，不能以这个数字宣布所有场景可解。
 
-测试Support Meter threshold=100，保证主线总贡献240，Vault再100；因此主线2Charges+40余量，Vault可多1，符合源约2–3的试制范围。分布：B01知识40、两路之一保证Scrap60、Coupler目标40、B04知识50、Fault02目标50。每份凭据唯一，敌人常规击杀不给稳定Support。Supply包内实际弹量/医疗量OPEN，先按试测记录，不给假精确经济。
+测试Support Meter threshold=100，保证主线总贡献240，Vault再100；因此主线2Charges+40余量，Vault可多1，符合源约2–3的试制范围。分布：B01知识40、两路之一保证Scrap60、Coupler目标40、B04知识50、Fault02目标50。每份凭据唯一，敌人常规击杀不给稳定Support。Supply包内弹量/医疗量采用测试参数初值并记录真实支出，不能把初值称作已平衡经济。
 
-Role只用Runner、Ranged Suppressor、Armored Holder、Scout/Source与Flanker；战斗原型详见[内容卡](combat-prototypes.md)。第一10分钟不发Relic/配件，隔离裸战斗测试。最新profile在B04/B06给少量Weapon/Tool Modification机会；对照profile沿源规则测试Relic，二者不能混在同一数据组声称某方案更好。
+Role只用Runner、Ranged Suppressor、Armored Holder、Scout/Source与Flanker；战斗原型详见[内容卡](combat-prototypes.md)。第一10分钟不发Relic/配件，隔离裸战斗测试。最新profile在B04/B06给少量Weapon/Tool Modification机会；主要对照为同场景无改装；原Relic只在Lab，不能混在Operation数据组声称改装更好。
 
 ## 多人、边界与反馈
 
-BST-008 · PROPOSED · 来源：本轮Greybox扩写。
+BST-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮Greybox扩写。
 
 单人无Bot能完成所有Fault与运输，双人以上可分工但不强制职业。查询结果自动分享；Cart只任一合法操作者提交但全队预览。Support/draft/上传走共享事务，不在关卡脚本另建账。所有任务目标最多一次完成，Host migration保存door/power/coupler/cell/ordnance/fault/upload状态。
 
@@ -121,3 +121,9 @@ BST-009 · TEST · 来源：SRC-SSOT-2.0 §16.5；本轮扩写。
 
 记录每房进入/离开、等待、伤害/资源来源、Cart选择、改装、退出/Wipe原因；询问玩家能否指出自己造成的终局后果。此文件只达到可搭建规格，所有实验结果尚未产生。
 
+
+## 分阶段构建而非一口气做整图
+
+BST-010 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0018。
+
+M2 miniature只搭B00/B01→B03→B05→B07/B08，保留一处合法查找、一项电力选择、一条顺序Fault、一处上传、退出/Wipe及资源事务；目标10–15min。完整房间表用于随后扩展，不把35–45分钟历史切片误当第一周任务。标准长局40–50min、Demo15–25min为不同内容profile；固定拓扑证明后M4才组合PCG。

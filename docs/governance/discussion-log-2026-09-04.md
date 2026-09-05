@@ -1,11 +1,11 @@
 ---
 doc_id: GOV-DISCUSSION-20260904
 doc_type: discussion
-stage: DRAFT
+stage: ARCHIVE
 updated: 2026-09-05
 owner_role: 设计记录维护
 canon_basis: "本轮Codex用户消息与SRC-CHATGPT-REVIEW-1.0"
-depends_on: ["decisions-and-questions.md"]
+depends_on: ["decision-register.md"]
 ---
 
 # 2026-09-04 讨论记录
@@ -26,8 +26,8 @@ depends_on: ["decisions-and-questions.md"]
 | 10 Team Ordnance | 手持超强、切枪放下、固定资源、普通补给不补 | DIRECTION；多人持久与安全规则PROPOSED | [DDD-0005](decisions/DDD-0005-team-ordnance.md) |
 | 11 Predator Reversal | 先躲/控，前向取得能力后反转 | DIRECTION；不做取枪长回跑 | [DDD-0006](decisions/DDD-0006-predator-and-breach-missions.md) |
 | 12 Breach/ToolHunt/Rejoin | 找重工具破障与前向汇合 | DIRECTION；耗尽仍有慢险路线，防软锁 | [DDD-0006](decisions/DDD-0006-predator-and-breach-missions.md) |
-| 13 公共匹配/范围 | 要全部列出不好玩与市场风险 | E3风险矩阵，不假装已经发生/解决 | [风险总览](../production/brutal-review.md) |
-| 14 小文件防丢 | 本轮所有讨论落命名清楚文件 | 已授权新增DDD与讨论log | [决策总览](decisions-and-questions.md) |
+| 13 公共匹配/范围 | 要全部列出不好玩与市场风险 | E3风险矩阵，不假装已经发生/解决 | [风险总览](../production/risk-register.md) |
+| 14 小文件防丢 | 本轮所有讨论落命名清楚文件 | 已授权新增DDD与讨论log | [决策总览](decision-register.md) |
 | 15 中文命名 | 面向用户统一使用“总览” | LOG-NAME · CANON · 来源：SRC-USER-2026-09-04-NAMING | 本库导航与报告 |
 | 16 唯一中央故事 | 中央故事曲线绝对唯一 | STORY-001用户CANON；五幕细节仍PROPOSED | [DDD-0007](decisions/DDD-0007-single-canonical-story.md) |
 | 17 First Builder初始用途 | 相关门户/Resonance基础设施用于快速旅行与能源采集 | CANON只锁初始工程用途；机制、Breach起因、预见性与责任OPEN | [世界观NAR-010](../gdd/narrative-bible.md) |
@@ -51,7 +51,7 @@ depends_on: ["decisions-and-questions.md"]
 | 35 Bastion—JANUS交易 | 付代价建立结构化合同，以物资/冷却/计算等换白名单内维护、防御与生存技术 | PROPOSED；不是对话商店或废料换神器，拒绝状态必须区分 | [世界设施WRD-013](../gdd/world-and-information.md) |
 | 36 Sol重联DLC | 基础本地弧完成后才可能受控重联Earth/Mars并联合外推 | PROPOSED且不承诺；不能补卖基础结局，Earth武器为有代价sidegrade | [世界观NAR-011](../gdd/narrative-bible.md) |
 | 37 枪械-only条件 | 倾向GTFO-like非Roguelike首发；正式确认后才删Staff/Arcane，保留Melee | 高影响DIRECTION，前提未锁；当前Staff 3/6不删、不建双轨 | [产品VIS-008](../gdd/vision.md) |
-| 38 Bridge无限枪取消 | 取消从空间网道汲能的低伤无限弹药枪 | 用户明确否决；LEGACY，只留历史，不回active候选 | [决策DEC-013](decisions-and-questions.md) |
+| 38 Bridge无限枪取消 | 取消从空间网道汲能的低伤无限弹药枪 | 用户明确否决；LEGACY，只留历史，不回active候选 | [决策DEC-013](decision-register.md) |
 | 39 三类枪械 | 传统动能、电磁、有限Energy Block；电磁非静音且须测过穿/材料/残能 | DIRECTION；资源、特征、友伤和补给无锁定数值 | [战斗CMB-012](../gdd/combat-and-arsenal.md) |
 | 40 Energy Block三子型 | 单发高伤、连发低伤、强制蓄力是三把独立武器 | PROPOSED；蓄力阈值/消耗/Heat/中断/范围风险OPEN | [战斗CMB-013](../gdd/combat-and-arsenal.md) |
 | 41 响应性操作窗口 | 真正装填完成后可取消收尾，切枪/ADS/Fire可预输入，蓄力可衔接下一轮 | PROPOSED/TEST；状态反馈一致，不破射速/资源/网络权威 | [战斗CMB-014](../gdd/combat-and-arsenal.md) |
@@ -120,8 +120,8 @@ depends_on: ["decisions-and-questions.md"]
 | 104 玩家是谁 | 在客观历史之后开始设计玩家剧情，先确定玩家身份 | 助手候选部分接受后被条目105覆盖：“第一代重新出网”、组织来源和线性发现未确认；专业外勤小队名称保留 | [中央故事STORY-008](../gdd/central-story-spine.md) |
 | 105 固定四人、正史存活、非递进 | 玩家是类似GTFO的固定四人“壁垒外勤小队”，四人正史存活；不必装作不知道内战和虚空兽，基础玩法像《深岩银河》而非递进战役 | STORY-008至STORY-010/DEC-042至DEC-043 · CANON/DIRECTION；姓名、关系、外观和上级机构OPEN | [玩家故事](../gdd/central-story-spine.md) |
 | 106 成就与收藏碎片叙事 | 玩家故事主要作为类似《黑暗之魂》的成就和可收集碎片存在 | STORY-011/NDL-004/MIS-018/PRG-014/DEC-044 · CANON/DIRECTION；不锁任务/战力，具体首批集合与成就名OPEN | [玩家故事STORY-011](../gdd/central-story-spine.md) |
-| 107 四名角色v1 | 用户要求开始设计四名固定外勤队员 | 助手提出四立场、六组关系、收藏链、对白与反刻板边界，并建议解绑Signature Active；最初真实姓名候选随后被用户否决 | [角色v1](../content/character-roster-v1.md) |
-| 108 只做人格并改用代号 | 用户限定本轮只做人设，不做美术或长相，并要求用代号替代真实姓名 | 人格、价值观、缺陷、关系、说话逻辑、背景与收藏钩子保留；年龄、性别呈现、身体、面部、服装、配色、轮廓、动作外观和配音选角DEFERRED；真实姓名不显示且不设真名谜题 | [角色CHAR-001/008](../content/character-roster-v1.md) |
-| 109 代号语气纠正 | 用户连续否决`界碑/游标/砝码/留白`与`老闩/译码/骡子/白手套`，要求真正有冲击力的中文代号 | 两组候选作废；助手提出事故型候选`断桥/回声/铁砧/寒蝉`，仍为PROPOSED FOR USER VERDICT | [角色CHAR-001](../content/character-roster-v1.md) |
+| 107 四名角色v1 | 用户要求开始设计四名固定外勤队员 | 助手提出四立场、六组关系、收藏链、对白与反刻板边界，并建议解绑Signature Active；最初真实姓名候选随后被用户否决 | [角色v1](../content/characters.md) |
+| 108 只做人格并改用代号 | 用户限定本轮只做人设，不做美术或长相，并要求用代号替代真实姓名 | 人格、价值观、缺陷、关系、说话逻辑、背景与收藏钩子保留；年龄、性别呈现、身体、面部、服装、配色、轮廓、动作外观和配音选角DEFERRED；真实姓名不显示且不设真名谜题 | [角色CHAR-001/008](../content/characters.md) |
+| 109 代号语气纠正 | 用户连续否决`界碑/游标/砝码/留白`与`老闩/译码/骡子/白手套`，要求真正有冲击力的中文代号 | 两组候选作废；助手提出事故型候选`断桥/回声/铁砧/寒蝉`，仍为PROPOSED FOR USER VERDICT | [角色CHAR-001](../content/characters.md) |
 
 最终规则不能仅凭此摘要改变；需要在对应DDD与责任GDD记录明确确认。原文里的原型数值和最新提案差异保留为显式OPEN，不悄悄删除。

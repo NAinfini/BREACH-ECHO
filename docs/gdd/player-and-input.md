@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-PLAYER
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 玩家系统设计
 canon_basis: "SRC-SSOT-2.0 §5、§7、§8、§11.1、§37、§40；SRC-USER-2026-09-05-FOUR-LIVING-FIELD-SQUAD-NONPROGRESSIVE-STORY"
@@ -12,25 +12,25 @@ depends_on: ["combat-and-arsenal.md"]
 
 ## 玩家目的
 
-从第一局就能移动、射击、近战、施法和救人；角色改变起点，玩家不必先招齐固定职业才能开始。
+从第一局就能移动、射击、快速近战、使用工具和救人；角色提供身份，玩家不必先招齐固定职业才能开始。
 
 ## 范围与术语
 
-Weapon 是装备平台，Staff/Melee/Energy 均占正常武器位；Utility 是独立战术工具；Signature Active 是角色特征动作；Ping 只表达沟通意图。资源见[经济](economy-and-support.md)，伤害见[战斗](combat-and-arsenal.md)，UI见[可访问性](ux-and-accessibility.md)。
+Weapon是Operation枪械平台；Utility是独立工具；Tactical Module是自由选择的个人战术动作；Ping 只表达沟通意图。资源见[经济](economy-and-support.md)，伤害见[战斗](combat-and-arsenal.md)，UI见[可访问性](ux-and-accessibility.md)。
 
 ## 已确认规则
 
-PLY-001 · CANON · 来源：SRC-SSOT-2.0 §5.1、§7.1–§7.4、§8.1、§37、§40。
+PLY-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-官方默认两个 Weapon、两个 Utility、一个 Signature Active，并具备 Quick Melee、Ping、无限累计 Relic；Character 是 Soft Archetype，不锁定武器类别。官方小队由四名固定角色组成，同一局每个角色只有一个Seat且Run内不换角色；装备和Build可以重复。特殊 Artifact/TC 可显式改变规则。无 Equipment/Accessory、通用 Ultimate、通用 Weapon Active 或第二角色 Active。
+官方Operation入场固定两把枪、一件Utility工具、一件自由选择的个人战术模块，另有Quick Melee、手电、Ping。四名固定角色同局不重复Seat、Run内不换身份；装备与战术模块可重复。人物只固定叙事/视听身份，不锁职业能力。武器与工具身份在Run中稳定，通过明确挂点改装而非彩色等级换枪；世界Team Ordnance独立，不是免费第三把随身枪。旧两Utility/人物专属Active/无限Relic配置退出Operation。
 
-PLY-002 · CANON · 来源：SRC-SSOT-2.0 §5.3、§6.3、§11.1、§37。
+PLY-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-所有角色有基础手电、高速移动、无限 Sprint、Jump/Crouch/Slide/Mantle/Air Control/Quick Melee lunge；不设全局体力攻击税。Gun 点 R Reload/Cycle；只有实际存在模式才长按 R 出轮盘。Staff 长按 R 选择 Spell、松开确认、Fire 施放。Melee 左键轻击/蓄力、右键即时防御；R 不硬塞动作。合法 Rocket jump/impulse 可存在。
+保留手电、Sprint、Jump/Crouch/Slide/Mantle/Air Control与Quick Melee lunge，无全局体力税。Gun点R执行真实Reload/Cycle；只有实际具有上下文动作才长按R显示轮盘。Operation不显示Staff/Spell入口。移动、输入缓冲和取消初值见[测试参数](../production/test-profile.md)，阶段提交不随渲染FPS变化。
 
-PLY-003 · DIRECTION · 来源：SRC-SSOT-2.0 §5.2、§7.2。
+PLY-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-键盘 1/2 武器，3/4 Utility 快捷入口；Utility 保留 Tactical Use + select 的正式语义。Active 至少满足新动作、改变战场解法、丰富 Build hook 三项中的两项；不是单纯限时加伤，也不能成为 Operation 必带任务钥匙。
+键盘默认1/2切枪、3选择/使用工具、4个人战术模块，E交互、Q语义Ping、R换弹、F手电、V快速近战；所有键可重绑并进行冲突检查。控制器用两个武器切换、工具选择/使用与战术动作的独立语义映射，具体物理键在首个InputAction资产及图示中固定并测试。模块需新动作/战场解法/效果连接至少满足两项，不能成为主任务必带钥匙。
 
 PLY-004 · CANON · 来源：SRC-SSOT-2.0 §8.2、§8.4、§37。
 
@@ -38,13 +38,13 @@ Scan 是 Utility，对合法目标提供团队标记/承伤窗口，不穿墙、
 
 ## 玩家流程
 
-PLY-005 · PROPOSED · 来源：本轮系统扩写。
+PLY-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-局前看角色动作与武器/工具成本→进入后直接使用完整动作→取得物品时比较当前装备→选择替换或放回世界→法杖轮盘只列当前持有法术。新手先学移动/攻击/交互/救人，再在实际遇到时学习工具和合成。界面显示已确认的行为差异，不用永久战力等级诱导配装。
+选角色与两枪/一工具/一战术模块→查看资源成本→进入任务→实际遇到时学习工具、救援、支援和改装。改装显示收益、代价、冲突与拆出物去向；取消不消耗，原子提交后才改变装备。不教授首发不存在的法术轮盘或自动Fusion。
 
 ## 状态与所有权
 
-PLY-006 · PROPOSED · 来源：本轮系统扩写。
+PLY-006 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 Authority 拥有 CharacterLock、LoadoutRevision、装备 InstanceID、动作阶段、当前合法姿态；Client 拥有绑定、轮盘焦点、镜头偏好。动作命令携带 player、sequence、instance、input phase；权威检查角色存活/允许动作/物品仍装备后提交。UI选择不直接改装备。
 
@@ -59,48 +59,73 @@ Authority 拥有 CharacterLock、LoadoutRevision、装备 InstanceID、动作阶
 
 ## 模式配置与内容接口
 
-PLY-007 · PROPOSED · 来源：本轮系统扩写。
+PLY-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-两模式共用动作语义；工具补给、施法资源和强度归各自经济 profile。Character 卡声明初始倾向、Signature verb、hook、反馈与禁用场景；Utility 卡声明目标验证、投掷/部署阶段、消耗点、共享标签。内容实例见[战斗原型](../content/combat-prototypes.md)。
+动作语义由共享系统实现，资源与允许内容由规则集控制。Character卡不声明独占Signature；TacticalModule卡独立声明verb、目标、成本/冷却、动作阶段和禁止场景。工具与模块资源分账。序列化保存CharacterID和TacticalModuleID为两个字段，不保留绑定与自由选择两套逻辑。
 
 ## 边界
 
-PLY-008 · PROPOSED · 来源：本轮系统扩写。
+PLY-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-双人抢武器按世界拾取事务的首次有效提交裁决；失败者不丢原武器。死亡取消未提交切换，不取消已射出的投射物。换出的 dormant 物品不监听被动事件。轮盘中的 Spell 被消耗合成时按新 repertoire 重算，不选隐藏默认项。输入序号去重；重连回放权威配装，不以客户端缓存覆盖。任意一至四个不同角色Seat的组合都不得要求某 Active 才能完成主目标。
+抢取世界物按首次合法事务提交，失败者不丢原物。死亡取消未提交切换，已发弹保留。拆下/dormant修改不监听新事件；轮盘目标失效时取消并解释，不能暗选另一个动作。重连以当前权威装备重建，不以客户端缓存覆盖；所有合法Seat组合均可完成主任务。
 
 ## 参数
 
 | 参数 | 值与状态 | 来源 |
 |---|---|---|
-| 官方 Weapon / Utility / Signature | 2 / 2 / 1 · CANON | SRC-SSOT-2.0 §5.1、§40 |
+| 官方 Weapon / Utility / Tactical Module | 2 / 1 / 1 · DECIDED | DDD-0014 |
 | Framework 槽位 | 0..N · CANON | SRC-SSOT-2.0 §1.5、§8.1 |
 | Active 原型数量 | 3 · TEST | SRC-SSOT-2.0 §7.2、§40 |
 | 操作至可见输入反馈 | ≤50ms 本地目标 · TEST | 本轮候选，不等于网络命中确认时间 |
 
 ## 示例
 
-PLY-009 · PROPOSED · 来源：本轮系统扩写。
+PLY-009 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-正常：Staff+Sword 玩家先用场域阻挡射线，再冲入近战，两个武器各付对应成本。失败：控制器松开轮盘时目标法术已 Fusion，界面告知替换原因并要求重新选择，不偷偷施法。跨系统：两名不同角色都可带Scan；标记按规则刷新，不能按人数无限倍增承伤。
+正常：AR+Shotgun玩家用Foam延缓侧路，再用自由选Aegis掩护队友救援，各付工具/模块成本。失败：改装预览后目标revision已变，安装拒绝且不吞旧件。跨系统：两人同带Scan可刷新合法窗口，但不按人数线性乘算承伤。
 
-## 验证与 OPEN
+## 验收与尚未实测项
 
-PLY-010 · TEST · 来源：本轮实验建议。
+PLY-010 · TEST · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-8 名从未读文档的玩家在无口头指导下完成切武器、使用两个工具、Staff 换 Spell、Ping、Revive；每个动作成功率目标 ≥7/8，误消耗次数为零。精确按键、轮盘阈值、移动速度、跳跃高度、冲量上限均 OPEN，需结合关卡尺度实测。
+8名新手无口头指导完成移动、切两枪、用一工具/战术模块、Ping与Revive，目标每项≥7/8且零误扣关键资源。键鼠/控制器和不同FPS均测试；初值由测试参数拥有，未实测不称最终平衡。
+
 ## 最新入场配装意图
 
-PLY-011 · DIRECTION · 来源：本轮用户固定Loadout/武器配件讨论。
-用户更希望像GTFO先选两把枪与工具入场，局内围绕原武器改装，不不断拿彩色等级枪。其“一工具”的描述与PLY-001两个Utility及一个Active基线冲突，当前OPEN；不能静默删除槽位或把Staff移到免费第三武器。
+PLY-011 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-PLY-012 · PROPOSED · 来源：本轮评审。
-Operation推荐入场锁定装备身份，局内少量Weapon/Tool Modification；具体次数由[模式参数](operations.md)拥有。世界Team Ordnance独立于loadout，不占位，拿起时占双手，切主武器即放下，详细规则归[战斗](combat-and-arsenal.md)。
+两枪一工具的最新意图与旧两Utility基线的冲突已关闭：采用两枪+一工具+一自由战术模块，理由和覆盖关系见DDD-0014。
 
-PLY-013 · PROPOSED · 来源：SRC-USER-2026-09-04-RESPONSIVE-GUNPLAY-CANCEL-WINDOWS；SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION。
+PLY-012 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮评审。
+Operation入场锁定装备身份，局内有限Weapon/Tool Modification；具体次数由[测试参数](../production/test-profile.md)拥有。世界Team Ordnance独立于loadout，不占位，拿起时占双手，切主武器即放下，详细规则归[战斗](combat-and-arsenal.md)。
 
-输入层须支持[战斗CMB-014](combat-and-arsenal.md)定义的换弹取消、切枪/ADS/Fire预输入与蓄力衔接，并让每个窗口基于动作阶段而非帧率偶然性。bunny hopping及其他移动技巧只作为TEST，不改PLY-002现行移动基线；缓冲、移动、受击与换弹如何互相中断仍OPEN。不得要求宏、隐藏Bug或外部攻略才能稳定执行。
+PLY-013 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-RESPONSIVE-GUNPLAY-CANCEL-WINDOWS；SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION。
 
-PLY-014 · OPEN（READY FOR USER VERDICT） · 来源：SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1；角色候选见[CHAR-007](../content/character-roster-v1.md)。
+输入层须支持[战斗CMB-014](combat-and-arsenal.md)定义的换弹取消、切枪/ADS/Fire预输入与蓄力衔接，并让每个窗口基于动作阶段而非帧率偶然性。bunny hopping及其他移动技巧只作为TEST，不改PLY-002现行移动基线；缓冲、移动、受击与换弹按测试参数的动作提交/取消优先级实现。不得要求宏、隐藏Bug或外部攻略才能稳定执行。
 
-固定四人且Seat不可重复后，PLY-001的角色Signature Active会让人物选择同时成为职业与强度选择。当前推荐保留一个Active槽，但把Active改成所有角色都能选择的`个人战术模块`，角色只固定叙事与视听身份。用户尚未批准，因此PLY-001暂不改；批准解绑时必须同步修改Character卡、选人界面、配装、存档和四人原型，不保留人物专属与自由选择两套并行规则。
+PLY-014 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
+
+采用所有角色均可自由选择的个人战术模块；这是本次delegated决定，不冒充用户过去逐字确认。Character、选人UI、Loadout、存档和示例统一解绑；人物代号与人格仍由OWNER-01批准。
+
+## PLY-015 · 默认实体输入映射（TEST）
+
+下表是M0的明确可执行初值，不是要求所有者选择键位；玩家可重绑，所有冲突均在设置中提示。提示图标按当前输入设备更新。战斗中的菜单不暂停在线模拟；只有真正离线Solo暂停菜单暂停SimulationTime。
+
+| 动作 | 键鼠默认 | 标准Xbox布局控制器默认 |
+|---|---|---|
+| 移动/瞄准 | WASD / Mouse | 左/右摇杆 |
+| ADS / 开火 | 右键 / 左键 | LT / RT |
+| 跑、跳、蹲/跑中滑铲 | Shift、Space、Ctrl | L3、A、B |
+| 1/2号枪 | 1 / 2；滚轮切换 | Y切换；持重资产时Y先放下并切枪 |
+| 单一工具 | 3选择工具，再Fire提交 | 持LB预备工具，RT提交；松LB取消预备；不能同时发主枪 |
+| 个人战术模块 | 4 | RB；动作持续/取消依模块定义 |
+| 交互/换弹 | E / R | X点按有合法近距交互时优先交互，否则换弹；持X明确换弹，点按与长按不能双触发 |
+| Quick Melee | V | R3 |
+| Ping/语义轮盘 | Q点按/长按 | D-pad右点按/长按 |
+| 手电 | F | D-pad上 |
+| 支援请求 | 持C打开，方向键输入，松C保留/关闭预览不扣费 | 持D-pad下打开支援选择，确认后方向输入；首个打开按键不计入代码 |
+| 地图/物资 | M / Tab | View打开地图和物资分页 |
+| 视角/换肩 | Z / Alt（TPS） | D-pad左点按切FPS/TPS、长按换肩；可拆分重绑 |
+| 暂停/设置/社交 | Escape | Menu |
+
+高风险支援代码完成后仍需合法投掷/放置信标；不会按完方向就远程扣费。控制器的交互/换弹双用途必须在首轮测试检查误操作，并提供将二者拆到任意可用按键/组合的选项；不能强迫残障玩家执行长按或高速代码，可开启等价顺序菜单/切换式输入，但仍付相同模拟时间与资源承诺。宏与设备高帧率不能改变提交时点。

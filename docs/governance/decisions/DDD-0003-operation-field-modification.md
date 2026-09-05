@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0003
 doc_type: decision
-stage: DRAFT
-updated: 2026-09-04
+stage: ARCHIVE
+updated: 2026-09-05
 owner_role: 产品与系统设计负责人
 canon_basis: "SRC-SSOT-2.0；本轮用户讨论"
-depends_on: ["../decisions-and-questions.md"]
+depends_on: ["../decision-register.md"]
 ---
 
 # 固定配装与局内改装
@@ -38,9 +38,14 @@ DIRECTION：固定配装/配件偏好；OPEN：槽位、次数、是否首发排
 
 ## Owner GDD links
 
-[玩家](../../gdd/player-and-input.md)；[模式配置](../../gdd/operations.md)；[配件候选](../../content/relics-and-fusions.md)。具体规则只由责任文档维护，本文件保留选择理由，不复制整套规范。
+[玩家](../../gdd/player-and-input.md)；[模式配置](../../gdd/operations.md)；[配件候选](../../content/modification-catalog.md)。具体规则只由责任文档维护，本文件保留选择理由，不复制整套规范。
 
 ## Supersedes / next gate
 
 拟重审SRC-SSOT-2.0 §4A.15、§5、§9的Operation应用；Week8/12对照。
 
+
+
+## 2026-09-05 disposition / 历史状态
+
+本文件保留当时的选项和理由，旧OPEN不是当前未决入口。产品/装备/技术/制作问题已由DDD-0013–0018决定，人物与完整故事仍通过OWNER-01审阅；请读[当前决策登记](../decision-register.md)。不再按本文旧日期或未批准推荐直接实施。

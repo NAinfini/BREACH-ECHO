@@ -1,8 +1,8 @@
 ---
 doc_id: GDD-AUDIO
 doc_type: gdd
-stage: DRAFT
-updated: 2026-09-04
+stage: BASELINE
+updated: 2026-09-05
 owner_role: 音频与触觉设计
 canon_basis: "SRC-SSOT-2.0 §19"
 depends_on: ["ux-and-accessibility.md"]
@@ -18,13 +18,13 @@ AUD-001 · CANON · 来源：SRC-SSOT-2.0 §19.1、§19.3、§19.5。
 
 Gameplay发语义事件，audio backend选clip/layer/spatialization，音频资产不驱动伤害/任务。Horde声源individual→cluster→virtualized，不为5000 AI保持5000 voice；用crowd beds与高价值单体线索。关键口语必须字幕，带speaker/priority/direction/location语义，关键字幕优先；方向字幕不泄露非法信息，SDH不把所有环境音变文字噪声。
 
-AUD-002 · DIRECTION · 来源：SRC-SSOT-2.0 §19.2、§19.4、§19.7。
+AUD-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-SSOT-2.0 §19.2、§19.4、§19.7。
 
 Audio bus数据驱动0..N，官方常用Master/Music/SFX/Weapons/Dialogue/VoiceChat/UI/Ambience/CriticalCue；致命预兆/倒地/任务危机不能被普通声音淹没。动态音乐读取CombatIntensity/Momentum/Boss/Faction/Biome/Quiet/Objective/LastChance/Victory等状态，不驱动gameplay，不假设固定三阶段。关键语义同时映射Audio/Visual/Haptic/Subtitle，呈现不改时序。
 
 ## 流程、状态与所有权
 
-AUD-003 · PROPOSED · 来源：本轮扩写。
+AUD-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 权威事件→可知性过滤→本地priority队列→关键cue保留→常规voice按距离/价值虚拟化→字幕/触觉同步。声音资产播放失败仍保留合法视觉提示与日志，不假装敌人动作没发生。
 
@@ -38,7 +38,7 @@ AUD-003 · PROPOSED · 来源：本轮扩写。
 
 ## 模式、接口与边界
 
-AUD-004 · PROPOSED · 来源：本轮扩写。
+AUD-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 Operation要有真正低压安静；Lab高密度也不把每个Proc都发独立高优先音。事件接口带root/source/known location、priority、interruptibility、semantic duration、SDH key与haptic类别。听不到的玩家需等价行动线索，不额外全图雷达。
 
@@ -48,7 +48,13 @@ Operation要有真正低压安静；Lab高密度也不把每个Proc都发独立�
 
 AUD-005 · TEST · 来源：SRC-CHATGPT-REVIEW-1.0 §6；本轮适配。
 
-四人语音+枪声+Horde混音中，≥80%参与者应在视觉接敌前识别压力来临；<60%失败，中间需更多样本。精确voice预算、duck量、haptic强度OPEN，不能把torture规模当实际音轨数。
+四人语音+枪声+Horde混音中，≥80%参与者应在视觉接敌前识别压力来临；<60%失败，中间需更多样本。音频初值采用测试参数TP-AUDIO，实际听辨和设备预算尚未测量，不能把torture规模当实际音轨数。
 
 正常：远处机械启动+合法字幕让队伍准备封门。失败：Gun音量淹没即死预兆，调整优先级而非事后暗改敌人时间。跨系统：Last Chance音乐只跟生命系统；音乐播完但Drone仍合法救人时不能判死。
 
+
+## 本次定稿：执行边界
+
+使用Unity AudioMixer，层级优先关键危险/团队战术事实，其次武器命中/动作，再环境/音乐/人物闲谈。语音ducking不能吞掉危机预兆；声音位置来自合法世界声源。动态混音和声部限制只影响表现，不改变AI听觉事件。玩家语音默认PTT且不录制；字幕覆盖影响玩法的信息。最终录音语言、演员和真实付款由OWNER-02/03批准，灰盒不伪装成正式配音。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

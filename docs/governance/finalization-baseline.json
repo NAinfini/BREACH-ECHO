@@ -1,0 +1,1025 @@
+{
+  "baseline_date": "2026-09-05",
+  "authority": "SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION",
+  "protected_source_sha256": {
+    "docs/sources/ssot-v2.0-original.md": "99721139befb62405c5b83067463161c9a9817435730d7ad72dddd2015accf0c",
+    "docs/sources/chatgpt-brutal-review-v1.0.md": "1fd4d10f8f22b2ce0263e26edcba0eb85e554eabd43aec907fa603ff68b87c16"
+  },
+  "renames": {
+    "gdd/build-algebra.md": "gdd/modifications-and-effects.md",
+    "content/relics-and-fusions.md": "content/modification-catalog.md",
+    "content/character-roster-v1.md": "content/characters.md",
+    "production/brutal-review.md": "production/risk-register.md",
+    "governance/decisions-and-questions.md": "governance/decision-register.md"
+  },
+  "rule_changes": [
+    {
+      "path": "gdd/vision.md",
+      "rule": "VIS-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/vision.md",
+      "rule": "VIS-002",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/vision.md",
+      "rule": "VIS-003",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/vision.md",
+      "rule": "VIS-008",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-002",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-003",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-005",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-007",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-008",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-009",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-010",
+      "status": "TEST",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-011",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-014",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-003",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-002",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-013",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-016",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-003",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-004",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-005",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-008",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-012",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-010",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-001",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-003",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-002",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-018",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "content/combat-prototypes.md",
+      "rule": "PRT-001",
+      "status": "TEST",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "content/combat-prototypes.md",
+      "rule": "PRT-005",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "content/combat-prototypes.md",
+      "rule": "PRT-006",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "content/characters.md",
+      "rule": "CHAR-007",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/narrative-bible.md",
+      "rule": "NAR-005",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/player-and-input.md",
+      "rule": "PLY-013",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/operations.md",
+      "rule": "OPS-010",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "CMB-014",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "ORD-001",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "ORD-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/combat-and-arsenal.md",
+      "rule": "ORD-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/modifications-and-effects.md",
+      "rule": "BLD-010",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-011",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-013",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-014",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/economy-and-support.md",
+      "rule": "ECO-015",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/progression-and-bastion.md",
+      "rule": "PRG-011",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/survival-and-recovery.md",
+      "rule": "LIFE-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/coop-and-social.md",
+      "rule": "COP-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/coop-and-social.md",
+      "rule": "COP-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/coop-and-social.md",
+      "rule": "COP-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/coop-and-social.md",
+      "rule": "COP-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/coop-and-social.md",
+      "rule": "COP-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/encounters-and-difficulty.md",
+      "rule": "ENC-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-010",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-013",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-014",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/missions-and-spaces.md",
+      "rule": "MIS-015",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-010",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-013",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/world-and-information.md",
+      "rule": "WRD-017",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/ux-and-accessibility.md",
+      "rule": "UX-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/ux-and-accessibility.md",
+      "rule": "UX-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/ux-and-accessibility.md",
+      "rule": "UX-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/ux-and-accessibility.md",
+      "rule": "UX-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/audio-and-haptics.md",
+      "rule": "AUD-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/audio-and-haptics.md",
+      "rule": "AUD-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/audio-and-haptics.md",
+      "rule": "AUD-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/art-direction.md",
+      "rule": "ART-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/art-direction.md",
+      "rule": "ART-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/art-direction.md",
+      "rule": "ART-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/art-direction.md",
+      "rule": "ART-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/debrief-and-replay.md",
+      "rule": "RPL-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/debrief-and-replay.md",
+      "rule": "RPL-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/debrief-and-replay.md",
+      "rule": "RPL-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/debrief-and-replay.md",
+      "rule": "RPL-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/narrative-delivery.md",
+      "rule": "NDL-001",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/narrative-delivery.md",
+      "rule": "NDL-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "gdd/narrative-delivery.md",
+      "rule": "NDL-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/architecture-and-performance.md",
+      "rule": "ARC-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/architecture-and-performance.md",
+      "rule": "ARC-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/architecture-and-performance.md",
+      "rule": "ARC-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/architecture-and-performance.md",
+      "rule": "ARC-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/architecture-and-performance.md",
+      "rule": "ARC-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/network-and-persistence.md",
+      "rule": "NET-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/network-and-persistence.md",
+      "rule": "NET-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/network-and-persistence.md",
+      "rule": "NET-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/network-and-persistence.md",
+      "rule": "NET-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-007",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-009",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-011",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/modding-and-toolchain.md",
+      "rule": "MOD-012",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/replay-recording.md",
+      "rule": "TRP-001",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/replay-recording.md",
+      "rule": "TRP-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/replay-recording.md",
+      "rule": "TRP-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/replay-recording.md",
+      "rule": "TRP-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "technical/replay-recording.md",
+      "rule": "TRP-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/blackstart.md",
+      "rule": "BST-003",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/blackstart.md",
+      "rule": "BST-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/blackstart.md",
+      "rule": "BST-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/blackstart.md",
+      "rule": "BST-006",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/blackstart.md",
+      "rule": "BST-008",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/modification-catalog.md",
+      "rule": "REL-002",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/modification-catalog.md",
+      "rule": "MODC-001",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "content/modification-catalog.md",
+      "rule": "REL-004",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "production/platform-and-release.md",
+      "rule": "PLAT-005",
+      "status": "DECIDED",
+      "action": "adopt specified behavior, not claim measured tuning"
+    },
+    {
+      "path": "production/platform-and-release.md",
+      "rule": "PLAT-002",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    },
+    {
+      "path": "production/platform-and-release.md",
+      "rule": "PLAT-004",
+      "status": "DECIDED",
+      "action": "replace responsibility rule"
+    }
+  ],
+  "game_implementation": "NOT STARTED",
+  "game_validation": "NOT RUN",
+  "independent_story_review": "NOT RUN",
+  "review_corrections_applied": true,
+  "review_corrections": [
+    "archive dependencies",
+    "finite-energy and draft rules",
+    "recovery tuning ownership",
+    "narrative question disposition",
+    "launch versus Lab rows",
+    "initial difficulty/world/audio/camera/input profiles"
+  ]
+}

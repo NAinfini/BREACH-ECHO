@@ -1,17 +1,17 @@
 ---
 doc_id: GOV-SOURCE-MAP
 doc_type: governance
-stage: DRAFT
+stage: ARCHIVE
 updated: 2026-09-05
 owner_role: 设计证据维护
 canon_basis: "SRC-SSOT-2.0 全文；本轮新增证据"
-depends_on: ["../sources/ssot-v2.0-original.md", "decisions-and-questions.md"]
+depends_on: ["../sources/ssot-v2.0-original.md", "decision-register.md"]
 ---
 
 # 源章节与规则迁移索引
 
 MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
-源依据均为SRC-SSOT-2.0。行号对应[原快照](../sources/ssot-v2.0-original.md)；包括总标题、§0–§45、§4A/4B、附录A/B。这里只负责定位，不提供第二份玩法数值。新增用户讨论见[日志](discussion-log-2026-09-04.md)、[DDD总览](decisions-and-questions.md)；最新中央故事合同在[主线](../gdd/central-story-spine.md)。
+源依据均为SRC-SSOT-2.0。行号对应[原快照](../sources/ssot-v2.0-original.md)；包括总标题、§0–§45、§4A/4B、附录A/B。这里只负责定位，不提供第二份玩法数值。新增用户讨论见[日志](discussion-log-2026-09-04.md)、[DDD总览](decision-register.md)；最新中央故事合同在[主线](../gdd/central-story-spine.md)。
 
 ## 全量顶层标题
 
@@ -29,8 +29,8 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 | # 6. Weapon / Combat Arsenal | L803–L895 | [combat-and-arsenal](../gdd/combat-and-arsenal.md)；[combat-prototypes](../content/combat-prototypes.md) | 源状态保留；扩写单独标注 |
 | # 7. Character System | L896–L945 | [player-and-input](../gdd/player-and-input.md)；[combat-prototypes](../content/combat-prototypes.md) | 源状态保留；扩写单独标注 |
 | # 8. Utilities | L946–L990 | [player-and-input](../gdd/player-and-input.md)；[economy-and-support](../gdd/economy-and-support.md)；[survival-and-recovery](../gdd/survival-and-recovery.md) | 源状态保留；扩写单独标注 |
-| # 9. Relic / Build Algebra / Proc / Fusion | L991–L1083 | [build-algebra](../gdd/build-algebra.md)；[relics-and-fusions](../content/relics-and-fusions.md) | 源状态保留；扩写单独标注 |
-| # 10. Combat Math / Crit / Reaction | L1084–L1107 | [build-algebra](../gdd/build-algebra.md) | 源状态保留；扩写单独标注 |
+| # 9. Relic / Build Algebra / Proc / Fusion | L991–L1083 | [build-algebra](../gdd/modifications-and-effects.md)；[relics-and-fusions](../content/modification-catalog.md) | 源状态保留；扩写单独标注 |
+| # 10. Combat Math / Crit / Reaction | L1084–L1107 | [build-algebra](../gdd/modifications-and-effects.md) | 源状态保留；扩写单独标注 |
 | # 11. Player Movement / Damage / Life State | L1108–L1160 | [player-and-input](../gdd/player-and-input.md)；[survival-and-recovery](../gdd/survival-and-recovery.md) | 源状态保留；扩写单独标注 |
 | # 12. Friendly Fire / Faction / Collision | L1161–L1188 | [combat-and-arsenal](../gdd/combat-and-arsenal.md) | 源状态保留；扩写单独标注 |
 | # 13. Enemy / AI / Director | L1189–L1250 | [encounters-and-difficulty](../gdd/encounters-and-difficulty.md)；[missions-and-spaces](../gdd/missions-and-spaces.md) | 源状态保留；扩写单独标注 |
@@ -57,17 +57,17 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 | # 34. Map / Navigation / Information UI | L2085–L2105 | [ux-and-accessibility](../gdd/ux-and-accessibility.md)；[world-and-information](../gdd/world-and-information.md) | 源状态保留；扩写单独标注 |
 | # 35. Narrative Delivery / Dialogue / Archive | L2106–L2134 | [narrative-delivery](../gdd/narrative-delivery.md) | 源状态保留；扩写单独标注 |
 | # 36. Versioning / Save / Compatibility | L2135–L2154 | [network-and-persistence](../technical/network-and-persistence.md) | 源状态保留；扩写单独标注 |
-| # 37. 重大历史决策登记表（A/B/C/D 选择与后续覆盖） | L2155–L2199 | [decisions-and-questions](decisions-and-questions.md) | 源状态保留；扩写单独标注 |
+| # 37. 重大历史决策登记表（A/B/C/D 选择与后续覆盖） | L2155–L2199 | [decisions-and-questions](decision-register.md) | 源状态保留；扩写单独标注 |
 | # 38. GTFO 社区建议文件：采纳/改造/拒绝统计 | L2200–L2236 | [references-and-methods](../research/references-and-methods.md) | 源状态保留；扩写单独标注 |
-| # 39. LEGACY / 已被覆盖的旧设计 | L2237–L2268 | [decisions-and-questions](decisions-and-questions.md) | 源状态保留；扩写单独标注 |
+| # 39. LEGACY / 已被覆盖的旧设计 | L2237–L2268 | [decisions-and-questions](decision-register.md) | 源状态保留；扩写单独标注 |
 | # 40. 当前数字/规模统计（Canon vs Test） | L2269–L2300 | [README](../README.md) | 数值逐项责任见下表，不在README复制数值 |
-| # 41. 当前仍需确认的东西（按返工风险排序） | L2301–L2368 | [decisions-and-questions](decisions-and-questions.md)；[roadmap-and-validation](../production/roadmap-and-validation.md) | 源状态保留；扩写单独标注 |
+| # 41. 当前仍需确认的东西（按返工风险排序） | L2301–L2368 | [decisions-and-questions](decision-register.md)；[roadmap-and-validation](../production/roadmap-and-validation.md) | 源状态保留；扩写单独标注 |
 | # 42. 全项目 Preproduction 流程 — CURRENT | L2369–L2431 | [roadmap-and-validation](../production/roadmap-and-validation.md) | 源状态保留；扩写单独标注 |
 | # 43. Release / Product Gates | L2432–L2470 | [roadmap-and-validation](../production/roadmap-and-validation.md) | 源状态保留；扩写单独标注 |
 | # 44. 最终当前 Product Thesis | L2471–L2489 | [vision](../gdd/vision.md) | 源状态保留；扩写单独标注 |
 | # 45. SSOT 维护纪律 | L2490–L2502 | [authoring-guide](authoring-guide.md) | 源状态保留；扩写单独标注 |
 | # Appendix A — 当前全项目一句话状态 | L2503–L2515 | [README](../README.md) | 源状态保留；扩写单独标注 |
-| # Appendix B — 本版本相对 SSOT v1.0 的主要变化 | L2516–L2527 | [decisions-and-questions](decisions-and-questions.md) | 源状态保留；扩写单独标注 |
+| # Appendix B — 本版本相对 SSOT v1.0 的主要变化 | L2516–L2527 | [decisions-and-questions](decision-register.md) | 源状态保留；扩写单独标注 |
 
 ## 跨系统章节细分
 
@@ -101,42 +101,42 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 
 | 项目 | 来源定位 | 去向 |
 |---|---|---|
-| H37-01 Public Team Voice topology | SRC-SSOT-2.0 §37 第1项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/coop-and-social.md) |
-| H37-02 旧 Layer Transition Recovery | SRC-SSOT-2.0 §37 第2项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/descent.md) |
-| H37-03 Enemy same-faction damage | SRC-SSOT-2.0 §37 第3项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/combat-and-arsenal.md) |
-| H37-04 Same-faction普通攻击拦截 | SRC-SSOT-2.0 §37 第4项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/combat-and-arsenal.md) |
-| H37-05 Enemy blocking | SRC-SSOT-2.0 §37 第5项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/combat-and-arsenal.md) |
-| H37-06 Basic flashlight | SRC-SSOT-2.0 §37 第6项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-07 旧 Advanced Sensor baseline | SRC-SSOT-2.0 §37 第7项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-08 Recoil style | SRC-SSOT-2.0 §37 第8项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/combat-and-arsenal.md) |
-| H37-09 Utility baseline concept | SRC-SSOT-2.0 §37 第9项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-10 旧 Utility Recharge | SRC-SSOT-2.0 §37 第10项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/economy-and-support.md) |
-| H37-11 Utility shared cooldown | SRC-SSOT-2.0 §37 第11项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-12 Revive Utility | SRC-SSOT-2.0 §37 第12项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/survival-and-recovery.md) |
-| H37-13 Revive recovery | SRC-SSOT-2.0 §37 第13项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/survival-and-recovery.md) |
-| H37-14 旧 Character Active slots | SRC-SSOT-2.0 §37 第14项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-15 Separate Ultimate slot | SRC-SSOT-2.0 §37 第15项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-16 Duplicate Character | SRC-SSOT-2.0 §37 第16项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-17 Mid-run Character swap | SRC-SSOT-2.0 §37 第17项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-18 Layer1 Build guarantee | SRC-SSOT-2.0 §37 第18项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/descent.md) |
-| H37-19 Fusion discovery | SRC-SSOT-2.0 §37 第19项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-20 Fusion determinism | SRC-SSOT-2.0 §37 第20项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-21 Fusion consumption model | SRC-SSOT-2.0 §37 第21项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-22 Fusion commit | SRC-SSOT-2.0 §37 第22项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-23 Fusion inheritance | SRC-SSOT-2.0 §37 第23项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-24 Operation/Descent双模式 | SRC-SSOT-2.0 §37 第24项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/vision.md) |
-| H37-25 Operation Earned Safety | SRC-SSOT-2.0 §37 第25项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/world-and-information.md) |
-| H37-26 Door system | SRC-SSOT-2.0 §37 第26项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/world-and-information.md) |
-| H37-27 Alert decay | SRC-SSOT-2.0 §37 第27项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/encounters-and-difficulty.md) |
-| H37-28 Operation generation | SRC-SSOT-2.0 §37 第28项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/missions-and-spaces.md) |
-| H37-29 Operation Wipe Recovery Anchor | SRC-SSOT-2.0 §37 第29项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/survival-and-recovery.md) |
-| H37-30 Support pricing | SRC-SSOT-2.0 §37 第30项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/economy-and-support.md) |
-| H37-31 Supply ownership | SRC-SSOT-2.0 §37 第31项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/economy-and-support.md) |
-| H37-32 Equipment/Accessory | SRC-SSOT-2.0 §37 第32项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/player-and-input.md) |
-| H37-33 Relic slots | SRC-SSOT-2.0 §37 第33项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/build-algebra.md) |
-| H37-34 Staff spell count | SRC-SSOT-2.0 §37 第34项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/combat-and-arsenal.md) |
-| H37-35 Descent layer length | SRC-SSOT-2.0 §37 第35项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/descent.md) |
-| H37-36 Facility Cart commit | SRC-SSOT-2.0 §37 第36项 | [原选择账](decisions-and-questions.md)；[当前责任](../gdd/world-and-information.md) |
+| H37-01 Public Team Voice topology | SRC-SSOT-2.0 §37 第1项 | [原选择账](decision-register.md)；[当前责任](../gdd/coop-and-social.md) |
+| H37-02 旧 Layer Transition Recovery | SRC-SSOT-2.0 §37 第2项 | [原选择账](decision-register.md)；[当前责任](../gdd/descent.md) |
+| H37-03 Enemy same-faction damage | SRC-SSOT-2.0 §37 第3项 | [原选择账](decision-register.md)；[当前责任](../gdd/combat-and-arsenal.md) |
+| H37-04 Same-faction普通攻击拦截 | SRC-SSOT-2.0 §37 第4项 | [原选择账](decision-register.md)；[当前责任](../gdd/combat-and-arsenal.md) |
+| H37-05 Enemy blocking | SRC-SSOT-2.0 §37 第5项 | [原选择账](decision-register.md)；[当前责任](../gdd/combat-and-arsenal.md) |
+| H37-06 Basic flashlight | SRC-SSOT-2.0 §37 第6项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-07 旧 Advanced Sensor baseline | SRC-SSOT-2.0 §37 第7项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-08 Recoil style | SRC-SSOT-2.0 §37 第8项 | [原选择账](decision-register.md)；[当前责任](../gdd/combat-and-arsenal.md) |
+| H37-09 Utility baseline concept | SRC-SSOT-2.0 §37 第9项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-10 旧 Utility Recharge | SRC-SSOT-2.0 §37 第10项 | [原选择账](decision-register.md)；[当前责任](../gdd/economy-and-support.md) |
+| H37-11 Utility shared cooldown | SRC-SSOT-2.0 §37 第11项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-12 Revive Utility | SRC-SSOT-2.0 §37 第12项 | [原选择账](decision-register.md)；[当前责任](../gdd/survival-and-recovery.md) |
+| H37-13 Revive recovery | SRC-SSOT-2.0 §37 第13项 | [原选择账](decision-register.md)；[当前责任](../gdd/survival-and-recovery.md) |
+| H37-14 旧 Character Active slots | SRC-SSOT-2.0 §37 第14项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-15 Separate Ultimate slot | SRC-SSOT-2.0 §37 第15项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-16 Duplicate Character | SRC-SSOT-2.0 §37 第16项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-17 Mid-run Character swap | SRC-SSOT-2.0 §37 第17项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-18 Layer1 Build guarantee | SRC-SSOT-2.0 §37 第18项 | [原选择账](decision-register.md)；[当前责任](../gdd/descent.md) |
+| H37-19 Fusion discovery | SRC-SSOT-2.0 §37 第19项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-20 Fusion determinism | SRC-SSOT-2.0 §37 第20项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-21 Fusion consumption model | SRC-SSOT-2.0 §37 第21项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-22 Fusion commit | SRC-SSOT-2.0 §37 第22项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-23 Fusion inheritance | SRC-SSOT-2.0 §37 第23项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-24 Operation/Descent双模式 | SRC-SSOT-2.0 §37 第24项 | [原选择账](decision-register.md)；[当前责任](../gdd/vision.md) |
+| H37-25 Operation Earned Safety | SRC-SSOT-2.0 §37 第25项 | [原选择账](decision-register.md)；[当前责任](../gdd/world-and-information.md) |
+| H37-26 Door system | SRC-SSOT-2.0 §37 第26项 | [原选择账](decision-register.md)；[当前责任](../gdd/world-and-information.md) |
+| H37-27 Alert decay | SRC-SSOT-2.0 §37 第27项 | [原选择账](decision-register.md)；[当前责任](../gdd/encounters-and-difficulty.md) |
+| H37-28 Operation generation | SRC-SSOT-2.0 §37 第28项 | [原选择账](decision-register.md)；[当前责任](../gdd/missions-and-spaces.md) |
+| H37-29 Operation Wipe Recovery Anchor | SRC-SSOT-2.0 §37 第29项 | [原选择账](decision-register.md)；[当前责任](../gdd/survival-and-recovery.md) |
+| H37-30 Support pricing | SRC-SSOT-2.0 §37 第30项 | [原选择账](decision-register.md)；[当前责任](../gdd/economy-and-support.md) |
+| H37-31 Supply ownership | SRC-SSOT-2.0 §37 第31项 | [原选择账](decision-register.md)；[当前责任](../gdd/economy-and-support.md) |
+| H37-32 Equipment/Accessory | SRC-SSOT-2.0 §37 第32项 | [原选择账](decision-register.md)；[当前责任](../gdd/player-and-input.md) |
+| H37-33 Relic slots | SRC-SSOT-2.0 §37 第33项 | [原选择账](decision-register.md)；[当前责任](../gdd/modifications-and-effects.md) |
+| H37-34 Staff spell count | SRC-SSOT-2.0 §37 第34项 | [原选择账](decision-register.md)；[当前责任](../gdd/combat-and-arsenal.md) |
+| H37-35 Descent layer length | SRC-SSOT-2.0 §37 第35项 | [原选择账](decision-register.md)；[当前责任](../gdd/descent.md) |
+| H37-36 Facility Cart commit | SRC-SSOT-2.0 §37 第36项 | [原选择账](decision-register.md)；[当前责任](../gdd/world-and-information.md) |
 
 ## §38 全部社区条目
 
@@ -171,31 +171,31 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 
 | 旧路径索引 | 来源定位 | 去向 |
 |---|---|---|
-| H39-01 **Hard Classes / mandatory Warrior-Healer-Tank-Mage composition** | SRC-SSOT-2.0 §39 第1项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-02 **2 Character Active Abilities** | SRC-SSOT-2.0 §39 第2项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-03 **Universal Weapon Active button** | SRC-SSOT-2.0 §39 第3项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-04 **Scan as baseline universal ability / Scan merged with Ping** | SRC-SSOT-2.0 §39 第4项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-05 **Equipment + Accessory + Relic** | SRC-SSOT-2.0 §39 第5项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-06 **Fixed Relic slots** | SRC-SSOT-2.0 §39 第6项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-07 **全游戏固定5 Layers** | SRC-SSOT-2.0 §39 第7项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-08 **Operation Layer baseline recovery/reset** | SRC-SSOT-2.0 §39 第8项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-09 **Operation所有Utility快速免费Recharge** | SRC-SSOT-2.0 §39 第9项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-10 **传统Extraction shooter/搜打撤核心** | SRC-SSOT-2.0 §39 第10项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-11 **Persistent Facility Alarm / Alarm levels** | SRC-SSOT-2.0 §39 第11项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-12 **Combat=被发现后的错误状态** | SRC-SSOT-2.0 §39 第12项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-13 **Gameplay Recovery Anchor/Checkpoint rollback** | SRC-SSOT-2.0 §39 第13项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-14 **Mandatory backtracking** | SRC-SSOT-2.0 §39 第14项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-15 **Extraction hard countdown** | SRC-SSOT-2.0 §39 第15项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-16 **Retro dark sci-fi =唯一品牌** | SRC-SSOT-2.0 §39 第16项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-17 **每个人永久自带完整Staff当无Ammo保底** | SRC-SSOT-2.0 §39 第17项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-18 **Melee“几乎必然换血”作为平衡** | SRC-SSOT-2.0 §39 第18项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-19 **复杂连续Power allocation/Excel** | SRC-SSOT-2.0 §39 第19项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-20 **所有重大Team决定投票** | SRC-SSOT-2.0 §39 第20项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-21 **Supply通过Facility Terminal订购** | SRC-SSOT-2.0 §39 第21项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-22 **Knowledge直接当Ammo货币** | SRC-SSOT-2.0 §39 第22项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-23 **Fusion是可逆A+B active state** | SRC-SSOT-2.0 §39 第23项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-24 **Fusion需要Forge/手动确认** | SRC-SSOT-2.0 §39 第24项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
-| H39-25 **公开Scenario Editor先做** | SRC-SSOT-2.0 §39 第25项 | [覆盖结论与禁止恢复](decisions-and-questions.md) |
+| H39-01 **Hard Classes / mandatory Warrior-Healer-Tank-Mage composition** | SRC-SSOT-2.0 §39 第1项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-02 **2 Character Active Abilities** | SRC-SSOT-2.0 §39 第2项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-03 **Universal Weapon Active button** | SRC-SSOT-2.0 §39 第3项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-04 **Scan as baseline universal ability / Scan merged with Ping** | SRC-SSOT-2.0 §39 第4项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-05 **Equipment + Accessory + Relic** | SRC-SSOT-2.0 §39 第5项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-06 **Fixed Relic slots** | SRC-SSOT-2.0 §39 第6项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-07 **全游戏固定5 Layers** | SRC-SSOT-2.0 §39 第7项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-08 **Operation Layer baseline recovery/reset** | SRC-SSOT-2.0 §39 第8项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-09 **Operation所有Utility快速免费Recharge** | SRC-SSOT-2.0 §39 第9项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-10 **传统Extraction shooter/搜打撤核心** | SRC-SSOT-2.0 §39 第10项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-11 **Persistent Facility Alarm / Alarm levels** | SRC-SSOT-2.0 §39 第11项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-12 **Combat=被发现后的错误状态** | SRC-SSOT-2.0 §39 第12项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-13 **Gameplay Recovery Anchor/Checkpoint rollback** | SRC-SSOT-2.0 §39 第13项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-14 **Mandatory backtracking** | SRC-SSOT-2.0 §39 第14项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-15 **Extraction hard countdown** | SRC-SSOT-2.0 §39 第15项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-16 **Retro dark sci-fi =唯一品牌** | SRC-SSOT-2.0 §39 第16项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-17 **每个人永久自带完整Staff当无Ammo保底** | SRC-SSOT-2.0 §39 第17项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-18 **Melee“几乎必然换血”作为平衡** | SRC-SSOT-2.0 §39 第18项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-19 **复杂连续Power allocation/Excel** | SRC-SSOT-2.0 §39 第19项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-20 **所有重大Team决定投票** | SRC-SSOT-2.0 §39 第20项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-21 **Supply通过Facility Terminal订购** | SRC-SSOT-2.0 §39 第21项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-22 **Knowledge直接当Ammo货币** | SRC-SSOT-2.0 §39 第22项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-23 **Fusion是可逆A+B active state** | SRC-SSOT-2.0 §39 第23项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-24 **Fusion需要Forge/手动确认** | SRC-SSOT-2.0 §39 第24项 | [覆盖结论与禁止恢复](decision-register.md) |
+| H39-25 **公开Scenario Editor先做** | SRC-SSOT-2.0 §39 第25项 | [覆盖结论与禁止恢复](decision-register.md) |
 
 ## §40 全部25项数字/规模
 
@@ -216,8 +216,8 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 | N40-11 Staff目标上限 | Official profile；来源：SRC-SSOT-2.0 §40 第11行项目 | [数值责任](../gdd/combat-and-arsenal.md) |
 | N40-12 Melee prototype | TEST set；来源：SRC-SSOT-2.0 §40 第12行项目 | [数值责任](../gdd/combat-and-arsenal.md) |
 | N40-13 Character prototype | TEST；来源：SRC-SSOT-2.0 §40 第13行项目 | [数值责任](../gdd/player-and-input.md) |
-| N40-14 Relic first pool | TEST；来源：SRC-SSOT-2.0 §40 第14行项目 | [数值责任](../gdd/build-algebra.md) |
-| N40-15 Curated Fusion first pool | TEST；来源：SRC-SSOT-2.0 §40 第15行项目 | [数值责任](../gdd/build-algebra.md) |
+| N40-14 Relic first pool | TEST；来源：SRC-SSOT-2.0 §40 第14行项目 | [数值责任](../gdd/modifications-and-effects.md) |
+| N40-15 Curated Fusion first pool | TEST；来源：SRC-SSOT-2.0 §40 第15行项目 | [数值责任](../gdd/modifications-and-effects.md) |
 | N40-16 Operation normal Support Charges | TEST；来源：SRC-SSOT-2.0 §40 第16行项目 | [数值责任](../gdd/economy-and-support.md) |
 | N40-17 Operation failure token payout | TEST；来源：SRC-SSOT-2.0 §40 第17行项目 | [数值责任](../gdd/progression-and-bastion.md) |
 | N40-18 Emergency Recovery Floor | TEST；来源：SRC-SSOT-2.0 §40 第18行项目 | [数值责任](../gdd/survival-and-recovery.md) |
@@ -233,7 +233,7 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 
 | 新证据 | 责任 |
 |---|---|
-| SRC-CHATGPT-REVIEW-1.0（外部助手NON-CANON） | [快照](../sources/chatgpt-brutal-review-v1.0.md)；[35项风险](../production/brutal-review.md) |
+| SRC-CHATGPT-REVIEW-1.0（外部助手NON-CANON） | [快照](../sources/chatgpt-brutal-review-v1.0.md)；[35项风险](../production/risk-register.md) |
 | 用户产品分叉/模块化/配件/统一模型 | DDD-0001–0004；vision/operations/build/modding |
 | 用户重资产/Predator/Breach | DDD-0005–0006；combat/missions/blackstart |
 | 用户唯一中央故事 | DDD-0007；central-story-spine |
@@ -249,12 +249,12 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 | 用户节点永久清场与真实行星端点Descent | [narrative-bible NAR-030](../gdd/narrative-bible.md)；CANON（LORE ONLY）；基础游戏玩家进度实现已被DEC-039否决 |
 | 用户程序Operation、随机主/支线、多任务族、中央Hub任务板与难度选择 | [operations OPS-011–OPS-012](../gdd/operations.md)；[missions MIS-016–MIS-017](../gdd/missions-and-spaces.md)；[progression PRG-012](../gdd/progression-and-bastion.md)；[UX-008](../gdd/ux-and-accessibility.md)；CANON/DIRECTION |
 | 用户Descent发布期全服务器节点恢复行动 | [vision VIS-009](../gdd/vision.md)；[operations OPS-013](../gdd/operations.md)；[progression PRG-013](../gdd/progression-and-bastion.md)；[descent DES-008、DES-010](../gdd/descent.md)；[network NET-008](../technical/network-and-persistence.md)；CANON/DIRECTION |
-| 用户匹配后端复用Descent活动汇总 | [network NET-001、NET-008](../technical/network-and-persistence.md)；[decisions DEC-040](decisions-and-questions.md)；CANON/DIRECTION |
-| 用户合作PVE不建设玩法反作弊 | [network NET-008](../technical/network-and-persistence.md)；[operations OPS-013](../gdd/operations.md)；[progression PRG-013](../gdd/progression-and-bastion.md)；[decisions DEC-040](decisions-and-questions.md)；CANON/DIRECTION |
-| 用户详细团队/个人统计、潜行破坏归因、轻量本地回放与结算确认后删除 | [debrief/replay RPL-001至RPL-008](../gdd/debrief-and-replay.md)；[technical TRP-001至TRP-006](../technical/replay-recording.md)；[UX-009](../gdd/ux-and-accessibility.md)；[decisions DEC-041](decisions-and-questions.md)；CANON/DIRECTION |
-| 用户固定四人壁垒外勤小队与非递进玩家故事 | [central story STORY-007至STORY-010](../gdd/central-story-spine.md)；[decisions DEC-042至DEC-043](decisions-and-questions.md)；CANON/DIRECTION，人物细节OPEN |
+| 用户匹配后端复用Descent活动汇总 | [network NET-001、NET-008](../technical/network-and-persistence.md)；[decisions DEC-040](decision-register.md)；CANON/DIRECTION |
+| 用户合作PVE不建设玩法反作弊 | [network NET-008](../technical/network-and-persistence.md)；[operations OPS-013](../gdd/operations.md)；[progression PRG-013](../gdd/progression-and-bastion.md)；[decisions DEC-040](decision-register.md)；CANON/DIRECTION |
+| 用户详细团队/个人统计、潜行破坏归因、轻量本地回放与结算确认后删除 | [debrief/replay RPL-001至RPL-008](../gdd/debrief-and-replay.md)；[technical TRP-001至TRP-006](../technical/replay-recording.md)；[UX-009](../gdd/ux-and-accessibility.md)；[decisions DEC-041](decision-register.md)；CANON/DIRECTION |
+| 用户固定四人壁垒外勤小队与非递进玩家故事 | [central story STORY-007至STORY-010](../gdd/central-story-spine.md)；[decisions DEC-042至DEC-043](decision-register.md)；CANON/DIRECTION，人物细节OPEN |
 | 用户成就与可收集碎片叙事 | [central story STORY-011](../gdd/central-story-spine.md)；[narrative delivery NDL-004](../gdd/narrative-delivery.md)；[missions MIS-018](../gdd/missions-and-spaces.md)；[progression PRG-014](../gdd/progression-and-bastion.md)；CANON/DIRECTION |
-| 用户四名角色设计请求、人格范围与中文代号纠正 | [character roster CHAR-001至CHAR-011](../content/character-roster-v1.md)；[central story STORY-008](../gdd/central-story-spine.md)；[decisions DEC-045](decisions-and-questions.md)；真实姓名取消、美术延后，`断桥/回声/铁砧/寒蝉`仍待用户裁决 |
+| 用户四名角色设计请求、人格范围与中文代号纠正 | [character roster CHAR-001至CHAR-011](../content/characters.md)；[central story STORY-008](../gdd/central-story-spine.md)；[decisions DEC-045](decision-register.md)；真实姓名取消、美术延后，`断桥/回声/铁砧/寒蝉`仍待用户裁决 |
 | 用户壁垒—守门人联系与结构化交易 | [world-and-information WRD-013–WRD-014](../gdd/world-and-information.md)；当前PROPOSED/TEST |
 | 用户Sol重联DLC与Earth武器边界 | [narrative-bible NAR-011](../gdd/narrative-bible.md)；DLC仍PROPOSED且不承诺 |
 | 用户枪械-only条件、三枪族、无限界桥枪否决与响应窗口 | [vision VIS-008](../gdd/vision.md)；[combat CMB-012–CMB-016](../gdd/combat-and-arsenal.md)；[combat prototypes](../content/combat-prototypes.md) |

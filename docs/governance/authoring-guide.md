@@ -1,67 +1,37 @@
 ---
 doc_id: GOV-AUTHORING
 doc_type: governance
-stage: DRAFT
-updated: 2026-09-04
-owner_role: 设计负责人
-canon_basis: "SRC-SSOT-2.0 §0、§45；SRC-USER-2026-09-04-DISCUSSION-PERSISTENCE；SRC-USER-2026-09-04-FINAL-STORY-OVERVIEW-BLIND-REVIEW"
-depends_on: ["../sources/evidence-register.md"]
+stage: BASELINE
+updated: 2026-09-05
+owner_role: BREACH ECHO documentation stewardship
+canon_basis: "SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION; delegated decisions DDD-0013–0018"
+depends_on: ["owner-decisions.md", "decision-register.md", "document-register.md"]
 ---
 
-# 文档权威与编写规则
+# 文档权威、命名、决定和维护规则
 
-## 玩家目的
+## 权威不是文档成熟度
 
-让制作、测试和内容贡献者能找到同一个规则，知道哪些内容确实决定了，哪些只是有待证明的设计。
+CANON：有明确所有者来源的要求/作者事实。DECIDED：当前所有者授权下已选的普通设计/技术决策，不冒充直接用户原话。DIRECTION：有来源但尚非完整规格的意图。TEST：实验参数/假设/验收目标，不能称实测。PROPOSED：未采纳候选。OPEN：真正未决且必须指向owner-decisions或未来工作边界。LEGACY：已覆盖，只保留历史。UNRECOVERED：原资料确实缺失，不能补造。风险标签RISK及历史组合状态只解释当时语境，不把它们当新审批。
 
-## 权威与状态
+stage描述文件用途：BASELINE当前可执行责任规格；REVIEW待创作审批；FUTURE非当前生产；ARCHIVE历史；TEMPLATE写作模板。BASELINE不等于实现、试玩、性能、许可或安全已通过。创作候选可以完整可读但仍REVIEW。
 
-GOV-001 · CANON · 来源：SRC-SSOT-2.0 §0.4、§0.5、§45。
+## 谁决定什么
 
-最新用户明确决定优先；其次是源文的已批准规则。原聊天里的助手建议、网页参考、本文扩写都不能自行变成正式决定。改变已确认规则必须记录 SUPERSEDES: SRC-SSOT-2.0 §X.Y，并在[决策登记](decisions-and-questions.md)留下原因、受影响规则及用户确认依据。没有确认时只提出变更，不替换现行规则。
+2026-09-05所有者明确委托助手选择普通技术和设计赢家。选择引擎依赖、网络恢复算法、schema、文件名、测试初值、一般内容取舍不再逐项询问所有者。涉及人物/故事最终身份、正式视觉/配音、真实付费合同账户以及变更明确要求，按[所有者队列](owner-decisions.md)。提出建议时给理由与代价，不盲目附和。
 
-GOV-002 · PROPOSED · 来源：本次文档拆分实施包。
+冲突处理：先确认时间、来源和适用模式；以新的明确用户决定为优先；当前授权可关闭已交付裁决的普通设计分叉，但不能伪称旧用户已说过。记录覆盖的旧规则ID、理由、范围、被否决方案、架构影响、测试与重审触发。原source快照不改。历史DDD的OPEN只在当时成立，当前状态以决策登记的替代关系为准。
 
-本库状态只有以下八种。源文 CONFLICT-RESOLVED、INHERITED 只作为来源属性，不能增加确信程度。源文 CANON DIRECTION 迁为 DIRECTION；CANON TEST SET 的原型名单保留、数值仍为 TEST。
+## 命名和唯一责任
 
-| 状态 | 含义 | 能否直接作为生产承诺 |
-|---|---|---|
-| CANON | 用户已确认的规则，有明确源定位 | 规则可作为基线；不代表实现或试玩已通过 |
-| DIRECTION | 用户意图或保留方向，细节未锁 | 否 |
-| TEST | 指定的实验参数、试制集合 | 仅对指定实验有效 |
-| PROPOSED | 新增的具体候选、流程或修正 | 否 |
-| OPEN | 缺少决定或证据 | 否 |
-| LEGACY | 已被明确覆盖的旧规则 | 否，不可因旧聊天恢复 |
-| UNRECOVERED | 历史内容无法确认恢复 | 否 |
+文件用描述性English kebab-case，不在活跃路径放v1/final/new。文档稳定doc_id、职责、依赖、日期、stage放frontmatter，Git拥有版本历史。规则稳定ID只由一个责任文件定义；其他文件链接，不复制容易漂移的参数表。参数必须有单位、TEST标记、唯一Owner和测量方法；未测量但需要实现时选择有理由的初值，不丢给新手所有者。
 
-## 文档契约
+所有活跃文档必须进入[完整登记](document-register.md)和适当阅读路径。新增系统包含目的、范围、玩家流、状态/所有权、成本提交、取消/并发/断线/恢复、接口、反馈、正常/失败例及验收。先证明薄的完整链，不能以更多接口替代玩法。
 
-GOV-003 · PROPOSED · 来源：本次文档拆分实施包。
+## 本次采纳的边界
 
-每份作者文档使用 doc_id、doc_type、stage、updated、owner_role、canon_basis、depends_on 元数据；owner_role 是职责而非虚构人名。源文快照为归档例外，保持原内容。规则采用“稳定ID · 状态 · 来源”。同一规则仅一个责任文件，其余文件用相对链接。元数据 stage: DRAFT 表示文档尚待评审，不会把所有继承规则降级或把新提案升级。
+自动迁移脚本逐个列出被采纳的行为规则，审计JSON记录其ID；没有把全部PROPOSED改CANON。角色/历史候选保留REVIEW，内容数值和用户研究假设保留TEST，Lab/Descent保留FUTURE边界。原文保留和新决定必须能由Git差异追溯。
 
-系统规格按玩家目的→范围→确认规则→玩家流程→状态/所有权→转换→模式配置→内容接口→边界→参数→示例→验证组织。内容卡必须交代触发、成本、输出、Tags、模式、反馈、失败。技术文档写契约和证据要求，不假装代码已经存在。
+## 完成检查与诚实
 
-## 更新与裁决流程
-
-GOV-004 · PROPOSED · 来源：本次文档拆分实施包。
-
-提出变更→列源与冲突→在决策登记写 OPEN/PROPOSED→列实验及阈值→由设计责任人审核证据→用户确认改变基线→同步责任文件与迁移索引。旧结论只留历史，不保留第二套运行时兼容设计。试验失败应撤回候选，不能把阈值事后降低以宣布成功。
-
-每条新数值标 TEST，写单位、测量对象、样本、失败解释。缺证据写“尚未测量”。外部资料只能支持方法、实现约束或市场快照；它不能证明本游戏会好玩。
-
-## 审核与交接
-
-GOV-005 · PROPOSED · 来源：本次文档拆分实施包。
-
-本轮验收：原件 SHA256 不变；全部顶层章节映射；相对链接、ID、状态检查；逐条检查 CANON 的来源；走读核心禁令及自动事务。无引擎、无代码、无试玩，因此不运行游戏测试，也不声称任何体验 Gate 通过。完整检查与评审记录归[制作计划](../production/roadmap-and-validation.md)。
-
-GOV-006 · CANON · 来源：SRC-USER-2026-09-04-DISCUSSION-PERSISTENCE。
-
-当前可见聊天中的重要项目知识——用户决定、设想、纠正、否决及未决边界——必须在本轮结束或可能发生上下文压缩前，以精简语义摘要写入对应责任文档及证据/讨论记录。无需逐字保存整段聊天，但记录必须保留来源、状态和OPEN边界；不得只依赖聊天上下文或压缩记忆。此规则只覆盖当前实际可见、可核对的讨论，不承诺捕获未访问、已删除或不可恢复的历史。
-
-GOV-007 · CANON · 来源：SRC-USER-2026-09-04-FINAL-STORY-OVERVIEW-BLIND-REVIEW；按SRC-USER-2026-09-05-FOUR-LIVING-FIELD-SQUAD-NONPROGRESSIVE-STORY调整完成条件。
-
-故事因果、时间线与玩家常态全部排完并写入最终相关文档后，先生成一份完整故事总览交用户审阅；此前不生成冒充定稿的总览。非递进基础游戏的触发条件为：作者层客观历史、壁垒公开知识、四名外勤队员及关系、当前Operation时代、常规合同叙事边界、灼星种/借尸者知识状态，以及更新或Descent公共世界事件边界均已闭合。旧五幕、最终揭示、玩家最终动作和Post-story状态不再是必填项。
-
-用户完成该轮审阅后，才创建一个`fork_turns=none`、只读、此前未接触本项目故事的全新agent，仅向其提供最终相关文档。盲审必须覆盖因果、时间线、动机、信息流、技术合理性、同质化、人物辨识、程序对白耐重复、叙事与玩法耦合及制作可行性，并把原始批评交付用户，不替项目润色结论。当前四名人物仍未完成，禁止现在触发盲审，也不创建空任务或占位agent。
+运行文档validator、自测和inventory；检查远端commit与CI。游戏测试另按验收矩阵，报告实际运行与未运行。不能声称已购资产、正式许可证清查、独立盲审、Steam认证、Deck达标或可玩构建，除非存在真实证据。交接必须有当前状态与下一个可执行任务，不依赖聊天记忆。

@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-DEBRIEF-REPLAY
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 战报与回放设计
 canon_basis: "SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；SRC-USER-2026-09-05-SIMPLIFIED-REPLAY-AND-STATS；SRC-USER-2026-09-05-DETAILED-STATS-LIGHTWEIGHT-LOCAL-REPLAY；SRC-USER-2026-09-05-POST-DEBRIEF-DISCARD；REF-GTFO-REPLAY"
@@ -20,7 +20,7 @@ RPL-001 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；
 
 ## 结算信息层级
 
-RPL-002 · DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；game-design界面方法。
+RPL-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；game-design界面方法。
 
 默认战报展示五层，完整武器/敌人拆分由玩家主动展开：
 
@@ -32,7 +32,7 @@ RPL-002 · DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；game-d
 
 底部固定提供`确认并返回壁垒`、`再来一局`、`观看回放`和`详细统计`。确认前提示“离开后本局战报与回放不会保留”；战报不能用不可跳过的逐项数字动画扣住玩家。
 
-RPL-003 · DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；REF-GTFO-REPLAY。
+RPL-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；REF-GTFO-REPLAY。
 
 正式统计池按问题分类，而不是堆成一张宽表：
 
@@ -54,7 +54,7 @@ RPL-003 · DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；REF-GT
 
 ## 行动摘要与因果
 
-RPL-004 · PROPOSED · 来源：本轮设计扩写。
+RPL-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮设计扩写。
 
 行动摘要完全由已提交事件生成，不用生成式文本猜剧情。自动书签候选包括：任务阶段改变、路线/供电/防御状态改变、Threat Surge起止、首次发现、团队资源跨过公开危险线、重资产取得或耗尽、倒地/救援链、最终目标提交、撤离和Wipe。连续重复事件合并成一段，默认只保留能解释决策变化的节点。
 
@@ -78,7 +78,7 @@ RPL-006 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-POST-DEBRIEF-DISCARD�
 
 ## 故障、模组与可访问性
 
-RPL-007 · DIRECTION · 来源：本轮设计扩写；技术责任见[回放记录TRP-001至TRP-006](../technical/replay-recording.md)。
+RPL-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮设计扩写；技术责任见[回放记录TRP-001至TRP-006](../technical/replay-recording.md)。
 
 回放记录失败不能使任务结算失败。`DebriefSnapshot`先于回放索引完成并独立生成；损坏或不完整回放明确标出最后有效时间，不伪装成完整记录。简化查看器只读取录制时写入的房间轮廓、实体类别、图标和状态，不加载Gameplay包执行逻辑；详细统计与文字战报在本次结算关闭前仍可用。
 
@@ -89,3 +89,10 @@ RPL-007 · DIRECTION · 来源：本轮设计扩写；技术责任见[回放记�
 RPL-008 · TEST · 来源：本轮设计扩写。
 
 用成功、末段Wipe、Host迁移、断线重连、程序秘密支路和高敌人密度六类任务验证，并为单人误唤醒、多人同时刺激、环境连锁、网络乱序各建固定测试。候选通过条件：结算出现后10秒内多数新玩家能指出任务结果、最大资源转折和下一步入口；随机抽取统计与权威事务账差异为0；已归因的潜行破坏与Authority刺激链逐项一致，证据不足的案例不得指名；点击摘要能跳到正确事件；任何玩家可在不看完整动画的情况下两次输入内返回Hub。若玩家只讨论击杀第一名、成员互相指责增加或战报阅读阻塞再开，应先删排名式呈现或收紧归因证据，不靠多发奖励诱导观看。
+
+
+## 本次定稿：执行边界
+
+详细权威统计与临时本地回放均保留首发。回放是低频位置+关键事件查看器，不是录像/全PhysX可重演证明，不记录玩家语音。离开结算或进入新Run清除临时记录，异常退出下次启动清残留；永久Archive/成就和必要恢复文件属于不同数据域。无MVP/KD公开排名；因果不足则写共同/环境/无法归因，不为故事性编造破坏潜行者。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

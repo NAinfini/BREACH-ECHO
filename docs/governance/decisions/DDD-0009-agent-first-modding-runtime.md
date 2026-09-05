@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0009
 doc_type: decision
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 技术与Modding负责人
 canon_basis: "SRC-USER-2026-09-05-AGENT-FIRST-STRUCTURE-A；SRC-USER-2026-09-05-OFFICIAL-CONTENT-PACKAGES；SRC-USER-2026-09-05-HOST-MOD-AUTO-SYNC；SRC-USER-2026-09-05-STEAM-WORKSHOP-PRIMARY；SRC-USER-2026-09-05-STEAM-ONLY-SALES-MODS-DECOUPLED；Steamworks Workshop官方实现资料"
-depends_on: ["../decisions-and-questions.md", "../../technical/modding-and-toolchain.md", "../../technical/network-and-persistence.md", "../../production/platform-and-release.md", "DDD-0008-engine-unity6.md"]
+depends_on: ["../decision-register.md", "../../technical/modding-and-toolchain.md", "../../technical/network-and-persistence.md", "../../production/platform-and-release.md", "DDD-0008-engine-unity6.md"]
 ---
 
 # AI-Agent-first 工程结构与内置 Mod Runtime
@@ -77,3 +77,8 @@ Steam Workshop 是当前唯一正式公开 Distribution Provider，但 Runtime P
 ## Risks / next gate
 
 最大风险不是下载本身，而是版本锁、依赖冲突、unsafe code、安全提示、被删除 Workshop item、长局恢复和多人精确一致性。首个 Modding Spike 至少要证明：官方武器包与社区测试包走同一 Registry；Client 加入缺一个安全测试 Mod 的 Host 时可以通过 Workshop 自动下载、验证、启用并成功 join；缺失 exact hash 时明确失败；Vanilla profile 可一键恢复；关闭Steam分发适配器后，Kernel/Gameplay/Content验证测试仍不需要引用Steam类型。
+
+
+## 2026-09-05 implementation closure
+
+本文件已确认的引擎/内容/命令/60Hz/复制合同继续有效；当时列出的provider、回溯、迁移算法、脚本、旧hash和UI未决项现在由DDD-0015–0017与其责任文档关闭。历史段落用于追溯，不要求重复询问所有者；具体TEST尚未执行。

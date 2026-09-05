@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0005
 doc_type: decision
-stage: DRAFT
-updated: 2026-09-04
+stage: ARCHIVE
+updated: 2026-09-05
 owner_role: 产品与系统设计负责人
 canon_basis: "SRC-SSOT-2.0；本轮用户讨论"
-depends_on: ["../decisions-and-questions.md"]
+depends_on: ["../decision-register.md"]
 ---
 
 # 团队重资产
@@ -44,3 +44,8 @@ DIRECTION：用户资产偏好；PROPOSED：状态/网络/防grief实现。
 
 扩展源Heavy方向，未删除原Weapon槽位；Week12耗空/丢失/断线验收。
 
+
+
+## 2026-09-05 disposition / 历史状态
+
+本文件保留当时的选项和理由，旧OPEN不是当前未决入口。产品/装备/技术/制作问题已由DDD-0013–0018决定，人物与完整故事仍通过OWNER-01审阅；请读[当前决策登记](../decision-register.md)。不再按本文旧日期或未批准推荐直接实施。

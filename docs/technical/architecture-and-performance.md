@@ -1,7 +1,7 @@
 ---
 doc_id: TECH-ARCH
 doc_type: technical
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 架构负责人
 canon_basis: "SRC-SSOT-2.0 §1.5、§22–§23、§29；SRC-USER-2026-09-05-UNITY-ENGINE-LOCK；SRC-USER-2026-09-05-UNITY-URP-GAMEOBJECT-FIRST；SRC-USER-2026-09-05-TICK-ARCHITECTURE"
@@ -18,13 +18,13 @@ ARC-001 · CANON · 来源：SRC-SSOT-2.0 §1.5、§22.1、§22.6、§23.1–§2
 
 Cardinality/Topology/Capability是数据：官方槽位不渗透Save/Network/UI/Entity。Simulation performance优先；可降VFX/audio voices/远处表示/动画细节，不能暗删合法伤害、承诺敌人数、投射物/Proc/Summon结果。实体由components/profiles/tags组合；AnatomyGraph支持0..N部位、稳定ID、拓扑、命中体、完整度/装甲与增删/再生/转换，能力从图编译供热路径读取。
 
-ARC-002 · DIRECTION · 来源：SRC-SSOT-2.0 §22.2–§22.5。
+ARC-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-SSOT-2.0 §22.2–§22.5。
 
 候选ECS/archetype/chunk/SoA、hot/cold split、index+generation handle、稳态热路径近零general heap分配；TaskGraph/DAG、worker-local buffer、deterministic commit；Command/Event/Transaction分离；脏依赖增量编译；批量Projectile/query、游戏物理与表现物理分离、层级空间/导航/flow/cohort；AOI/delta/dirty mask、共享语义schema、snapshot+journal、semantic RNG。以上只是高负载系统可采用的技术方向，不构成默认DOTS要求。
 
 ## 通用接缝与真实消费者
 
-ARC-003 · PROPOSED · 来源：SRC-USER-2026-09-04-MODULAR-REFINEMENT；本轮架构评审。
+ARC-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-MODULAR-REFINEMENT；本轮架构评审。
 
 Kernel拥有Action/Entity/Damage/Effect/Tag/Stat/Reaction与提交序；不引用Operation专属Terminal类型、BLACKSTART目标或Descent层数。Ruleset提供Run lifecycle、合法内容池、ResourcePolicy、RewardSource/cadence、MapGrammar、failure policy。Operation是首个实际消费者，内部10分钟Combat Lab是第二个低成本契约测试，不提供Roguelike专用接口或发布功能。
 
@@ -32,7 +32,7 @@ ContentPackage通过能力接口声明内容；核心服务有清楚边界，但
 
 ## 数据所有权与提交流程
 
-ARC-004 · PROPOSED · 来源：本轮技术扩写。
+ARC-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮技术扩写。
 
 输入Command→权限/前置校验→候选状态与成本→确定顺序Commit→事实Event→后续规则处理→Snapshot/Journal→网络/表现投影。每个事务持有输入revision、幂等ID和结果；事件说明已发生事实，不能作为未经校验的万能写入口。批处理保留原语义与贡献，不只保留总DPS。
 
@@ -59,7 +59,7 @@ ARC-007 · LEGACY/SUPERSEDED · 来源：SRC-SSOT-2.0 §29.2；SUPERSEDED BY ARC
 
 旧基线要求用同一Prototype对Unity与Unreal作同级比较后再锁引擎。该比较原则已完成产品决策使命，不再要求生产两套引擎原型。仍保留其测量思想：任何Unity技术选择都必须通过代表性场景、硬件、构建配置和可重复日志验证，而不是靠营销结论。
 
-ARC-008 · PROPOSED · 来源：本轮技术评审；按Unity锁定调整。
+ARC-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮技术评审；按Unity锁定调整。
 
 先固定玩家场景与日志，再比较Unity内部具体实现：网络方案、导航/空间查询、Projectile表示、序列化、Job/Burst热路径等。记录hardware、build配置、包hash、帧时间分位、sim时间、分配、网络带宽、温度与可视密度。超过预算必须调整公开范围或算法并复测，不偷偷减少真实结果。
 
@@ -83,8 +83,15 @@ Fixed-step loop必须限制catch-up工作量，不能无限追赶导致spiral-of
 
 ## 内容接口、边界与验证
 
-ARC-009 · PROPOSED · 来源：本轮技术扩写。
+ARC-009 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮技术扩写。
 
 每能力声明读写集合、成本/时序、可重放状态、权限和故障归属；Mod耗时可归因，安全故障停止该受影响会话并给诊断，不继续伪成功。跨平台bitwise determinism目前未证明；服务器权威与可重放有序语义不自动等于物理跨CPU完全一致。
 
-验证 Operation和Lab各消费同一Damage/Effect/Package/Save schema；替换mode package不用改Kernel源码；两个不同部位拓扑敌人支持相同命中协议；表征优化前后结果账一致。Unity首个技术Spike至少覆盖玩家+一把枪、100/500/1000轻量敌人、Projectile压力、基础Reaction/Effect、4人网络、Host loss恢复、一个Facility模块和一次购入资产导入。Tick架构Spike需记录60 Hz sim frame budget、catch-up次数、AI cohort耗时、replication bytes/sec、packet rate、Dormant savings、Projectile网络成本和不同Render FPS下Gameplay一致性。所有性能检查尚未运行。
+验证 Operation和Lab各消费同一Damage/Effect/Package/Save schema；替换mode package不用改Kernel源码；两个不同部位拓扑敌人支持相同命中协议；表征优化前后结果账一致。这些Spike分阶段执行而非阻塞第一个构建：M0仅玩家+一把枪和本地命令/构建；M1加入100/500/1000轻量敌人和Projectile/Effect压力测试；M2加入Facility；M3验证4人网络与Host loss。购入资产导入只在OWNER-02批准实际采购后进行，此前用原创灰盒验证同一管线。Tick架构Spike需记录60 Hz sim frame budget、catch-up次数、AI cohort耗时、replication bytes/sec、packet rate、Dormant savings、Projectile网络成本和不同Render FPS下Gameplay一致性。所有性能检查尚未运行。
+
+
+## 本次定稿：执行边界
+
+具体依赖现在由technology-stack.md拥有；旧讨论的网络provider/编辑器/脚本选择不再OPEN。普通GameObject-first与局部热路径优化继续，禁止为未来Descent先写通用游戏引擎。数据合同定义稳定ID、字段和状态写入；网络/持久化共用语义但不同投影。所有性能要求仍NOT RUN，显示密度优化不能成为丢合法结果借口。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

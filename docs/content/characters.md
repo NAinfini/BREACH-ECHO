@@ -1,7 +1,7 @@
 ---
 doc_id: CONTENT-CHARACTERS
 doc_type: content
-stage: DRAFT
+stage: REVIEW
 updated: 2026-09-05
 owner_role: 角色与对白设计
 canon_basis: "SRC-USER-2026-09-05-FOUR-LIVING-FIELD-SQUAD-NONPROGRESSIVE-STORY；SRC-USER-2026-09-05-CHARACTER-PERSONALITY-ONLY；SRC-USER-2026-09-05-CHARACTER-CODENAMES；SRC-USER-2026-09-05-COOL-CODENAME-DIRECTION；SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1"
@@ -110,11 +110,9 @@ CHAR-006 · PROPOSED · 来源：SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1�
 
 ## 玩法身份边界
 
-CHAR-007 · REVIEW RECOMMENDATION · 来源：SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1；与[PLY-001](../gdd/player-and-input.md)的角色Signature Active基线存在待决冲突。
+CHAR-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-强烈建议四名固定人物只决定人格、说话逻辑、关系、背景和收藏关联，不提供独占属性、被动、武器、工具、权限或任务交互。现有`一个Signature Active`槽位可以保留，但应改为局前可选的个人战术模块，而不是与断桥、回声、铁砧或寒蝉绑定。否则角色选择会退化成强度选择，匹配最后一个空Seat的玩家会被迫接受玩法，单人模式也会出现某角色天然更适合某任务的问题。
-
-该建议尚未获用户批准，因此本稿不擅自改写PLY-001，也不把Aegis、Breaker、Echo或未来第四个Active分配给任何人。若用户坚持角色专属Active，则每名角色必须各有一个同功率预算、无任务钥匙、单人合法且不会形成必选组合的Active，并另做四角色×六任务族覆盖测试。
+所有角色自由选择个人战术模块；不再将人物身份与Signature绑定。该装备决定来自当前授权，人物代号/人格/关系仍待OWNER-01；批准人物不等于批准其年龄、身体、外观或演员。
 
 ## 延后范围
 
@@ -164,4 +162,9 @@ CHAR-011 · TEST · 来源：SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1。
 - 两人局因为没带某角色而缺少任务信息或合法解法；
 - 收藏只是在地图上捡发光纸条，没有环境证据、关系或代价。
 
-最终代号、人格、经历、关系、收藏事实与台词数量均待用户裁决和原型测试；所有美术与身体设定按CHAR-008明确延后。
+最终代号、人格、经历、关系与收藏事实由OWNER-01审阅；原型台词数量是开发者可调整的TEST，不要求所有者逐个裁决。所有美术与身体设定按CHAR-008明确延后。
+
+
+## 审阅入口
+
+完整上下文已汇总到[故事总览](../gdd/story-overview.md)。本文件REVIEW仅指人物创作身份尚需所有者裁决，不指技术配装还在两方案之间。候选人物细节不能在未批准前转成付费美术或配音订单。

@@ -1,11 +1,11 @@
 ---
 doc_id: GDD-VISION
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 产品设计负责人
 canon_basis: "SRC-SSOT-2.0 §1–§3、§4、§44；本轮用户意图"
-depends_on: ["../governance/decisions-and-questions.md"]
+depends_on: ["../governance/decision-register.md"]
 ---
 
 # 产品体验、受众与模式选择
@@ -14,21 +14,19 @@ depends_on: ["../governance/decisions-and-questions.md"]
 
 让好友一起进入陌生设施，在压力下计划、交火、改变环境，并对“为什么这次活了或死了”形成共同记忆。玩家的承诺应能用一段实际游玩解释，而不是听完 Proc Graph、Forge、IR 和五种武器哲学才明白。
 
-VIS-001 · CANON · 来源：SRC-SSOT-2.0 §1.1–§1.4、§2.1、§44。
+VIS-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-现有基线是 1–4 人 PvE、共享战斗与系统战场的 Operations 和 Descent；强调裸武器手感、可组合 Build、环境互动、合作与可观看的涌现。简单输入承载复杂结果；难度应来自有趣决策，不以折磨本身为目标。此为原文设计基线，并不证明市场已经需要两个模式。
+唯一基础产品为1–4人合作PvE Operation：裸枪手感、有限资源、真实设施后果与合作执行。少量有边界的武器/工具改装增加情境解法。Descent保留为FUTURE扩展；共享内核不等于两套首发内容。完整范围由[首发合同](../production/release-scope.md)拥有。
 
-VIS-002 · DIRECTION · 来源：SRC-USER-2026-09-04-OPERATION-FOCUS。
+VIS-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-最新偏好聚焦 GTFO-like 的紧张合作资源管理，同时加入 Roguelike 元素。该偏好令“两个对等模式首发”成为必须重审的范围问题。
+Operation-only方向已在本次授权下裁决，普通技术选择不再等待所有者逐一批准。保留无改装对照实验用于验证增益；不是同时制作另一个可售产品。
 
 ## REVIEW RECOMMENDATION
 
-VIS-003 · PROPOSED · 来源：本轮产品评审推断 E3；对应决策 DEC-001。
+VIS-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-Operation 作为唯一首发消费者核心。Roguelike 先提供 Field Adaptation：改变武器行为、路线、控制、风险交换与协作机会；不把持续指数经济增长塞入该体验。共享战斗/事件/内容内核，通过 mode ruleset、economy profile、content profile表达不同体验。Descent 保留内部 Build 实验场和后续候选，只有通过验证才成为独立承诺。此建议待用户确认；不偷偷覆盖 VIS-001。
-
-“全 API 公开”按字面实现会让安全、存档、网络、兼容和客服一起失控。承诺应改为可审计的[扩展能力面](../technical/modding-and-toolchain.md)，官方内容尽量使用同一能力面。框架深度靠实际官方内容与首批作者验证，不靠接口数量。
+选择Operation+有限Field Modification；拒绝对等双模式首发、无限Relic累积和Operation自动Fusion。模式规则共享可验证的命令/效果/事务，不共享所有奖励能力。公开扩展采用Data/有界Graph，完整编辑器/脚本/TC后置；具体权限见[模组安全](../technical/mod-security-and-sync.md)。
 
 ## 四个产品分叉
 
@@ -37,11 +35,11 @@ VIS-004 · PROPOSED · 来源：本轮产品评审推断 E3。
 | 分叉 | 玩家可能获得 | 核心损失与费用 | 本轮判断 |
 |---|---|---|---|
 | 纯 Operation，无 Relic | 资源紧张与任务因果最清楚 | 可重复变化可能不足，需高质量任务与遭遇 | 必须作为对照实验 |
-| Operation + 有边界的 Field Adaptation | 保留计划，局内有新解法 | 要证明规则变化可理解、不会消灭资源压力 | 推荐首先验证 |
+| Operation + 有边界的 Field Adaptation | 保留计划，局内有新解法 | 要证明规则变化可理解、不会消灭资源压力 | 已选择，先验证 |
 | 纯 Descent | 更直接的成长、组合与战斗节奏 | 正面进入拥挤 co-op roguelite 竞争；长期资源规划退居其次 | Operation 不成立时的转向候选 |
 | 两个对等完整模式首发 | 覆盖两种心情 | 两套教程、节奏、平衡、内容、匹配人口、QA；通常超过“共享内核”省下的工作 | 目前拒绝作为制作默认 |
 
-单纯给 Operation 禁掉全部 Relic，会浪费现有组合方向；全部共享奖励池则会让两种资源承诺相互拆台。推荐边界与双倍资源反例见[经济系统](economy-and-support.md)。任何可持续战斗构筑仍应保持结果诚实；候选池准入与公开成本规则应在局前可知，不能临场偷改掉落、伤害或 Boss 抗性。
+单纯给 Operation 禁掉全部 Relic，会浪费现有组合方向；全部共享奖励池则会让两种资源承诺相互拆台。当前边界与双倍资源反例见[经济系统](economy-and-support.md)。任何可持续战斗构筑仍应保持结果诚实；候选池准入与公开成本规则应在局前可知，不能临场偷改掉落、伤害或 Boss 抗性。
 
 ## 为什么会爱、恨、退款、玩一百小时
 
@@ -64,18 +62,18 @@ VIS-006 · PROPOSED · 来源：本轮产品评审推断 E3；外部基线见[�
 
 “能改一切”吸引的是一小部分创作者。普通购买者先问今晚好不好玩、好友愿不愿意来。社区不会自动替一个不好玩的底座生产内容。God Build 让一人爽却让三人无事可做时，宣传视频和真实留存会相反。高规格枪感、程序地图、开放 SDK、无损大规模模拟、双视角和两种模式同时推进，等于把最难交付的东西排列成目录。
 
-12 个月应砍什么、具体伤害机制、Severity、实验阈值与 30/90/180 天否决关卡见[制作与风险](../production/roadmap-and-validation.md)。文档不能替代这些测试。
+范围控制、具体伤害机制、Severity、实验阈值与按依赖排列的否决关卡见[制作与风险](../production/roadmap-and-validation.md)。文档不能替代这些测试。
 ## 最新配装与重资产细化
 
 VIS-007 · DIRECTION · 来源：SRC-USER-2026-09-04-WEAPON-MODS、SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
-用户进一步希望固定入场配装、局内用下挂/稳枪/增伤等模块改造原武器，并加入固定资源、手持放下的团队重资产。推荐profile因此进一步收敛到WeaponModule/ToolModule/TeamProtocol，传统Relic与自动Fusion留Lab/未来候选；详见[Operation唯一模式参数](operations.md)与[修改合同](build-algebra.md)。先前广义Field Adaptation数量建议不是当前数值真相。
+用户进一步希望固定入场配装、局内用下挂/稳枪/增伤等模块改造原武器，并加入固定资源、手持放下的团队重资产。当前profile因此确定为WeaponModule/ToolModule/TeamProtocol，传统Relic与自动Fusion留Lab/未来候选；详见[Operation唯一模式参数](operations.md)与[修改合同](modifications-and-effects.md)。先前广义Field Adaptation数量建议不是当前数值真相。
 
-VIS-008 · DIRECTION · 来源：SRC-USER-2026-09-04-GUN-ONLY-CONDITIONAL。
+VIS-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-用户目前倾向GTFO-like、非Roguelike首发；语音转写中的“GTA4/GTF”按上下文均指GTFO-like。如果用户之后正式确认该产品方向，则首发移除Staff/Arcane，远程只保留枪械，Melee保留为前线与省弹的高风险工具。该前提尚未正式锁定，因此现在不得删除[战斗CMB-002](combat-and-arsenal.md)及Staff 3/6基线，也不得为可能发生的删除建立永久双轨、兼容层或两套首发平衡。最终裁决见DEC-012。
+首发远程武器为传统动能、电磁实体弹与有限Energy Block枪械。Staff/Spell及独立主武器近战谱系只在Lab/未来候选，不进入Operation制作清单；Quick Melee保留。旧条件分叉已由授权裁决，不维护旧运行时兼容分支。
 
 VIS-009 · DIRECTION · 来源：SRC-USER-2026-09-05-NODE-CLEARANCE-AND-PLANETARY-DESCENT；SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COMMUNITY-EVENT。
 
 Operation与Descent采用先后关系而非两个无关入口。Operation是产品核心：从壁垒任务板选择程序生成地图、随机主/支线和难度，进行可复玩的设施合同；基础游戏不显示节点版图或累计节点收复。准备发布Descent DLC时，才用一次全服务器联合行动统计节点恢复贡献，并在唯一正史中打通虚空兽、灼星种或借尸者真实行星端点。Descent随后把端点后的不同区域作为连续远征，提供更快构筑、更高战斗密度和Roguelike节奏；每次Run是新行动，不是时间循环。
 
-该连接解决叙事统一，不解决双模式的关卡、敌人、教程、平衡、匹配和QA成本。制作范围继续Operation-first：Descent必须先通过Combat Lab和三层原型Gate，再决定属于1.0后期内容、扩展或DLC；不得因世界观已经合理就恢复“两个对等完整模式首发”的默认方案。
+该连接解决叙事统一，不解决双模式的关卡、敌人、教程、平衡、匹配和QA成本。制作范围继续Operation-first：Descent必须先通过Combat Lab和三层原型Gate，再决定未来扩展的实际制作与商业形式；不得因世界观已经合理就恢复“两个对等完整模式首发”的默认方案。

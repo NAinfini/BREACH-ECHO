@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-UX
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 体验与可访问性设计
 canon_basis: "SRC-SSOT-2.0 §18、§31.3、§34；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE"
@@ -22,13 +22,13 @@ UX-002 · CANON · 来源：SRC-SSOT-2.0 §34.1–§34.2；来源属性：INHERI
 
 轻量局部导航+compass，Full Map只显示发现图、connector、队友/Ping/known objective，支持vertical/Fold；无全知敌人雷达、无未发现秘密图。知识获取归[世界](world-and-information.md)。
 
-UX-003 · DIRECTION · 来源：SRC-SSOT-2.0 §18.3、§18.8、§31.3。
+UX-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-SSOT-2.0 §18.3、§18.8、§31.3。
 
 按武器/输入自适应中等Aim Assist，Sniper低、近距Shotgun与Melee独立，Gyro减弱rotation，不改hitbox/弹道、不发现隐藏目标。字幕/SDH、关键提示双通道、低动态音频、低镜头晃动、非纯色信息、可简化Support输入但成本/结果相同。Streamer HUD展示少量Build核心、隐藏私人信息、无额外知识。
 
 ## 流程、状态与所有权
 
-UX-004 · PROPOSED · 来源：本轮扩写。
+UX-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 战斗层：目标+生命/弹药/工具+关键威胁；调查层：地图/Terminal/Cart事实；配装层：行为/成本/冲突；复盘层：因果/发现。打开菜单不暂停多人模拟，重要危机仍有双通道提示。
 
@@ -44,7 +44,7 @@ Authority给已知事实和可执行动作；Client拥有布局、文字大小�
 
 ## 模式、内容、边界
 
-UX-005 · PROPOSED · 来源：本轮扩写。
+UX-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 Operation重点显示团队资源、携带资产与任务后果，Lab才突出构筑链。长期制作是否保留自由TPS需DEC-005范围复核；本文不直接删源Canon。内容接口包含semantic priority、文字、图标、方向合法性、输入hint、无色编码、可访问替代。
 
@@ -56,7 +56,7 @@ UX-006 · TEST · 来源：Xbox XAG/Steam Deck方法，详见[研究](../researc
 
 从首个greybox就测controller-only、静音、灰度、低晃动、文字放大、Steam Deck分辨率。XAG是设计准则不是“通过合规认证”。字号/对比度/提示时长以具体硬件阅读测试决定；首批无口头帮助完成核心动作目标见玩家文档。
 
-正常：不知道Coupler位置时只有目标说明，Terminal查询后出现waypoint。失败：TPS看见墙后像素不自动标秘密。跨系统：自动Fusion在未来Lab先给消耗预览；推荐Operation改装以可见挂点和tradeoff表达，不弹未知吞噬惊喜。
+正常：不知道Coupler位置时只有目标说明，Terminal查询后出现waypoint。失败：TPS看见墙后像素不自动标秘密。跨系统：自动Fusion在未来Lab先给消耗预览；Operation改装以可见挂点和tradeoff表达，不弹未知吞噬惊喜。
 
 UX-007 · TEST · 来源：SRC-USER-2026-09-04-RESPONSIVE-GUNPLAY-CANCEL-WINDOWS；SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION。
 
@@ -64,7 +64,7 @@ UX-007 · TEST · 来源：SRC-USER-2026-09-04-RESPONSIVE-GUNPLAY-CANCEL-WINDOWS
 
 ## 壁垒任务板
 
-UX-008 · DIRECTION · 来源：SRC-USER-2026-09-05-PROCEDURAL-OPERATION-HUB-BOARD；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE；数据责任见[Operation OPS-011](operations.md)。
+UX-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-PROCEDURAL-OPERATION-HUB-BOARD；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE；数据责任见[Operation OPS-011](operations.md)。
 
 中央Hub任务板与快捷菜单读取同一Offer列表。默认卡片必须在进入配装前显示：区域、设施主题、主任务、支线、已知环境与敌对局势、奖励类型、预计长度、特殊/公共活动标记和当前难度。Descent发布联合行动使用文字、形状与图标共同区分，不能只靠颜色；普通程序合同不得伪装成会推进正史或节点版图。玩家选中Offer后再调整难度，界面逐项说明敌人、资源、复活、环境与奖励发生了什么变化，禁止只显示“敌人更强”。
 
@@ -77,3 +77,10 @@ Archive界面按事件、人物、设施、Faction与可信度筛选收藏，并
 UX-009 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-DEBRIEF-AND-REPLAY；SRC-USER-2026-09-05-DETAILED-STATS-LIGHTWEIGHT-LOCAL-REPLAY；SRC-USER-2026-09-05-POST-DEBRIEF-DISCARD；内容责任见[任务战报RPL-001至RPL-008](debrief-and-replay.md)。
 
 任务结束后立即显示团队战报，并提供观看回放入口。默认页先给结果、关键事件、潜行破坏和团队资源变化，完整数字在详细统计页按成员、武器、敌人、阶段与事件展开。潜行破坏卡必须写明时间、触发动作、直接警戒对象和单人/共同/无法归因状态，并可跳到简化回放。统计图必须有文字/表格等价表达，时间线事件不能只靠颜色；控制器可完成筛选、拖动、变速、跟随成员、旋转/缩放地图和退出。玩家确认返回Hub或再开一局前显示不保留提示；确认后删除本局战报和回放，索引或文件处理不得锁住离开流程。
+
+
+## 本次定稿：执行边界
+
+运行时统一uGUI/TMP。主流程固定为启动/语言与无障碍→主菜单→Hub任务板/选人配装→Lobby/包同步→任务HUD→暂停设置/社交→结算/临时回放→Hub。每页必须有loading、empty、error、offline、controller focus和返回路径。中英文本为首发基线；字幕/语音独立，重点危险双通道，字号缩放/重绑/色觉友好/减少运动闪光/镜头摇晃可调。TPS与Bot仍是首发合同，不以原型只做FPS为由删除。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

@@ -1,7 +1,7 @@
 ---
 doc_id: DDD-0012
 doc_type: decision
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 网络与Gameplay架构负责人
 canon_basis: "SRC-USER-2026-09-05-REPLICATION-ARCHITECTURE；DDD-0010；DDD-0011"
@@ -317,3 +317,7 @@ Gameplay/Content代码应声明需要复制的语义状态与事件，不自行�
 **下一正式网络 Gate：Lag Compensation / Server Rewind Architecture。**
 
 先确定Hitscan、Projectile与移动目标在延迟下如何使用Command时间和Authority历史做公平命中验证，再继续Host Migration具体协议与Transport Provider选择。
+
+## 2026-09-05 implementation closure
+
+本文件已确认的引擎/内容/命令/60Hz/复制合同继续有效；当时列出的provider、回溯、迁移算法、脚本、旧hash和UI未决项现在由DDD-0015–0017与其责任文档关闭。历史段落用于追溯，不要求重复询问所有者；具体TEST尚未执行。

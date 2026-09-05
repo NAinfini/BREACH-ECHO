@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-ART
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 美术指导
 canon_basis: "SRC-SSOT-2.0 §26；SRC-USER-2026-09-05-UNITY-ENGINE-LOCK；SRC-USER-2026-09-05-UNITY-URP-GAMEOBJECT-FIRST；本轮美术讨论"
@@ -26,7 +26,7 @@ ART-006 · DIRECTION · 来源：本轮用户在单人开发、购入资产、Un
 
 ## 视觉语法候选
 
-ART-002 · PROPOSED · 来源：本轮美术假设，非已制作资产。
+ART-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮美术假设，非已制作资产。
 
 | 对象 | 形状/材料候选 | 必须服务的玩法 | 不应发生 |
 |---|---|---|---|
@@ -36,7 +36,7 @@ ART-002 · PROPOSED · 来源：本轮美术假设，非已制作资产。
 | Weapon Module | 挂点、轮廓与动作可读变化 | 带入武器的改装身份 | 掉落等级颜色代替行为 |
 | Team Ordnance | 明显双手体量、耗材/弹药显示 | 队友认出需要掩护的携带者 | 外观大但行为等同普通枪 |
 
-ART-007 · DIRECTION · 来源：本轮单人开发与资产采购讨论。
+ART-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮单人开发与资产采购讨论。
 
 资产生产遵守“买通用、做品牌”的原则：人类工业设施、管线、梯道、容器、普通机械、基础枪模、Humanoid动画和通用VFX可以大量采购/改造；四名外勤角色的关键轮廓、Human armor/exoskeleton language、核心武器外壳语言、虚空兽主体轮廓、筑路者结构与界桥必须有更强原创控制。不得把不同Marketplace完整角色/怪物原样并排后只靠统一后处理冒充同一美术体系。
 
@@ -48,7 +48,7 @@ ART-008 · CANON · 来源：SRC-USER-2026-09-05-UNITY-URP-GAMEOBJECT-FIRST；�
 
 ## 流程、状态与所有权
 
-ART-003 · PROPOSED · 来源：本轮扩写。
+ART-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 先三张关键帧候选→同主题greybox应用→无Logo辨识与战斗可读性测试→批准一种视觉语法→才批量制作。资源资产归内容包，碰撞/命中真相归模拟；broken/sealed/charged等状态驱动呈现，不能由贴图反推规则。
 
@@ -56,7 +56,7 @@ ART-003 · PROPOSED · 来源：本轮扩写。
 
 ## 模式、内容与边界
 
-ART-004 · PROPOSED · 来源：本轮扩写。
+ART-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮扩写。
 
 Operation密度服务视线、资源、路线；Lab高效果密度仍遵守同一形状身份。内容卡包括轮廓、材质、缩略可读性、LOD、低色彩辨识、动画姿势、危险状态、叙事理由。多人VFX须让队友区分谁创造了当前机会；表现密度可降，命中体积不随LOD缩水。色觉差异、夜间模式、Deck小屏是早期测试条件。
 
@@ -67,3 +67,10 @@ ART-005 · TEST · 来源：SRC-CHATGPT-REVIEW-1.0 §4.9、§6；本轮适配。
 三张无Logo/HUD关键帧给10名未知项目者各看5秒；候选通过目标≥7人识别同一视觉世界，<3人只说generic sci-fi。另以静态灰度图测试门状态、敌人轮廓、可交互物。此为小样本否决启发，不是市场统计。
 
 正常：关门后的机械锁位变化让玩家无需看HP条知道状态。失败：Fold漂亮但挡住狙击预兆，删遮挡层而不是延长敌人前摇掩盖视觉错误。完整palette/fonts/style仍OPEN，不凭文字宣称Visual Gate通过。
+
+
+## 本次定稿：执行边界
+
+Stylized Industrial Realism被选择为制作方向，实际视觉样张与人物外观仍需OWNER-03。环境先灰盒和单一kit统一，规范、许可和图像→可动资源完整管线归资产生产文档；未选palette/字体不是让用户选技术，开发者先用合法系统字体和中性测试材质证明可读性，最终品牌视觉才付费生产。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

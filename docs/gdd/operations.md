@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-OPERATIONS
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: Operation模式设计
 canon_basis: "SRC-SSOT-2.0 §4A；最新用户Operation与武器改装意图"
@@ -14,9 +14,9 @@ depends_on: ["vision.md", "world-and-information.md"]
 
 进入失控设施，带着事先选好的装备面对资源、路线和团队执行问题。本文仅拥有模式旅程与配置差异，共享战斗、经济、世界、生命规则分别归其系统文件。
 
-OPS-001 · CANON · 来源：SRC-SSOT-2.0 §4A.1–§4A.2、§4A.15。
+OPS-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-源基线：一个Run是连续Operation/Facility/Mission，无玩家可见Layers，资源/门/Cart/Knowledge/Support/Optional后果从插入持续到结束；Mission比Build更核心。Relic较少、Fusion稀有，作为Field Adaptation改变解决办法；不要求频繁三选一。移除Relic后任务本身仍须好玩。
+Run是一个连续Operation/Facility/Mission，无玩家可见Layers；资源、门、Cart、Knowledge、Support和Optional后果连续保留。Mission比改装更核心；采用有限Field Modification，不启用自动Fusion或无限Relic池。移除改装后的同任务对照仍应有趣。
 
 OPS-002 · CANON · 来源：SRC-SSOT-2.0 §4A.8、§4A.16。
 
@@ -24,17 +24,13 @@ OPS-002 · CANON · 来源：SRC-SSOT-2.0 §4A.8、§4A.16。
 
 ## 最新 REVIEW RECOMMENDATION
 
-OPS-003 · PROPOSED · 来源：SRC-USER-2026-09-04-OPERATION-FOCUS、SRC-USER-2026-09-04-MODULAR-REFINEMENT；本轮武器改装补充。
+OPS-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-强烈建议唯一首发核心为Operation。入场前确定loadout identity；局内不做彩色等级换枪循环，而让带入武器获得少量Field Modification/Calibration。面向玩家区分WeaponModule、ToolModule、TeamProtocol；底层统一ModificationDefinition/Effect，不把配件展示成不可见Relic。
-
-Operation推荐profile不启用自动Fusion；物理配件不被无预告吞掉，传统Relic/无限积累/指数Proc/闭环God Build留内部Lab或未来Descent。源文的自动Fusion仍是继承基线，变更待DEC-002批准。新的可装配操作本身可以选择/取消；未来工作台合成若要加入，必须另审，不能借“与Fusion同底层”偷渡。
-
-推荐高紧张合作任务而非固定解谜：明确目标+不确定局势+稀缺资源+团队执行。固定谜底可能一次掌握，系统选择与执行压力才有重复空间。纯无改装Operation仍作为对照；改装没有带来更好复玩时应删除，不能为未来接口硬留玩法。
+唯一首发Operation；入场锁装备身份，局内以WeaponModule/ToolModule/TeamProtocol改变解法。标准长局初值每玩家2保证+1可选机会；安装预览后3s在合法维护点提交，同挂点替换、旧件留世界。原自动Fusion仅Lab/FUTURE，不能吞掉Operation配件。数量和挂点归[测试参数](../production/test-profile.md)，统一数学归[修改与效果](modifications-and-effects.md)。
 
 ## 玩家旅程与状态
 
-OPS-004 · PROPOSED · 来源：本轮模式扩写。
+OPS-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮模式扩写。
 
 | 阶段 | 玩家主要问题 | 使用的共享系统 | 结束证据 |
 |---|---|---|---|
@@ -52,7 +48,7 @@ OPS-009 · CANON · 来源：SRC-USER-2026-09-05-LEGACY-ID-LOW-CLEARANCE；权�
 
 Operation小队使用旧制人类身份进入断网设施。凭证通常足以通过基础识别，却只能取得低级、局部或过期权限；壁垒无法在远端直接接管设施。Recon与Execution阶段因此包含现场确认旧身份映射、恢复设施内权限链或在权限不足时选择替代路线。每项任务必须明确起始权限、可恢复权限及越权后果，不能把“权限不足”当作任意锁门借口。
 
-OPS-010 · DIRECTION · 来源：SRC-USER-2026-09-05-CARRIER-REBOOT-PHYSICAL-RECOVERY；SRC-USER-2026-09-05-LIMITED-NODE-DEFENSE-ASSETS；SRC-USER-2026-09-05-REGION-RISK-REWARD-PROFILES；SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES。
+OPS-010 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-CARRIER-REBOOT-PHYSICAL-RECOVERY；SRC-USER-2026-09-05-LIMITED-NODE-DEFENSE-ASSETS；SRC-USER-2026-09-05-REGION-RISK-REWARD-PROFILES；SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES。
 
 设施网络恢复是Operation任务族之一，不代表玩家正在永久收复一个界桥节点。执行该任务时，小队进入失联设施建立Terminal Uplink、读取载波、重写本地人类协议并恢复设施控制。成功必须改变本局可观察状态，包括通信恢复、地图/任务信息更新，以及符合权限的炮塔、机器人、门和资源库转为己方；失败或中断不得伪装成设施已经恢复。界桥节点及其长期清场只属于世界观，基础游戏不显示或累计节点进度。
 
@@ -64,7 +60,7 @@ Operation是从壁垒中央Hub任务板选择的可复玩合同。每份任务Of
 
 所有Operation都应让门、电力、路线、防御、敌人或资源在本局内真实响应玩家行动，但基础游戏不保存玩家可见的节点版图、清场状态或账号剧情阶段。程序合同负责侦察、维修、回收、运输、压制、样本、救援或防御；特殊合同可以提供手制事件或公共世界事件内容，但不构成必须按顺序完成的个人主线。可选故事发现进入玩家Archive，节点统计仅在OPS-013定义的Descent发布联合行动期间启用。
 
-五档难度沿用ENC-003，选择发生在锁定任务后、进入任务前；难度不得改变任务事实或封锁核心故事收藏。它只调整公开的敌人组合与协同、资源/复活压力、环境约束和可选变异，并可提供透明的结算倍率或挑战资格；具体倍率仍OPEN。重要故事收藏不得因任务板刷新、随机Seed或现实时间活动永久错过；任务板Offer数量、刷新触发及是否允许手动刷新仍OPEN。
+五档难度沿用ENC-003，选择发生在锁定任务后、进入任务前；难度不得改变任务事实或封锁核心故事收藏。它只调整公开的敌人组合与协同、资源/复活压力、环境约束和可选变异，并可提供透明的结算倍率或挑战资格；具体初始外观奖励倍率见测试参数，核心知识和任务事实不受倍率改变。重要故事收藏不得因任务板刷新、随机Seed或现实时间活动永久错过；任务板采用6个Offer，回Hub/完成合同刷新，出发前可免费手动整批刷新；锁定Run后不可重掷，初值见测试参数。
 
 OPS-012 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-OPERATION-MISSION-PORTFOLIO-PCG；详细生成见[任务MIS-016–MIS-017](missions-and-spaces.md)。
 
@@ -91,35 +87,32 @@ OPS-013 · DIRECTION · 来源：SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COM
 
 ## 模式配置与参数唯一表
 
-| 项目 | 值/状态 | 来源与冲突 |
+| 项目 | 当前合同 | 唯一责任 |
 |---|---|---|
-| 源Operation时长 | 约40–70分钟 · DIRECTION | SRC-SSOT-2.0 §4A.1、§40 |
-| 用户近期目标 | 40–50分钟 · DIRECTION | SRC-USER-2026-09-04-MODULAR-DUALMODE |
-| 本轮试制推荐 | 35–45分钟 · TEST，非正式改Canon | 本轮评审；需验证长局成本 |
-| 源有意义Relic/player | 自然约2–4个 · TEST | SRC-SSOT-2.0 §4A.15；现需重审 |
-| 最新Field Modification/Calibration | 每玩家约2–4次/局 · TEST | 本轮武器配件推荐；替代前轮3–5次广义适应提案 |
-| 推荐主奖励 | WeaponModule/ToolModule/TeamProtocol · PROPOSED | 遵守经济能力边界 |
-| 推荐自动Fusion | 不在Operation profile启用 · PROPOSED | 与源§9.5的全局表述冲突，待确认 |
-| 入场槽位 | [玩家参数](player-and-input.md) | 用户“两枪一工具”与源“两Weapon两Utility一Active”未决 |
+| 标准长局 / Demo / 首个灰盒 | 40–50 / 15–25 / 10–15分钟体验目标，TEST | [首发范围](../production/release-scope.md) |
+| 现场改装机会与挂点 | 2保证+1可选初值；明确安装替换 | [测试参数](../production/test-profile.md) |
+| 自动Fusion / 无限Relic | Operation禁用；Lab/FUTURE隔离 | [修改与效果](modifications-and-effects.md) |
+| 入场槽位 | 2枪 / 1工具 / 1自由战术模块 | [玩家合同](player-and-input.md) |
+| 任务板与难度倍率 | 六Offer与免费局前刷新；倍率仅允许外观收益 | [测试参数](../production/test-profile.md) |
 
 ## 内容接口与边界
 
-OPS-005 · PROPOSED · 来源：本轮模式扩写。
+OPS-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮模式扩写。
 
 首个模板采用[BLACKSTART](../content/blackstart.md)，主角是Terminal信息与Power Cart，Door/Support作支撑；不额外塞Boss、Predator或谜题大全。所有主线能无Bot单人顺序完成。已完成目标后只关闭该目标可重复奖励来源，不能偷删未取得且设计承诺的资源；世界恶化必须有实际路径与反馈。若能稳定farm，先修奖励来源/可见世界行为，不加隐藏处决表。
 
 ## 正常、失败与跨系统示例
 
-OPS-006 · PROPOSED · 来源：本轮模式扩写。
+OPS-006 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮模式扩写。
 
 正常：队伍选择稳枪配件牺牲ADS速度，然后用通风换得较远视线；装备与路线共同产生计划。失败：最后医疗被早耗，终局仍有合法近战/封门解法但团队执行失败；结算保留已上传知识，不回档。跨系统：一人选下挂结构工具，能更有效破坏普通可破结构，但不能绕过需要任务Cell的关键门。
 
-## 验证与 OPEN
+## 验收与尚未实测项
 
 OPS-007 · TEST · 来源：本轮模式验证建议。
 
-以相同枪感/敌人/时长比较“纯战斗任务”“设施选择Operation”“设施选择+少量改装”；记录自发复玩、后果复述、等待、资源争执，而非问玩家喜欢多少系统。Week12微BLACKSTART后若任务层未明显提高复玩，停止扩建设施，回到分叉决策。准确Gate归[制作计划](../production/roadmap-and-validation.md)。
+以相同枪感/敌人/时长比较“纯战斗任务”“设施选择Operation”“设施选择+少量改装”；记录自发复玩、后果复述、等待、资源争执，而非问玩家喜欢多少系统。M2微BLACKSTART验收后若任务层未明显提高复玩，停止扩建设施，回到分叉决策。准确Gate归[制作计划](../production/roadmap-and-validation.md)。
 ## Team Ordnance 的模式位置
 
-OPS-008 · DIRECTION · 来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
+OPS-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
 临时团队重武器是任务中的强力世界资产，能推动Breach、短时火力优势与Predator Reversal，但不改变常规loadout identity。玩家带入的枪继续是主角，特殊资产通过双手与空间成本制造需要队友的机会。详细机制归战斗，首个可搭建分支在BLACKSTART。

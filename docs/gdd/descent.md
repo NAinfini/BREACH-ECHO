@@ -1,18 +1,18 @@
 ---
 doc_id: GDD-DESCENT
 doc_type: gdd
-stage: DRAFT
+stage: FUTURE
 updated: 2026-09-05
 owner_role: 候选模式设计
 canon_basis: "SRC-SSOT-2.0 §4B、§37、§40、§42；最新Operation优先建议；SRC-USER-2026-09-05-FOUR-LIVING-FIELD-SQUAD-NONPROGRESSIVE-STORY"
-depends_on: ["build-algebra.md", "narrative-bible.md"]
+depends_on: ["modifications-and-effects.md", "narrative-bible.md"]
 ---
 
 # Descent：保留基线与未来候选
 
 ## 玩家目的与范围
 
-为希望快速形成组合、连续转化并突破战斗规模的玩家提供另一种节奏。本文件保留源基线，不构成首发承诺；当前推荐先用内部Combat Lab验证通用接缝。
+为希望快速形成组合、连续转化并突破战斗规模的玩家提供另一种节奏。本文件保留源基线，不构成首发承诺；已选择未来扩展，内部Combat Lab仅按实际契约测试需要使用。
 
 DES-001 · CANON · 来源：SRC-SSOT-2.0 §4B.1–§4B.5、§37、§40。
 
@@ -28,7 +28,7 @@ DES-003 · PROPOSED · 来源：本轮Operation优先评审。
 
 Descent不进入当前1.0承诺。内部[Combat Lab](../technical/modding-and-toolchain.md)只有10分钟、无任务、高密度奖励的第二消费者，用来证明Kernel没有焊死Operation及测试Proc；它不是公开Descent、完整三层内容或免费第二游戏。
 
-未来批准后流程为局前profile→Layer1保证构筑连接→层间选择/恢复→后续转化→终局/继续深潜→结果。共享数学、资源事务、融合、死亡规则只引用[Build](build-algebra.md)、[经济](economy-and-support.md)、[生命](survival-and-recovery.md)。
+未来批准后流程为局前profile→Layer1保证构筑连接→层间选择/恢复→后续转化→终局/继续深潜→结果。共享数学、资源事务、融合、死亡规则只引用[Build](modifications-and-effects.md)、[经济](economy-and-support.md)、[生命](survival-and-recovery.md)。
 
 ## 状态、所有权与奖励保证
 
@@ -63,7 +63,7 @@ Ammo/Medical/Utility补给与Support成长更宽松，可按战斗/目标获得�
 | 先行层数 | 3 · TEST | SRC-SSOT-2.0 §42 Phase4 |
 | 内部Lab时长 | 10分钟 · TEST候选 | 本轮架构契约实验，不是Descent层数 |
 | 每层奖励数/恢复量/Endless曲线 | OPEN | SRC-SSOT-2.0 §41.5 |
-| 是否首发/是否制作 | OPEN，当前推荐延后 | DEC-001 |
+| 是否首发/是否制作 | 不进入基础1.0；未来另过制作Gate | DDD-0013/0018 |
 
 ## 示例与验证
 
@@ -96,3 +96,8 @@ DES-010 · DIRECTION · 来源：SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COM
 全服务器联合行动是Descent发布事件，不是基础游戏常驻系统。活动期间，指定Operation贡献节点恢复进度；达到阶段阈值后，Hub与任务板依次显示路线识别、通信恢复、前沿防御建立和端点稳定，最终开放第一个Descent目的地。节点名称与进度只在该活动叙事中出现，活动结束后不保留为日常地图清单或赛季刷条。
 
 活动进度可以影响开放仪式与纪念记录，不能决定已购买内容是否永远可玩。即使社区活跃度低，也必须按预先公开的确定方案完成路线；活动结束后的玩家直接继承“端点已开放”的公共历史。否则这不是宏大世界事件，只是开发商拿服务器人数绑架DLC入口。
+
+
+## FUTURE状态如何解释
+
+本文件的奖励、层Boss、Endless、活动阈值等OPEN均是未来产品实验，不是当前基础版待所有者选择的技术问题。基础游戏不需要实现这些系统才能通过文档或M0。未来启动时先用单一行星、三层原型证明内容/节奏，再按五层历史目标扩展；未通过不对外承诺日期或销量。

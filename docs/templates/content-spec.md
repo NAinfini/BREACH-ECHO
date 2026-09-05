@@ -1,8 +1,8 @@
 ---
 doc_id: TPL-CONTENT
 doc_type: template
-stage: DRAFT
-updated: 2026-09-04
+stage: TEMPLATE
+updated: 2026-09-05
 owner_role: 设计流程维护
 canon_basis: "本轮模块化文档实施包"
 depends_on: ["../governance/authoring-guide.md"]
@@ -42,3 +42,8 @@ depends_on: ["../governance/authoring-guide.md"]
 ## 发布/依赖
 包、依赖、权限、hash/版本、成熟度；正式内容、Lab、未来模式与归档用途分开。
 
+
+
+## 当前生产补充
+
+内容必须声明Operation/Lab/FUTURE的准入，数值TEST不等于发布完成；购入/AI来源记录provenance和许可，禁止未经允许提交原资源到本公开仓库。普通已选行为可DECIDED，人物等创作身份按OWNER-01审阅。

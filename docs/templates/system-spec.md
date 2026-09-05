@@ -1,8 +1,8 @@
 ---
 doc_id: TPL-SYSTEM
 doc_type: template
-stage: DRAFT
-updated: 2026-09-04
+stage: TEMPLATE
+updated: 2026-09-05
 owner_role: 设计流程维护
 canon_basis: "本轮模块化文档实施包"
 depends_on: ["../governance/authoring-guide.md"]
@@ -48,3 +48,8 @@ depends_on: ["../governance/authoring-guide.md"]
 ## 验证与OPEN
 假设、最小原型、样本、指标、通过/失败阈值、失败后决定、证据位置；从未执行不得标通过。
 
+
+
+## 授权后的写作补充
+
+普通已裁决选择可标DECIDED并链接DDD，不必保留PROPOSED等待所有者技术投票。参数选TEST初值并给单位/测量条件；只有真正创作/商业/明确需求变更指向owner-decisions。stage用BASELINE/REVIEW/FUTURE/ARCHIVE/TEMPLATE，不能把BASELINE当游戏已实现。

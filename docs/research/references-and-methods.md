@@ -1,8 +1,8 @@
 ---
 doc_id: RESEARCH-METHODS
 doc_type: research
-stage: DRAFT
-updated: 2026-09-04
+stage: BASELINE
+updated: 2026-09-05
 owner_role: 设计研究负责人
 canon_basis: "SRC-SSOT-2.0 §3、§38；外部一手资料"
 depends_on: ["../sources/evidence-register.md"]

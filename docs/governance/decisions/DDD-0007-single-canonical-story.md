@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0007
 doc_type: decision
-stage: DRAFT
+stage: ARCHIVE
 updated: 2026-09-05
 owner_role: 产品与系统设计负责人
 canon_basis: "SRC-SSOT-2.0；本轮用户讨论"
-depends_on: ["../decisions-and-questions.md"]
+depends_on: ["../decision-register.md"]
 ---
 
 # 单一客观正史与非递进玩家故事
@@ -43,3 +43,8 @@ CANON：官方客观历史唯一；基础游戏玩家故事非递进；固定四
 ## Supersedes / next gate
 
 覆盖旧§25.9五幕候选及故事stage幂等工作；下一关卡是完成四名队员、首批收藏集合与成就命名，并用程序任务垂直切片验证对白不装傻、碎片位置合理且不会快速重复。
+
+
+## 2026-09-05 disposition / 历史状态
+
+本文件保留当时的选项和理由，旧OPEN不是当前未决入口。产品/装备/技术/制作问题已由DDD-0013–0018决定，人物与完整故事仍通过OWNER-01审阅；请读[当前决策登记](../decision-register.md)。不再按本文旧日期或未批准推荐直接实施。

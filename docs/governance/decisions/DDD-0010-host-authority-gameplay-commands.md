@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0010
 doc_type: decision
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 网络与Gameplay架构负责人
 canon_basis: "SRC-SSOT-2.0 §21、§36；SRC-USER-2026-09-05-HOST-AUTHORITY-GAMEPLAY-COMMANDS"
-depends_on: ["../decisions-and-questions.md", "../../technical/network-and-persistence.md", "DDD-0009-agent-first-modding-runtime.md"]
+depends_on: ["../decision-register.md", "../../technical/network-and-persistence.md", "DDD-0009-agent-first-modding-runtime.md"]
 ---
 
 # Host Authority 与 Gameplay Command Replication
@@ -202,3 +202,8 @@ Transport 可以是 Steam/EOS/其他 provider adapter 的实现细节，但不�
 9. Dedicated Server 的包装、部署和管理体验。
 
 **下一正式设计 Gate：Replication Architecture。** 先裁决 Snapshot + Delta + Event、state baseline / dirty mask、interest set / dormancy 与可靠性语义，再继续细化 Rewind、Host Migration 和 Transport Provider。
+
+
+## 2026-09-05 implementation closure
+
+本文件已确认的引擎/内容/命令/60Hz/复制合同继续有效；当时列出的provider、回溯、迁移算法、脚本、旧hash和UI未决项现在由DDD-0015–0017与其责任文档关闭。历史段落用于追溯，不要求重复询问所有者；具体TEST尚未执行。

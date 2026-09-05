@@ -1,11 +1,11 @@
 ---
 doc_id: DDD-0002
 doc_type: decision
-stage: DRAFT
-updated: 2026-09-04
+stage: ARCHIVE
+updated: 2026-09-05
 owner_role: 产品与系统设计负责人
 canon_basis: "SRC-SSOT-2.0；本轮用户讨论"
-depends_on: ["../decisions-and-questions.md"]
+depends_on: ["../decision-register.md"]
 ---
 
 # 模块化与公开API
@@ -44,3 +44,8 @@ DIRECTION：用户模块化偏好明确；PROPOSED：具体接缝、权限与冻
 
 没有已批准替代架构；Week8 Operation/Lab不改Kernel切规则，slice后精选作者验证。
 
+
+
+## 2026-09-05 disposition / 历史状态
+
+本文件保留当时的选项和理由，旧OPEN不是当前未决入口。产品/装备/技术/制作问题已由DDD-0013–0018决定，人物与完整故事仍通过OWNER-01审阅；请读[当前决策登记](../decision-register.md)。不再按本文旧日期或未批准推荐直接实施。

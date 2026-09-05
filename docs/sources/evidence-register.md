@@ -1,7 +1,7 @@
 ---
 doc_id: SRC-REGISTER
 doc_type: evidence
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 设计研究负责人
 canon_basis: "SRC-SSOT-2.0 §0；本轮用户消息"
@@ -483,7 +483,7 @@ SRC-USER-2026-09-05-COOL-CODENAME-DIRECTION · 用户语气纠正 · DIRECTION�
 
 SRC-CODEX-2026-09-05-FOUR-CHARACTER-ROSTER-V1 · 助手角色方案 · PROPOSED FOR USER VERDICT。
 
-助手现提出`断桥/回声/铁砧/寒蝉`四个事故型代号候选，四人分别从安全规程、技术求知、生存账本和污染边界解释共同核心矛盾，并补充个人盲区、道德边界、六组队内关系、收藏链、程序对白规则和反刻板验收。美术与身体设定已经依用户纠正从本稿移除。助手同时建议把Signature Active从人物解绑为可选战术模块，避免Seat变成职业与强度选择；代号、人物内容与解绑建议都尚未获得用户批准。唯一完整候选见[角色v1](../content/character-roster-v1.md)。
+助手现提出`断桥/回声/铁砧/寒蝉`四个事故型代号候选，四人分别从安全规程、技术求知、生存账本和污染边界解释共同核心矛盾，并补充个人盲区、道德边界、六组队内关系、收藏链、程序对白规则和反刻板验收。美术与身体设定已经依用户纠正从本稿移除。助手同时建议把Signature Active从人物解绑为可选战术模块，避免Seat变成职业与强度选择；代号、人物内容与解绑建议都尚未获得用户批准。唯一完整候选见[角色v1](../content/characters.md)。
 
 SRC-CODEX-2026-09-05-OBJECTIVE-HISTORY-CURRENT-CANDIDATE · 助手当前完整历史提案 · PROPOSED FOR USER APPROVAL。
 
@@ -492,3 +492,12 @@ SRC-CODEX-2026-09-05-OBJECTIVE-HISTORY-CURRENT-CANDIDATE · 助手当前完整�
 SRC-USER-2026-09-05-GAME-WORKING-TITLE · 用户一手决定 · DIRECTION。
 
 用户选择中文《裂界残响》、英文BREACH: ECHO作为游戏当前工作标题，并以“for now”明确保留以后更改的可能。该决定不等于最终发行名冻结或法律清查完成；唯一标题状态见[世界命名NAM-008](../gdd/world-naming.md)。
+
+
+## SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION
+
+类型：用户直接授权；日期：2026-09-05；适用范围：本次GitHub游戏文档定稿与后续普通设计/技术裁决。
+
+用户请求查看BREACH ECHO仓库、使用skills、完成整个游戏文档，说明自己不懂制作或编码游戏，要求助手选择明确赢家而非每件事等待本人；确实需要本人决定的事项保留。用户要求名称合理、后续参与者能完整读取与接手。
+
+DDD-0013–0018中的具体技术/系统选择是助手在此授权下的决定，不是用户曾逐字说过。没有授权花钱、公开发布游戏、替其同意合同或伪造创作批准。

@@ -1,6 +1,6 @@
 ---
 doc_id: GOV-OWNER
- doc_type: governance
+doc_type: governance
 stage: BASELINE
 updated: 2026-09-05
 owner_role: 项目所有者

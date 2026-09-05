@@ -1,8 +1,8 @@
 ---
 doc_id: GDD-WORLD-NAMING
 doc_type: gdd
-stage: DRAFT
-updated: 2026-09-04
+stage: BASELINE
+updated: 2026-09-05
 owner_role: 世界观命名设计
 canon_basis: "SRC-USER-2026-09-04-WORLD-NAMING-SYSTEM；SRC-USER-2026-09-04-WORLD-NAMING-SELECTION-REJECTED；SRC-USER-2026-09-04-WORLD-NAMING-CHINESE-SELECTION；SRC-USER-2026-09-05-GAME-WORKING-TITLE；本轮碰撞初筛"
 depends_on: ["narrative-bible.md", "../sources/evidence-register.md"]

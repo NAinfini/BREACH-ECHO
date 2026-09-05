@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-PROGRESSION
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 进度设计
 canon_basis: "SRC-SSOT-2.0 §4A.16、§24；SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE"
@@ -14,27 +14,27 @@ depends_on: ["economy-and-support.md"]
 
 失败仍留下发现和理解，成功让世界承认任务完成；账号不会靠永久伤害数字逼新玩家先刷级。此文件拥有上传与账户结算，Support经济另见[资源](economy-and-support.md)。
 
-PRG-001 · CANON · 来源：SRC-SSOT-2.0 §24.1、§24.3。
+PRG-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-永久成长是横向：Character、Weapon/Utility/Relic/Spell池资格、cosmetic/title、Knowledge/Archive、Fusion与Operation发现、Test Chamber、challenge/history/mod内容。无必需永久战斗属性，无永久装备仓把局内强武器/Relic/Spell/Utility带入下一局；Build快照可保存和展示。
+官方四人及基础可用装备从起点可选，不靠刷永久战力解锁主任务能力。长期进度是武器/工具/模块的横向选项、外观/称号、Archive、知识、挑战和玩家掌握。无永久伤害/血量升级、无把Run强武器/资源存入跨局装备仓；Saved Loadout只保存合法定义选择和外观，不保存局内改装/弹药。Lab的Fusion/Spell发现不混入Operation能力门锁。
 
 PRG-002 · CANON · 来源：SRC-SSOT-2.0 §4A.16。
 
-失败保留已上传/Banked Knowledge/Data的100%、Cosmetic/Fusion Discovery；Run Weapon/Relic/Spell/Utility/Prototype不永久继承，Mission Completion Bonus失败无。代币失败比例是测试而非保证。成功与失败结果都须有可追踪凭据。
+失败保留已上传/Banked Knowledge/Data的100%和已合法入账的外观/收藏；Run枪械实例、Modification、工具资源与Prototype不永久继承，失败无Mission Completion Bonus，未撤离废料收益0%。不因一次任务失败撤销此前合法账号解锁。Lab的Fusion发现是隔离测试数据，不写官方Operation解锁。成功/失败均有可追踪幂等凭据。
 
-PRG-003 · DIRECTION · 来源：SRC-SSOT-2.0 §24.2、§24.4。
+PRG-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018；原规则历史保留于Git。
 
-Archive Credits命名/结算待统一；壁垒是物理Hub+快捷菜单，服务不强迫反复跑NPC，Archive做知识调查，Test Chamber复用真实Scenario，战利品/历史/外观可展示。
+唯一可消费外观货币名称为外观信用点，来自成功撤离且未用于Support的合法废料；Knowledge/字形/筑路者资料不是货币，不沿用含糊Archive Credits。壁垒实体Hub和快捷菜单共享任务/配装/Archive/Test Chamber数据，不强迫跑NPC。完整战报/回放不保留历史，长期Archive和成就不是战报录像。
 
 ## 玩家流程
 
-PRG-004 · PROPOSED · 来源：本轮系统扩写。
+PRG-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 取Data→团队获得当局Support价值→到明确上传节点→看上传到账→结束页分别列已永久存入、仅本局、任务完成奖励、失败损失→回壁垒读发现/解锁。上传知识不第二次增加Support；一份数据的两种用途使用关联凭据但不同账本。
 
 ## 状态与数据所有权
 
-PRG-005 · PROPOSED · 来源：本轮系统扩写。
+PRG-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 Session authority持有CollectedData/UploadTransaction/ResultID；Account处理StructuredClaim，Host不能写其他账号。知识ID与用户资格组合成幂等claim key。团队收集的上传知识候选按上传时在场seat及其此前参与凭据授予资格，后加入不追溯所有历史；该公平规则待实测。
 
@@ -49,9 +49,9 @@ Session authority持有CollectedData/UploadTransaction/ResultID；Account处理S
 
 ## 模式、内容与边界
 
-PRG-006 · PROPOSED · 来源：本轮系统扩写。
+PRG-006 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
-Operation在前线设施的合法上传点提交数据；Descent可按层bank但是否首发由模式决策控制。Account unlock可以只扩充可选池，不强迫永久把玩家偏好池稀释；具体pool策展OPEN。故事关键证据与普通资源ID分开，不能卖给商店或当耗材。
+Operation在前线设施的合法上传点提交数据；Descent可按层bank但是否首发由模式决策控制。Account unlock可以只扩充可选池，不强迫永久把玩家偏好池稀释；玩家在Hub选择已解锁的合法装备，不强迫把不喜欢的横向解锁加入随机必选池。故事关键证据与普通资源ID分开，不能卖给商店或当耗材。
 
 死亡前未提交上传仍未bank，迁移冻结不改变资格；上传与Wipe同帧按commit序，不能“界面点过就算”。Account拒绝claim时显示具体待处理状态。离队不复制Run实例，已banked资格不因后来换Host丢失。单人离线须有可验证本地结构化账，不依赖持续联网才能正常玩。
 
@@ -60,13 +60,13 @@ Operation在前线设施的合法上传点提交数据；Descent可按层bank但
 | 参数 | 值/状态 | 来源 |
 |---|---|---|
 | 失败banked knowledge保留 | 100% · CANON | SRC-SSOT-2.0 §4A.16 |
-| 失败Operation/Archive代币 | 约成功应得50% · TEST | SRC-SSOT-2.0 §4A.16、§40 |
-| Upload节点频率/一次用时 | OPEN | 不以任意数字假装解决长局失败 |
+| 失败未撤离废料收益 | 0% · DECIDED；旧50%测试停止 | DDD-0014；已banked知识仍100% |
+| Upload节点频率/一次用时 | 标准长局至少中段/撤离前；3s · TEST | 测试参数；不宣称已解决长局失败 |
 | 永久战斗属性 | 不提供必需数值 · CANON | SRC-SSOT-2.0 §24.1 |
 
 ## 示例与验证
 
-PRG-007 · PROPOSED · 来源：本轮系统扩写。
+PRG-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 正常：中段上传关键记录，终局失败后仍能在Archive阅读。失败：上传进度未commit玩家倒地，UI不列为已保留。跨系统：同一Data已贡献Support，上传只生成Account claim，不再刷Charge。
 
@@ -76,7 +76,7 @@ PRG-008 · TEST · 来源：本轮实验建议。
 
 ## 玩家掌握作为长期成长
 
-PRG-009 · DIRECTION · 来源：SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION。
+PRG-009 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-PLAYER-MASTERY-PROGRESSION。
 
 玩家玩得越久、学得越多，实际表现应越强；长期成长优先来自player knowledge与skill，不来自局外数值碾压。可教学、可观察、可复现的技巧包括取消窗口、预输入、蓄力衔接、路线/敌人/资源知识、噪声管理和队伍协同。新手应能完成基本动作，高级技巧提高效率与安全裕度，不取消弹药、噪声、遭遇或合作规则；具体操作合同见[战斗CMB-014](combat-and-arsenal.md)。
 
@@ -88,7 +88,7 @@ PRG-010 · TEST · 来源：本轮玩家掌握验证建议。
 
 ## 字形知识与外观进度
 
-PRG-011 · DIRECTION · 来源：SRC-USER-2026-09-05-REGION-RISK-REWARD-PROFILES；SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES；SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COMMUNITY-EVENT。
+PRG-011 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-REGION-RISK-REWARD-PROFILES；SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES；SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COMMUNITY-EVENT。
 
 基础游戏不记录或显示战略节点、节点所有权、清场率、恢复百分比或账号剧情阶段。永久进度只拥有横向账号解锁、故事收藏、知识、成就/挑战和外观；普通程序合同不需要声明自己在唯一时间线中永久改变了哪个地点。字形知识解锁可验证的秘密路线、Archive解释和新的可选支路，不直接增加伤害。筑路者资料只推进世界理解与允许的横向内容。
 
@@ -102,7 +102,7 @@ PRG-012 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-PROCEDURAL-OPERATION-
 
 壁垒中央Hub的任务板是Operation Offer的权威入口；为尊重玩家时间，物理任务板与快捷菜单只显示同一份数据，不得形成两套任务池。每张卡至少展示区域、设施主题、主任务、支线、已知局势、奖励、预计长度和当前选择的难度。所有基础合同完成后只结算资源、故事收藏、知识、挑战和外观资格；没有合同提交账号剧情阶段、节点或路线版图。
 
-程序任务板与唯一正史不互相冒充。普通Offer的数量、刷新方式和周期仍OPEN；禁止用现实时间轮换让玩家永久错过故事收藏、必要装备或唯一知识。联机时所有玩家共享本局任务状态，故事收藏与一次性成就按各账号既有资格幂等结算；队长的Archive完成度不改变其他人的任务池，也没有需要同步的个人剧情世界。
+程序任务板与唯一正史不互相冒充。普通Offer采用测试参数的六卡与局前免费整批刷新，不按现实日期锁内容；禁止用现实时间轮换让玩家永久错过故事收藏、必要装备或唯一知识。联机时所有玩家共享本局任务状态，故事收藏与一次性成就按各账号既有资格幂等结算；队长的Archive完成度不改变其他人的任务池，也没有需要同步的个人剧情世界。
 
 PRG-014 · CANON/DIRECTION · 来源：SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE；内容规则见[中央故事STORY-011](central-story-spine.md)。
 
@@ -115,3 +115,10 @@ PRG-013 · DIRECTION · 来源：SRC-USER-2026-09-05-NODES-LORE-ONLY-DESCENT-COM
 节点恢复进度只在Descent DLC发布联合行动期间存在，且为全服务器共享活动账。符合公开条件的Operation完成后提交一次防重复贡献；服务器汇总阶段进度并驱动Hub广播、路线图和端点状态变化。活动结束并开放端点后，节点计数冻结为历史记录，不转成日常赛季等级、个人战力或永久重复刷条。
 
 该活动不能成为付费内容的永久门锁。晚加入者、未参加活动者和活动后购买DLC的玩家看到的是已经完成的公共历史，并可正常进入Descent；参与者奖励只允许纪念外观、称号或Archive记录，不授予影响Operation平衡的独占战力。本作是合作PVE，不为该公共进度建设作弊检测；服务只负责合法格式、账号归属和ResultID去重。离线贡献、服务器分区、目标阈值和活动失败语义仍OPEN。
+
+
+## 资格与最终提交
+
+PRG-015 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0014/0016。
+
+上传资格为在该发现/采集后参与且上传时仍在本次Run名册的Seat；断线宽限内保留，明确离队者保留此前已Banked权利但不领取后来新发现。late join不补发加入前所有历史发现；同场后续再次合法发现可按账号已有集合去重。任务完成奖励要求在最终目标完成前加入并实际参与至少一个任务/战斗/支援事件，非伤害竞赛；Host不得手填名单。主任务Final Result须经过最终恢复证书后幂等写账号。

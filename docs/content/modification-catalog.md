@@ -1,26 +1,26 @@
 ---
 doc_id: CONTENT-MODIFICATIONS
 doc_type: content
-stage: DRAFT
-updated: 2026-09-04
+stage: BASELINE
+updated: 2026-09-05
 owner_role: 构筑内容设计
 canon_basis: "SRC-SSOT-2.0 §9、§40、§41.3；本轮配件讨论"
-depends_on: ["../gdd/build-algebra.md"]
+depends_on: ["../gdd/modifications-and-effects.md"]
 ---
 
-# 修改、Relic 与 Fusion 内容候选
+# Operation修改目录与Lab实验
 
 ## 身份、范围与状态
 
 REL-001 · TEST · 来源：SRC-SSOT-2.0 §9.1、§40、§41.3。
 保留30件Relic与6–10配方的源试制规模。下面给出30件和8配方，全部具体效果为PROPOSED/TEST，不是已批准最终内容，不代表已实现、已平衡或所有模式可用。
 
-REL-002 · PROPOSED · 来源：本轮最新武器配件讨论。
-Operation候选优先WeaponModule/ToolModule/TeamProtocol；传统Relic及自动Fusion在Lab/未来Descent验证。底层统一ModificationDefinition，配件不自动变成隐藏被动Relic，不被未知Fusion吞掉。共享语义见[Build](../gdd/build-algebra.md)。
+REL-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮最新武器配件讨论。
+Operation采用WeaponModule/ToolModule/TeamProtocol；传统Relic及自动Fusion在Lab/未来Descent验证。底层统一ModificationDefinition，配件不自动变成隐藏被动Relic，不被未知Fusion吞掉。共享语义见[Build](../gdd/modifications-and-effects.md)。
 
-## Operation Weapon/Tool Modification 候选
+## Operation Weapon/Tool Modification 初版测试卡
 
-MODC-001 · PROPOSED · 来源：本轮武器改装用户意图与评审。
+MODC-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮武器改装用户意图与评审。
 所有卡使用明确安装目标/挂点、相容Tag、tradeoff、冲突组、可见资产；mode_allowlist先为Operation实验profile。下面调整数值均TEST，未做平衡。
 
 | ID/身份 | 安装与动作 | 收益/输出Tags | 代价与限制 | 反馈/验收 |
@@ -33,7 +33,7 @@ MODC-001 · PROPOSED · 来源：本轮武器改装用户意图与评审。
 | TM-SINK应急冷却 | Tool/TechnicalMount；一次排热 | HeatReset，按工具资源消耗 | 用一次少一个耗材，非免费无限续航 | 明确消耗确认与冷却反馈 |
 | TP-COVER协作协议 | Team；受掩护交叉火力窗口 | Team/Control短时稳定 | 只接受合法队伍事件，不叠乘Scan或复制资源 | 队友看见窗口，不新增常驻图表 |
 
-每次改装均先预览冲突/损失，再原子装配，取消前不耗材；拆出的旧模块去向须由内容profile明确，当前候选放回世界而不是静默销毁。具体安装是否要工作台为OPEN，不能默认加入每次回Hub跑腿。
+每次改装均先预览冲突/损失，再原子装配，取消前不耗材；拆出的旧模块去向须由内容profile明确，当前候选放回世界而不是静默销毁。采用前线合法维护点3s安装，取消不耗材；不要求回Hub跑腿，具体见测试参数。
 
 ## Lab/未来Descent的30件Relic
 
@@ -91,13 +91,21 @@ FUS-001 · PROPOSED · 来源：本轮内容扩写；自动消费原则继承SRC
 | F07 | C01+R21→C07继电心 | Preserve换弹electric，扩大明确Triggered scope | 编译需验证没有同commit Reload循环 | Build页解释被允许的新边 |
 | F08 | C03+R25→C08闭环轨道 | Convert回收进度为可持续周期，保留投入 | cadence+弹体travel+charge状态推进 | 合法loop持续；无目标时不拖LastChance |
 
-Recipe priority候选F08最高、然后F03/F07、其余按稳定ID；该排序是TEST，规则仲裁责任在Build文档。不得把配方结果同时注册为原件listener制造双倍继承。
+Lab配方优先级TEST为F08=30、F03/F07=20、其余=10，再按稳定ID，规则仲裁责任在Build文档。不得把配方结果同时注册为原件listener制造双倍继承。
 
 ## 状态、边界与验证
 
-REL-004 · PROPOSED · 来源：本轮内容扩写。
+REL-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮内容扩写。
 每张卡都包含定义ID与版本、运行Instance、Owner、目标scope、效果图、模式许可、挂点/冲突、可见资产、成本与provenance；参数未定应使validator报告缺失，不按隐含0生成伪成功。实例消失后已提交弹体按提交快照继续，不能双重监听。
 
 REL-005 · TEST · 来源：本轮候选池验收。
 每卡单测触发/不触发/资源不足/目标失效/重复消息；每recipe测缺件、已发现/未知、重叠仲裁、输入同帧变化、迁移、返回队列。构筑测试至少包含一条合法时间循环与一个非法零推进环；四人能解释主链、自动消耗没有误解、Operation常规池无法铸造战略资源。全部尚未运行。
 
+
+## 首发挂点映射与目录边界
+
+MODC-002 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0014。
+
+Damper与Pressure占handling槽；Breach、Link、Reactor占behavior槽，即使视觉分别装在枪下/瞄具/弹仓也不能同时占同一逻辑槽。Sink占tool槽；Cover占唯一team protocol槽。Breach附带固定2发独立破结构弹，不补关键Cell，基础枪参数不能复制出无限弹。Pressure初值每次有效射击耗2单位ammo且穿甲能力增加，倍耗同事务；Link用自身有限电池，不显示未知敌人；Reactor容量降低25%以换允许ReactionTag；Cover持续窗口不加倍Scan。数值均TEST，不扩充正式已验证目录。
+
+30Relic/8Fusion全部明确留在Lab/FUTURE，缺参数的未来卡不可激活为生产内容；保留文案不是默许默认0或假装完成制作。

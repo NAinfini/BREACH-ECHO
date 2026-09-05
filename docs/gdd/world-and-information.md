@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-WORLD
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 系统关卡设计
 canon_basis: "SRC-SSOT-2.0 §4A.3、§4A.6、§4A.13–§4A.14、§14、§33.5、§34；本轮守门人交易候选"
@@ -32,19 +32,19 @@ WRD-003 · CANON · 来源：SRC-SSOT-2.0 §4A.13、§37。
 
 重大配置用小整数预算+Cart多选；同屏通常4–6项、成本主要1/2、极少3，每项一句话解释后果。任何合法操作者可直接Commit，不做多数票；极端不可逆终局动作可例外SharedDecision。提交后不免费反悔，重配需新的合法世界行动/Cell/下游节点。
 
-WRD-004 · DIRECTION · 来源：SRC-SSOT-2.0 §14.2、§33.5。
+WRD-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-SSOT-2.0 §14.2、§33.5。
 
 设施候选系统包括Power、Ventilation/Fog、Security、Turrets、Transit、Fabricator/Storage、Containment、Network/Uplink、Cargo condition、Fold/Resonance。有限Transit需发现/激活节点与link，受电力/阵营/世界状态影响，高威胁/战斗不可用；不提供任意房间传送。
 
 ## 玩家流程
 
-WRD-005 · PROPOSED · 来源：本轮系统扩写。
+WRD-005 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 看见目标但未知位置→到Terminal查合法本地记录→结果自动分享→沿前向路线取Cell→Cart预览世界后果→操作者Commit→新灯光/通风/封门/炮台响应→队伍利用变化推进。Terminal让信息有地点和风险，不让另三人长期等菜单。
 
 ## 状态与数据所有权
 
-WRD-006 · PROPOSED · 来源：本轮系统扩写。
+WRD-006 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 Authority持有FacilityStateRevision、PowerLedger、DoorState、IngressGraph、ControlPermissions、TeamKnowledge；Terminal只是当前节点的视图与命令入口。Cart把预算扣减、设施改变、mission consequence和日志一起原子提交。
 
@@ -59,23 +59,23 @@ Authority持有FacilityStateRevision、PowerLedger、DoorState、IngressGraph、
 
 ## 并发 Cart 与安全承诺
 
-WRD-007 · PROPOSED · 来源：本轮系统扩写。
+WRD-007 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 同节点多个玩家可看Cart；命令带observedRevision与option set，权威串行验证。首个成功者扣预算；第二个收到“配置已由某人改变”与新成本，必须重新预览再提交。无需投票，也不能用陈旧预算超买。
 
-候选社交保护：选择时全队出现简短预览广播；按住确认关键提交，说明谁将改什么，不锁权给Host。这降低误触，无法根治恶意；公共匹配风险归[风险登记](../production/brutal-review.md)。若实测仍可轻易毁局，需要用户批准改变权限，不把UI日志当完整解决方案。
+候选社交保护：选择时全队出现简短预览广播；按住确认关键提交，说明谁将改什么，不锁权给Host。这降低误触，无法根治恶意；公共匹配风险归[风险登记](../production/risk-register.md)。若实测仍可轻易毁局，需要用户批准改变权限，不把UI日志当完整解决方案。
 
 安全由可达威胁路径与其能力推导。封口后不因“节奏需要”生成免疫封门的单位。新威胁必须已由任务/世界来源允许且可感知；关闭一处入口不自动平移等量敌人到玩家背后。
 
 ## 模式配置与内容接口
 
-WRD-008 · PROPOSED · 来源：本轮系统扩写。
+WRD-008 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 Operation调用完整设施配置；Descent可复用门/材质/世界反应，不自动带入Terminal与Cart流程。设施系统卡声明可查询信息、控制范围、权限、Power dependency、故障输入、可达port、UI短句与结果表现。关卡不得依赖“查到一次后记住秘密ID”。
 
 ## 边界
 
-WRD-009 · PROPOSED · 来源：本轮系统扩写。
+WRD-009 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
 操作者死亡/离线取消未提交Cart，已提交世界状态保留。关键电源丢失时展示实际失效系统，不回滚已花资源。封门不能切断唯一必需目标可达路径；设计允许自毁路线时须有提前可读替代/失败条件并经验证。已知目标移动时更新“最后确认位置”，不提供无授权追踪雷达。Host迁移保持Knowledge来源、门状态与剩余物资。
 
@@ -85,28 +85,28 @@ WRD-009 · PROPOSED · 来源：本轮系统扩写。
 |---|---|---|
 | Cart展示项数与成本 | 通常4–6项；1/2/极少3 · CANON | SRC-SSOT-2.0 §4A.13 |
 | BLACKSTART电池与选项 | 只在[实例](../content/blackstart.md)拥有数值 | SRC-SSOT-2.0 §16.3 |
-| 安全确认延迟/门耐受/Query耗时 | OPEN | 原文未给定 |
+| 安全确认/普通门/终端响应初值 | 3s保持确认 / 120结构HP / 本地响应目标≤0.2s · TEST | 见测试参数；玩家理解查询步骤与系统响应时间分别测量 |
 | 常规Query用时 | 中位≤15秒 · TEST | SRC-CHATGPT-REVIEW-1.0 §6；候选阈值 |
 
 ## 示例
 
-WRD-010 · PROPOSED · 来源：本轮系统扩写。
+WRD-010 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写。
 
-正常：队伍选择Ventilation，finale低处视野恢复，之前有毒区变成合法移动路径。失败：另一人先花Cell，后提交者不被允许用旧预算开Vault。跨系统：Spear玩家在普通Door将被砸开前拉开距离；SecuritySeal仍阻隔无Breach能力的Horde，没有“玩家太安全所以门突然坏了”。
+正常：队伍选择Ventilation，finale低处视野恢复，之前有毒区变成合法移动路径。失败：另一人先花Cell，后提交者不被允许用旧预算开Vault。跨系统：Shotgun玩家在普通Door将被砸开前拉开距离；SecuritySeal仍阻隔无Breach能力的Horde，没有“玩家太安全所以门突然坏了”。
 
-## 验证与 OPEN
+## 验收与尚未实测项
 
 WRD-011 · TEST · 来源：本轮实验建议。
 
 枚举所有Cart合法组合检查预算和可达性；对比有无Seal、关门前后AI路线；多人同时操作、断线、Power failure都只提交一次。记录队友等待、后果理解与实际策略变化。设施系统完整列表是方向，不意味着每个模板都实现全部系统。
 ## Team Ordnance 与设施互作
 
-WRD-012 · PROPOSED · 来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
+WRD-012 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-ORDNANCE-MISSIONS。
 结构卡声明可接受的Structure/Armor/Heat/Sonic等能力、需消耗量、破坏输出及替代前向路线。Security战略Seal与任务关键门不能仅因“Heavy”标签被全体通杀。Terminal可合法查团队重资产位置/状态，未知资产不自动全图显示；发现后按共享Ping呈现。重资产失联不删除，世界持久由[战斗合同](combat-and-arsenal.md)与存档共同承担。
 
 ## 壁垒—守门人结构化联系
 
-WRD-013 · PROPOSED · 来源：SRC-USER-2026-09-04-BASTION-JANUS-CONTACT；SRC-USER-2026-09-04-BASTION-JANUS-TRANSACTION；SRC-USER-2026-09-04-BASTION-ORIGIN-JANUS-TRADE；SRC-USER-2026-09-05-BASTION-MULTIROUTE-REAR-HUB；SRC-USER-2026-09-05-EMERGENCY-FOLD-LOCAL-COMMIT；SRC-USER-2026-09-05-FINAL-SEQUENCE-AUTHORITY-CORRECTION；SRC-USER-2026-09-05-BASTION-ENERGY-CLOSURE-APPROVAL；SRC-USER-2026-09-05-BASTION-ARTIFICIAL-SUN-DEADLINE；SRC-USER-2026-09-05-BASTION-NETWORK-SPACE；SRC-USER-2026-09-05-NATIVE-MANAGEMENT-HUMAN-DATA-LAYER；SRC-CODEX-2026-09-05-OBJECTIVE-HISTORY-CURRENT-CANDIDATE。
+WRD-013 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-04-BASTION-JANUS-CONTACT；SRC-USER-2026-09-04-BASTION-JANUS-TRANSACTION；SRC-USER-2026-09-04-BASTION-ORIGIN-JANUS-TRADE；SRC-USER-2026-09-05-BASTION-MULTIROUTE-REAR-HUB；SRC-USER-2026-09-05-EMERGENCY-FOLD-LOCAL-COMMIT；SRC-USER-2026-09-05-FINAL-SEQUENCE-AUTHORITY-CORRECTION；SRC-USER-2026-09-05-BASTION-ENERGY-CLOSURE-APPROVAL；SRC-USER-2026-09-05-BASTION-ARTIFICIAL-SUN-DEADLINE；SRC-USER-2026-09-05-BASTION-NETWORK-SPACE；SRC-USER-2026-09-05-NATIVE-MANAGEMENT-HUMAN-DATA-LAYER；SRC-CODEX-2026-09-05-OBJECTIVE-HISTORY-CURRENT-CANDIDATE。
 
 壁垒位于筑路者技术生成的有限人工节点空间，不存在可供常规航行、开采或扩张的外部宇宙。无线电、有线与激光只在同一节点空间内部有效，不能跨越关闭的界桥路线。闭合域保留少数筑路者预设的传能接口和封闭设施空间：前者不是交通门，后者的有限体积已经属于壁垒边界；它们不能通往正常宇宙，也不能中继外部战区的人类数据，因此既不是逃生口，也不能绕过历史断层。
 
@@ -151,8 +151,15 @@ WRD-016 · CANON · 来源：SRC-USER-2026-09-05-CARRIER-REBOOT-PHYSICAL-RECOVER
 
 恢复盘只提供受信根、恢复工具和可携带状态，不预装所有节点的最终配置。写入成功也只接管仍属于该节点、结构完整且未被其他阵营改写的资产。限界探索区的炮塔、机器人、备用电源和封闭资源库在节点入域前可能保持锁定、中立或敌对；入域后按当前权限转为友军设施。必须通过灯光、识别色以外的形状/声音、炮口姿态、终端状态和友军目标选择清楚表现转换，不能只改UI阵营标签。
 
-WRD-017 · DIRECTION · 来源：SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES。
+WRD-017 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-USER-2026-09-05-OPTIONAL-GLYPH-REROUTES。
 
 部分节点允许玩家把当前字形路由序列改为已存在的备用地址，进入隐藏仓库、检修空间或被遗忘的支路。它不生成新空间，也不允许任意输入通往任意节点。有效序列必须由日志、环境符号、扫描或其他合法证据取得；错误序列通常不给答案，主线和可访问性内容不得要求盲猜或穷举。
 
 改线前必须预告至少一项代价：占用路线、消耗电力或任务时间、暂时失去退路、提高节点暴露，或接通额外合法敌人来源。隐藏区域可提供额外物资、废料、外观信用点、成就条件、外观物品、字形知识或筑路者资料；不得放置主线唯一必需能力，也不得让奖励无风险获得。进入后必须存在可理解的返回或重新设路方式。
+
+
+## 本次定稿：执行边界
+
+Cart采用三Cell基线，普通选项1、Vault2，无撤销退款和常规多数投票。操作者3s保持确认期间全队看到影响与成本；其他合法提交造成revision改变就取消旧确认。Terminal只查合法已知信息和局部权限，不连全知雷达/全局Alarm。重要操作有键鼠/控制器等价短选项，不要求玩家输入晦涩真实命令才能做主任务。地图只显示确认信息；可破与不可破边界由材质/任务语义明确解释。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。

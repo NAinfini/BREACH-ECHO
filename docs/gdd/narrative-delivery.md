@@ -1,7 +1,7 @@
 ---
 doc_id: GDD-NARRATIVE-DELIVERY
 doc_type: gdd
-stage: DRAFT
+stage: BASELINE
 updated: 2026-09-05
 owner_role: 叙事系统设计
 canon_basis: "SRC-SSOT-2.0 §35；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE"
@@ -14,7 +14,7 @@ depends_on: ["narrative-bible.md"]
 
 玩家在行动中理解任务，重要信息错过后可补读，剧情播放不控制权威世界结果。正史归[世界观](narrative-bible.md)。
 
-NDL-001 · DIRECTION · 来源：SRC-SSOT-2.0 §35.1–§35.2；来源属性：INHERITED。
+NDL-001 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：SRC-SSOT-2.0 §35.1–§35.2；来源属性：INHERITED。
 
 通过briefing、Terminal日志、环境、壁垒NPC/Handler、Archive、短radio与少量高价值sequence交付；不长篇抢玩法。Dialogue semantic state与voice播放分离，战斗时可按定义暂停/转radio/继续/中断；重要内容Archive可恢复。Skip/快进只改呈现，不重复/漏掉已提交世界后果。选择0..N，重大team choice才SharedDecision，在线客户端按各自语言/字幕/skip偏好播放。
 
@@ -24,7 +24,7 @@ Text/subtitle/voice语言独立；缺voice asset允许内容回退，CJK/RTL/换
 
 ## 玩家流程、状态与所有权
 
-NDL-003 · PROPOSED · 来源：本轮系统扩写；按SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE调整。
+NDL-003 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写；按SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE调整。
 
 触发语义事件→按优先级排队→本地播放→玩家可跳过/战斗打断→Archive保存合法发现。Authority提交ConversationChoice/WorldConsequence；Client拥有PlaybackCursor，不能以音频结束时间推进任务。公共行动知识不依赖Archive解锁，收藏只补充局部人物、事件与技术细节。
 
@@ -38,7 +38,7 @@ NDL-003 · PROPOSED · 来源：本轮系统扩写；按SRC-USER-2026-09-05-COLL
 
 ## 模式、内容与边界
 
-NDL-004 · DIRECTION · 来源：本轮系统扩写；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE。
+NDL-004 · DECIDED · 来源：SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；授予决策权后采纳行为合同，数值/效果仍须TEST；原依据：来源：本轮系统扩写；SRC-USER-2026-09-05-COLLECTIBLE-ACHIEVEMENT-LORE。
 
 Operation短信息支撑设施决策；Lab不要求叙事。台词卡记录speaker role、text key、事实状态、触发前置、priority、interrupt policy、字幕/SDH、Archive target、world effect ID。收藏卡另记录载体、作者、可信度类别、语义兼容Cluster、关联集合、重复获取与成就条件。缺录音用已验证文字/字幕表达，不伪造已经制作配音。字幕方向不透露未知敌人位置。
 
@@ -54,3 +54,10 @@ NDL-006 · TEST · 来源：本轮实验建议。
 ## 最新唯一历史与玩家故事约束
 
 客观历史归[世界观](narrative-bible.md)，固定小队、非递进Operation与碎片收藏归[玩家故事](central-story-spine.md)。基础游戏不采用五幕、Final Truth任务、主结局、账号剧情stage或Post-Revelation双状态。本文只负责如何把公共事实和可选碎片交给玩家，不复制第二份历史。
+
+
+## 本次定稿：执行边界
+
+优先级采用关键战术事实→短人物评论→可选长背景；战斗不强播长档案，不让关闭语音失去关键操作信息。重复合同不重复假装首次发现核心历史。人物与创作事实仍按OWNER-01，短句/冷却初值为TEST；完整故事审阅入口已独立提供。
+
+Authority: delegated，SRC-USER-2026-09-05-DELEGATED-DOCUMENT-FINALIZATION；DDD-0013–0018。所有未提供实测的参数与验证仍为TEST；未展开的未来功能不在当前实现关键路径。
