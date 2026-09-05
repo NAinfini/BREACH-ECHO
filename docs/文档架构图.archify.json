@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "裂界残响 · 文档职责架构",
+    "locale": "zh-CN",
+    "output": "docs/文档架构图.html",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1500,
+      720
+    ],
+    "views": [
+      {
+        "id": "base",
+        "label": "基础版主路",
+        "focus": [
+          "product",
+          "play",
+          "content",
+          "runtime",
+          "delivery"
+        ]
+      },
+      {
+        "id": "worlds",
+        "label": "世界与未来",
+        "focus": [
+          "history",
+          "product",
+          "future"
+        ]
+      },
+      {
+        "id": "support",
+        "label": "治理与制作",
+        "focus": [
+          "evidence",
+          "rules",
+          "assets",
+          "delivery"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "product",
+      "type": "backend",
+      "label": "产品",
+      "tag": "承诺与范围",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        160,
+        70
+      ]
+    },
+    {
+      "id": "play",
+      "type": "backend",
+      "label": "玩法",
+      "tag": "玩家行为与共同规则",
+      "pos": [
+        345,
+        300
+      ],
+      "size": [
+        175,
+        70
+      ]
+    },
+    {
+      "id": "content",
+      "type": "database",
+      "label": "内容",
+      "tag": "任务／装备／敌人／设施",
+      "pos": [
+        665,
+        300
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "runtime",
+      "type": "cloud",
+      "label": "技术",
+      "tag": "模拟／联机／模组合同",
+      "pos": [
+        1000,
+        300
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "delivery",
+      "type": "frontend",
+      "label": "制作与验收",
+      "tag": "原型批次与实测证据",
+      "pos": [
+        1320,
+        300
+      ],
+      "size": [
+        170,
+        70
+      ]
+    },
+    {
+      "id": "history",
+      "type": "database",
+      "label": "世界与叙事",
+      "tag": "真实历史与玩家知情",
+      "pos": [
+        665,
+        70
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "future",
+      "type": "external",
+      "label": "未来扩展",
+      "tag": "行星深潜／地球重联",
+      "pos": [
+        40,
+        530
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "assets",
+      "type": "backend",
+      "label": "表现与资产",
+      "tag": "视觉／音频／界面／许可",
+      "pos": [
+        345,
+        530
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "rules",
+      "type": "security",
+      "label": "治理",
+      "tag": "裁决、权威与唯一责任",
+      "pos": [
+        40,
+        70
+      ],
+      "size": [
+        190,
+        70
+      ]
+    },
+    {
+      "id": "evidence",
+      "type": "external",
+      "label": "参考与原始来源",
+      "tag": "证据，不覆盖现行决定",
+      "pos": [
+        1000,
+        70
+      ],
+      "size": [
+        190,
+        70
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "rules",
+      "to": "product",
+      "label": "约束范围",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "product",
+      "to": "play",
+      "label": "定义体验",
+      "variant": "emphasis"
+    },
+    {
+      "from": "play",
+      "to": "content",
+      "label": "约束内容",
+      "variant": "emphasis"
+    },
+    {
+      "from": "content",
+      "to": "runtime",
+      "label": "交付行为合同",
+      "variant": "emphasis"
+    },
+    {
+      "from": "runtime",
+      "to": "delivery",
+      "label": "接受验证",
+      "variant": "emphasis"
+    },
+    {
+      "from": "history",
+      "to": "content",
+      "label": "约束事实",
+      "labelDy": 80
+    },
+    {
+      "from": "product",
+      "to": "future",
+      "label": "保留后续方向",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "play",
+      "to": "assets",
+      "label": "转译感知与操作",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "evidence",
+      "to": "runtime",
+      "label": "核验选型",
+      "variant": "dashed",
+      "labelDy": 80
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "规则不重复",
+      "items": [
+        "玩法讲行为，内容卡讲具体实例",
+        "技术讲实现，制作讲验证顺序"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "范围不混用",
+      "items": [
+        "候选全集 ≠ 首轮原型 ≠ 商业首发",
+        "三项主任务、十二配置、八个条目各有含义"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "未来不删除",
+      "items": [
+        "深潜、遗物与融合、地球重联继续维护",
+        "未进入当前制作，不等于已经废弃"
+      ]
+    }
+  ]
+}

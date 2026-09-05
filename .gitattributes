@@ -1,0 +1,15 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cs text eol=lf
+*.shader text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.blend binary
+*.fbx binary
+*.glb binary
+*.gltf text eol=lf

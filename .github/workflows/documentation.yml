@@ -1,0 +1,35 @@
+name: Documentation
+on:
+  push:
+    branches: [main, docs/finalization-2026-09-05]
+    paths: ['docs/**', '.agents/**', 'tools/**', 'README.md', 'AGENTS.md', '.github/workflows/documentation.yml']
+  pull_request:
+    paths: ['docs/**', '.agents/**', 'tools/**', 'README.md', 'AGENTS.md', '.github/workflows/documentation.yml']
+permissions:
+  contents: read
+concurrency:
+  group: documentation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validator self-tests
+        run: python3 tools/validate_docs.py --self-test
+      - name: Validate documents
+        run: python3 tools/validate_docs.py
+      - name: Inventory documents
+        if: always()
+        run: python3 tools/docs_audit.py
+      - name: Retain documentation and audit inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-audit
+          path: artifacts/
+          retention-days: 7
+          if-no-files-found: error
