@@ -18,14 +18,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Validator self-tests
+        run: python3 tools/validate_docs.py --self-test
+      - name: Validate documents
+        run: python3 tools/validate_docs.py
       - name: Inventory documents
+        if: always()
         run: python3 tools/docs_audit.py
-      - name: Validate documents when validator exists
-        run: |
-          if test -f tools/validate_docs.py; then
-            python3 tools/validate_docs.py
-          fi
       - name: Retain documentation and audit inventory
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: documentation-audit
