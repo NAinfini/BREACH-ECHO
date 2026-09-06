@@ -16,7 +16,7 @@ depends_on: ["../gdd/art-direction.md", "asset-policy-and-provenance.md", "../te
 
 ## 选定策略
 
-PIPE-001 · DECIDED。先用原始灰盒证明玩法，再对通过来源、许可和视觉预审的候选资产做小批量集成。Stylized Industrial Realism 仍是待 OWNER-03 通过游戏内样张批准的领先方向，不是已冻结的美术风格。
+PIPE-001 · DECIDED。先用原始灰盒证明玩法，再对通过来源、许可和视觉预审的候选资产做小批量集成。唯一 Visual DNA 已锁为“分层壁垒”：中等多边形的风格化工业科幻；低模只用于灰盒、远景、普通小道具、碰撞代理和 LOD。正式资产仍需通过同屏 Style Target、Unity 游戏视角、变形和目标硬件 Gate。
 
 日常建模/修复/rig/LOD加工使用Blender受支持LTS并固定实际验证版本。可选AI来源先用Meshy API做一个人形和一个静态道具的受控试验；需要信用或商业条款时先获预算批准。没有购买任何方案，也不保证Meshy自动输出可以直接发布。Tripo等不建并行自动化链，除非实测Meshy失败且新决策记录替换收益。
 

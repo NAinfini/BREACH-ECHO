@@ -13,7 +13,7 @@ depends_on: ["risk-register.md", "../governance/decisions/unity-engine-and-rende
 ## 当前成熟度
 
 PLAN-001 · DIRECTION · 来源：SRC-SSOT-2.0 Appendix A、§41–§43；按最新用户技术决定更新。
-项目尚未production ready。战斗/Build/Operation未通过原型，Narrative因果和Visual DNA未冻结；**Unity 6 + URP、GameObject-first/DOTS-on-proof、AI-agent-first、Steam/Workshop边界、Host Authority、60 Hz Authority、Snapshot/Delta/Event/Interest/Dormancy、有限Server Rewind、Steam/SDR + FishNet + 自有恢复，以及Luau Core/无社区DLL/旧hash本地缓存原则已锁。** 150 ms Rewind和全部容量/性能值只是TEST；FishySteamworks、Host Migration、Luau绑定、Mod Manager UX、Asset Registry细节、Deck性能与SDK成熟度仍未证明。当前交付主要是设计文档，不是完成的游戏；所有试玩、性能、市场Gate均“未执行”。
+项目尚未production ready。战斗/Build/Operation未通过原型，Narrative连接因果仍需审阅，Visual DNA虽已锁定但未通过实机生产Gate；**Unity 6 + URP、分层壁垒与中等多边形几何档位、GameObject-first/DOTS-on-proof、AI-agent-first、Steam/Workshop边界、Host Authority、60 Hz Authority、Snapshot/Delta/Event/Interest/Dormancy、有限Server Rewind、Steam/SDR + FishNet + 自有恢复，以及Luau Core/无社区DLL/旧hash本地缓存原则已锁。** 150 ms Rewind和全部容量/性能值只是TEST；FishySteamworks、Host Migration、Luau绑定、Mod Manager UX、Asset Registry细节、视觉Style Target、Deck性能与SDK成熟度仍未证明。当前交付主要是设计文档，不是完成的游戏；所有试玩、性能、市场Gate均“未执行”。
 
 PLAN-002 · LEGACY/SUPERSEDED + PROPOSED · 来源：SRC-SSOT-2.0 §42；SUPERSEDED BY DECISION-UNITY-ENGINE-RENDERING。
 原流程中的“Phase5 Engine Lock”已被用户提前完成，不再等待Descent原型后才选引擎。保留“先验证再扩范围”的方法，不制作Unity/Unreal双引擎分支。网络顺序为：Authority→Tick→Replication→Lag Compensation→Steam-only网络运行与恢复（原则均已锁）→公网/断主机实测；具体时间、频率和adapter仍为TEST。制作顺序仍为Visual/资产规则→Unity项目骨架/Agent与Package基础→Combat Sandbox→Build/Combat Lab→micro-BLACKSTART→完整Operation切片→网络/Deck/Workshop与Modding spikes。Descent是否进入正式制作仍需独立产品裁决。

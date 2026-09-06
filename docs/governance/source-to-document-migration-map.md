@@ -272,6 +272,7 @@ MAP-001 · PROPOSED · 来源：本轮文档拆分合同。
 | 用户初始版本全Steam平台栈、Steam Workshop Mod与网络批次批准 | [网络运行与恢复](decisions/network-runtime-and-recovery.md)；[Network NET-015](../technical/network-and-persistence.md)；[平台PLAT-001/PLAT-007/PLAT-008](../production/platform-and-release.md)；[Modding MOD-016/MOD-019](../technical/modding-and-toolchain.md)；组合CANON/DIRECTION，数值TEST |
 | 用户批准Mod Runtime、安全优先、无社区DLL并授权脚本选择 | [Steam Workshop Mod Runtime](decisions/steam-workshop-mod-runtime.md)；[Modding MOD-018至MOD-025](../technical/modding-and-toolchain.md)；Luau Core与内容能力原则CANON/DIRECTION，绑定及预算为TEST |
 | 用户要求批次交付直接说明下一批 | [作者指南GOV-009](authoring-guide.md)；[证据登记](../sources/evidence-register.md)；CANON工作规则 |
-| 助手建议下一批“视觉制作与资产治理” | [Asset Policy](../production/asset-policy-and-provenance.md)；[视觉方向](../gdd/art-direction.md)；DIRECTION，待下一批研究与用户裁决 |
+| 助手建议下一批“视觉制作与资产治理” | [Asset Policy](../production/asset-policy-and-provenance.md)；[视觉方向](../gdd/art-direction.md)；已完成策略与Visual DNA裁决，生产Gate待实测 |
 | 用户要求先确定并立即安装完整游戏制作Agent Skills、更新Blender与Blender MCP，并明确授权Online Access | [Agent Skills能力地图](../production/game-production-agent-skills.md)；36项项目Skill已校验，Unity CLI已安装，Blender MCP已完成26-tool端到端只读验证 |
 | 用户否决资产来源固定比例，采用合格免费优先、否则AI生成修整、付费止损 | [视觉方向ART-007](../gdd/art-direction.md)；[Asset Policy ASSET-001/006](../production/asset-policy-and-provenance.md)；CANON WORKFLOW |
+| 用户委托正式比较三套视觉候选并质疑工业与低模的产能风险 | [Visual DNA决策](decisions/visual-dna-and-art-direction.md)；[视觉方向ART-006/012](../gdd/art-direction.md)；分层壁垒与中等多边形生产档位为CANON/DIRECTION，实机Gate未执行 |

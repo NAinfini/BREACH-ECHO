@@ -12,7 +12,7 @@ depends_on: ["authoring-guide.md"]
 
 这份登记包含全部 Markdown：根入口、项目技能、现行规格、创作审阅、未来设计、历史来源和模板。`BASELINE` 表示文档权威，不代表游戏已经实现。按角色先读[文档总览](../README.md)，再阅读相关责任文件。两份受保护的原始来源快照保持原文，只用于证据追溯，不是现行设计。
 
-自动登记文件数：87。新增或改名后运行 `python3 tools/validate_docs.py --reindex` 更新本表。
+自动登记文件数：88。新增或改名后运行 `python3 tools/validate_docs.py --reindex` 更新本表。
 
 | ID / 路径 | 用途 / 状态 | 文档 |
 |---|---|---|
@@ -25,7 +25,7 @@ depends_on: ["authoring-guide.md"]
 | `CONTENT-CHARACTERS` | REVIEW | [壁垒外勤小队：四名固定角色 v1](../content/field-team-character-personalities.md) |
 | `CONTENT-MISSIONS` | BASELINE | [首发任务目录与兼容矩阵](../content/mission-catalog.md) |
 | `CONTENT-MODIFICATIONS` | BASELINE | [Operation 改装目录与实验室实验](../content/modification-catalog.md) |
-| `GDD-ART` | REVIEW | [视觉方向与可识别性](../gdd/art-direction.md) |
+| `GDD-ART` | BASELINE | [视觉方向与可识别性](../gdd/art-direction.md) |
 | `GDD-AUDIO` | BASELINE | [音频、音乐、字幕与触觉](../gdd/audio-and-haptics.md) |
 | `GDD-NARRATIVE` | REVIEW | [世界观与故事圣经](../gdd/canonical-world-history-and-lore.md) |
 | `GDD-COMBAT` | BASELINE | [战斗与武器家族](../gdd/combat-and-arsenal.md) |
@@ -68,6 +68,7 @@ depends_on: ["authoring-guide.md"]
 | `DECISION-TEAM-ORDNANCE` | BASELINE | [团队重资产](decisions/team-ordnance.md) |
 | `DECISION-UNIFIED-MODIFICATION-MODEL` | BASELINE | [统一修改模型而非统一玩家概念](decisions/unified-modification-model.md) |
 | `DECISION-UNITY-ENGINE-RENDERING` | BASELINE | [引擎锁定：Unity 6](decisions/unity-engine-and-rendering.md) |
+| `DECISION-VISUAL-DNA-ART-DIRECTION` | BASELINE | [Visual DNA：分层壁垒](decisions/visual-dna-and-art-direction.md) |
 | `GOV-DOCUMENT-REGISTER` | BASELINE | [完整文档登记](document-register.md) |
 | `GOV-OWNER` | BASELINE | [仅需项目所有者裁决的事项](project-owner-decision-queue.md) |
 | `GOV-SOURCE-MAP` | ARCHIVE | [源章节与规则迁移索引](source-to-document-migration-map.md) |

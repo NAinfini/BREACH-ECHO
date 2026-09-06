@@ -612,3 +612,11 @@ SRC-USER-2026-09-05-DEVELOPMENT-DOCUMENT-COMPLETENESS · 用户完整性要求 �
 SRC-USER-2026-09-05-SEMANTIC-FILE-NAMES-NO-DISCUSSION-LOGS · 用户文档治理要求 · CANON。
 
 用户要求文件名直接说明内容，清除仅由文档类别和流水号组成、离开索引无法理解的文件或内部标识，并且不保留讨论文件。现行规则是：文件名、`doc_id` 与决策规则 ID 都使用主题语义；聊天中的有效结论进入唯一责任文档，选择理由进入主题决策记录，来源与确认状态进入本证据登记。已经完成迁移的讨论摘要删除，由 Git 历史承担过程追溯，不再维护第二套聊天式档案。
+
+SRC-USER-2026-09-05-VISUAL-DNA-SELECTION · 用户视觉方向委托 · DIRECTION。
+
+用户要求正式比较现有三套视觉候选并锁定唯一 Visual DNA。用户没有亲自指定胜者，而是把具体选择委托给美术与设计责任人；因此“分层壁垒”是有记录理由与重审条件的受托裁决，不得伪写成用户逐项确认。正式比较、淘汰方案和生产边界见[Visual DNA 决策](../governance/decisions/visual-dna-and-art-direction.md)。
+
+SRC-USER-2026-09-05-INDUSTRIAL-VS-LOW-POLY-CONCERN · 用户产能风险与取舍问题 · DIRECTION。
+
+用户担心团队和 AI Agent 无法稳定产出足够好的工业模型，询问是否应整体转向低模。现行受托裁决是保留工业身份、收敛为中等多边形风格化工业，并把低模限定为灰盒、远景、通用小道具、碰撞代理和 LOD；该裁决不是对模型质量的虚假保证，仍需 Unity Style Target、绑定/动画、第一人称接触与目标硬件实测。

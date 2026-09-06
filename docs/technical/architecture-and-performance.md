@@ -71,7 +71,7 @@ ARC-010 · CANON · 来源：SRC-USER-2026-09-05-UNITY-URP-GAMEOBJECT-FIRST。
 
 ARC-011 · CANON · 来源：SRC-USER-2026-09-05-UNITY-URP-GAMEOBJECT-FIRST。
 
-**正式Render Pipeline为Unity 6 URP。** HDRP不建立并行资产或兼容管线。正式材质、Shader、VFX、Lighting、Fog、Decal、LOD和资产采购以URP为唯一生产基线。URP仍需在Stylized Industrial Realism真实场景中接受GPU frame time、memory、shader variant/build成本、战斗可读性和Steam Deck thermal soak测试；测试用于优化URP实现，不再把HDRP当默认备份方案。
+**正式Render Pipeline为Unity 6 URP。** HDRP不建立并行资产或兼容管线。正式材质、Shader、VFX、Lighting、Fog、Decal、LOD和资产采购以URP为唯一生产基线。URP仍需在“分层壁垒”的中等多边形风格化工业实机场景中接受GPU frame time、memory、shader variant/build成本、战斗可读性和Steam Deck thermal soak测试；测试用于优化URP实现，不再把HDRP或全局低模当默认备份方案。
 
 ARC-012 · CANON · 来源：SRC-USER-2026-09-05-TICK-ARCHITECTURE；详见[固定Tick与多频模拟](../governance/decisions/fixed-tick-and-multirate-simulation.md)。
 

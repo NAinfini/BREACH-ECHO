@@ -39,7 +39,7 @@ depends_on: ["start-here.md", "governance/authoring-guide.md", "governance/decis
 | 世界真实历史 | [叙事圣经](gdd/canonical-world-history-and-lore.md)、[故事总览](gdd/story-overview.md) |
 | 玩家如何获得故事 | [中央故事边界](gdd/player-story-and-canonical-timeline.md)、[叙事交付](gdd/narrative-delivery.md) |
 | 四名固定角色 | [角色候选](content/field-team-character-personalities.md) |
-| 视觉候选与识别规则 | [视觉方向](gdd/art-direction.md) |
+| Visual DNA、几何档位与识别规则 | [视觉方向](gdd/art-direction.md) |
 | 战报与轻量本地回放 | [战报设计](gdd/debrief-and-replay.md)、[记录格式](technical/replay-recording.md) |
 | 未来 Descent | [Descent](gdd/descent-future-game-mode.md) |
 
@@ -56,7 +56,7 @@ depends_on: ["start-here.md", "governance/authoring-guide.md", "governance/decis
 | 产品 | Operation-only 基础版；Descent 后置；Steam-only 首发 | 核心玩法是否真的有趣、市场与留存 |
 | 战斗 | 固定入场装备、有限资源、少量局内修改、团队重资产 | 枪感、数值、四人可读性 |
 | 叙事 | 唯一客观历史、非递进程序合同、碎片收藏 | 四名人物最终批准、完整故事盲审 |
-| 视觉 | Unity 6 + URP；三套视觉候选与统一流程 | 最终 Visual DNA 与真实 3D 样张 |
+| 视觉 | Unity 6 + URP；“分层壁垒”；中等多边形风格化工业 | Unity同屏Style Target、Deck性能与五秒识别 |
 | 网络 | Steam/SDR + FishNet + 自有权威/恢复合同；有限回溯 | 真实公网、Host Migration、Steam Deck 与性能 Spike |
 | Mod | 官方与社区同包模型；Workshop；Luau Core Sandbox；禁社区 DLL | Luau/IL2CPP 绑定、安全配额、资产 Cooker 与作者 UX |
 | 制作 | 里程碑、风险、验收与 Agent 技能已登记 | 团队容量、预算、排期和发行承诺 |

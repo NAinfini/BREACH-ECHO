@@ -39,7 +39,7 @@ READY-001 · DECIDED。
 | 角色 | [四名角色候选](../content/field-team-character-personalities.md) | 需所有者审阅 | 代号、人格与关系最终批准 |
 | 客观历史与玩家叙事 | [故事总览](../gdd/story-overview.md)、[叙事圣经](../gdd/canonical-world-history-and-lore.md) | 连接因果需所有者确认/盲审 | OWNER-01后独立挑错 |
 | 叙事交付与本地化 | [叙事交付](../gdd/narrative-delivery.md) | 已规格化；需内容样本 | 收藏、字幕、可信度与随机放置 |
-| 视觉 | [视觉方向](../gdd/art-direction.md) | 三候选；需最终Visual DNA | 灰盒上真实样张与OWNER-03 |
+| 视觉 | [视觉方向](../gdd/art-direction.md) | Visual DNA与几何档位已锁；需生产验证 | Unity同屏Style Target、Deck性能与五秒识别 |
 | 音频、音乐、触觉 | [音频](../gdd/audio-and-haptics.md) | 系统合同已定义；缺资产与混音 | 战斗可读性、字幕与声部预算 |
 | UX与可访问性 | [UX](../gdd/ux-and-accessibility.md) | 已规格化；需设备/玩家测试 | A-ACCESS、Deck、超宽屏、200%文字 |
 
@@ -65,7 +65,7 @@ READY-002 · DECIDED。
 
 可以立即开始M0/M1的设计输入已经足够：引擎、目录结构、输入、两把首枪、两类首敌、命令/伤害边界和验收都存在。没有最终角色代号、正式模型、配音、价格或Descent设计，不阻碍原创灰盒Combat Sandbox。
 
-不能声称“完整游戏可直接量产”的原因是：仓库仍无Unity工程与可玩构建；玩法、网络、Steam Deck、Luau、安全、PCG、AI、摄像机和资产均未实测；最终历史、角色和Visual DNA仍需审阅；团队人数、预算、开发速率、价格与发布日期未知。解决这些问题需要原型和证据，不是再写更多预测性文档。
+不能声称“完整游戏可直接量产”的原因是：仓库仍无Unity工程与可玩构建；玩法、网络、Steam Deck、Luau、安全、PCG、AI、摄像机、正式资产与 Visual Production Gate 均未实测；最终历史和角色仍需审阅；团队人数、预算、开发速率、价格与发布日期未知。解决这些问题需要原型和证据，不是再写更多预测性文档。
 
 ## 文档完成门
 
@@ -78,4 +78,3 @@ READY-003 · DECIDED。
 READY-004 · DECIDED。
 
 下一批不再继续横向补文档，而是进入`M0：Unity项目骨架与Combat Sandbox`：建立可重复Unity 6 URP工程、锁准确包版本、实现本地权威命令到伤害的最小链、输入/相机/调试HUD和独立Windows构建。完成M0后按M1先做AR、Shotgun、逐能体、压射体与动作阶段，再决定哪些设计参数需要改写。
-

@@ -22,6 +22,7 @@ depends_on: ["authoring-guide.md"]
 | Predator 与破障任务 | CANON/DIRECTION | [Predator 与破障任务](decisions/predator-and-breach-missions.md) | [任务与空间](../gdd/missions-and-spaces.md) |
 | 唯一客观正史 | CANON | [单一客观正史](decisions/single-canonical-story.md) | [故事总览](../gdd/story-overview.md)、[叙事圣经](../gdd/canonical-world-history-and-lore.md) |
 | 引擎与渲染 | CANON | [Unity 6 与 URP](decisions/unity-engine-and-rendering.md) | [技术栈](../technical/unity-steam-and-modding-technology-stack.md)、[视觉方向](../gdd/art-direction.md) |
+| Visual DNA 与几何档位 | CANON/DIRECTION，生产验证待执行 | [分层壁垒视觉方向](decisions/visual-dna-and-art-direction.md) | [视觉方向](../gdd/art-direction.md)、[资产管线](../production/asset-pipeline.md) |
 | Agent-first 与内容包 | CANON/DIRECTION | [Agent-first Mod Runtime](decisions/agent-first-modding-runtime.md) | [Mod 工具链](../technical/modding-and-toolchain.md) |
 | 权威与 Gameplay Command | CANON/DIRECTION | [Host Authority](decisions/host-authority-and-gameplay-commands.md) | [网络与持久化](../technical/network-and-persistence.md) |
 | 固定时基与分频 | CANON/DIRECTION | [固定 Tick 与多频模拟](decisions/fixed-tick-and-multirate-simulation.md) | [架构与性能](../technical/architecture-and-performance.md) |
