@@ -2,7 +2,7 @@
 doc_id: TECH-STACK
 doc_type: technical
 stage: BASELINE
-updated: 2026-09-05
+updated: 2026-09-07
 owner_role: 技术负责人
 canon_basis: 当前引擎、Steam 联机、Mod Runtime 与制作管线决定
 depends_on:
@@ -33,7 +33,7 @@ STACK-001 · DECIDED · delegated。以下是实现选择，不是已安装、�
 | 存档/快照 | 明确定义的版本化二进制DTO；JSON诊断导出仅开发工具；长度、范围和checksum验证 | 不用BinaryFormatter/任意多态类型反序列化，不保存Unity对象图 |
 | 音频 | Unity AudioMixer + 项目自己的有限声部/优先级路由；Steam Voice只作在线语音采集压缩 | 首发不依赖FMOD/Wwise付费中间件；不录玩家语音进回放 |
 | 测试与构建 | Unity Test Framework、命令行批处理、GitHub Actions文档检查；游戏构建由有合法Unity环境的受控runner执行 | 不假设托管runner已有Unity许可证；不提交密钥或有再分发限制的资源 |
-| 资产加工 | Blender受支持LTS、FBX/纹理导出、URP导入检查 | AI生成只作为可选来源，不跳过拓扑、碰撞、骨架、许可验收 |
+| 资产加工 | 通过资产往返试验后固定的Blender受支持LTS版本、FBX/纹理导出、URP导入检查 | 不因已安装最新版就声称管线兼容；AI生成不跳过拓扑、碰撞、骨架、许可验收 |
 
 技术事实及核验限制见[证据登记](../参考/技术选择证据与核验限制-2026-09-05.md)。Unity的6.3 LTS选择是本项目稳定性判断，不是声称所有新项目必须用LTS。
 
@@ -61,8 +61,10 @@ STACK-004 · DECIDED。
 
 协调服务只有建立会话、成员更新、恢复证书和租约接口；认证使用服务端验证的Steam Web API票据，服务密钥保存在服务器秘密配置。客户端不是可信计费/会员/进度数据库。部署需要OWNER-02预算和账户批准；M0–M2用接口兼容的本地协调器测试替身。
 
-## M0必须交付的版本证据
+## 分阶段交付的版本证据
 
-记录Editor补丁、URP/Input/Cinemachine/Animation Rigging/AI Navigation/Addressables/Test Framework版本、FishNet/FishySteamworks/Steamworks.NET commit及许可证文件hash、Scripting Backend、目标架构、API兼容级别、构建命令、两台机器的联机结果。至少Windows x64开发构建与一次非Editor运行；Steam路径须用合法测试账号/应用条件验证，不承诺同一Steam账号能模拟四台客户端。
+STACK-VERSION-EVIDENCE · 2026-09-07受托收敛。M0只固定其实际使用的Editor补丁、URP/Input/Test Framework及构建后端、目标架构、API级别、命令与许可依据，提交可复现依赖锁并完成Windows x64开发构建和非Editor运行。Cinemachine、绑定、导航、Addressables等在首个消费里程碑安装和固定，不为填表先装整套系统。
 
-编译错误、许可证缺失或传输不兼容属于M0失败；不能把未验证版本标为已锁定。安全补丁升级可以重新做兼容矩阵，不以“无旧代码”删除已发布玩家进度。
+M3本地网络验证再固定FishNet和实际使用的本地传输依赖，提交两端/两机结果及恢复故障证据；真实Steam路径须等OWNER-02批准，固定FishySteamworks/Steamworks.NET commit、许可文件hash并用合法测试账号/应用条件复测。本地替身通过不等于Steam部署通过，也不承诺同一Steam账号能模拟四台客户端。资产工具在首件往返试验固定版本、导出设置和导入结果；本批未升级软件或修改全局配置。
+
+实际消费该能力的里程碑遇到编译错误、许可证缺失或传输不兼容即失败；后续网络未测不反过来要求M0先实现网络。不能把未验证版本标为已锁定。安全补丁升级需重做受影响兼容矩阵，不以“无旧代码”删除已发布玩家进度。

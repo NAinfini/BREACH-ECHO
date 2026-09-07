@@ -1,6 +1,10 @@
 # Generated documentation reports
 artifacts/
 
+# Python validation caches
+__pycache__/
+*.py[cod]
+
 # Unity generated state
 [Ll]ibrary/
 [Tt]emp/
